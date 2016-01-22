@@ -240,12 +240,12 @@
     #specialView #specialListData li:first-child .main .rightDv p .bonus{width:15%;position:absolute;top:41%;left:55%;}
     #specialView #specialListData li {/*padding: .1em .7em;*/padding:0 0 0 0;line-height:1.0em}
     #specialView #specialListData .main {width:100%;display:inline-block;background-color: #fff;/*padding: 5px 0 15px 0;*/;padding:0 0 0 0}
-    #specialView #specialListData .main .leftDv {width:55%;float:left;height: 220px;}
+    #specialView #specialListData .main .leftDv {width:60%;float:left;height: 220px;}
     #specialView #specialListData .main .leftDv p:nth-child(1) {color:#000;font-size:22px;/*font-weight:bold;*/margin: 15px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(2) {color:#CF2321;font-size: 16px;margin: 11px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(3) {color:#999;;font-size: 17px;margin: 10px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(4) {color:#615E5E;;font-size: 14px;margin: 25px 0 0px 14px;}
-    #specialView #specialListData .main .rightDv {width:45%;float:left;height: 220px;}
+    #specialView #specialListData .main .rightDv {width:40%;float:left;height: 220px;}
     /*#specialView #specialListData .main .rightDv p {margin: 15px 0px 0 0px;}
     #specialView #specialListData .main .rightDv p img {width:70%;margin: 0 0 0 50px;}
     #specialView #specialListData .main .rightDv p .bonus{width:15%;position:absolute;top:37%;left:55%;}*/
@@ -1204,18 +1204,18 @@
     #specialView #specialListData li:first-child .main .rightDv p .bonus{width:20%;position:absolute;top:38%;left:53%;}
     #specialView #specialListData li {/*padding: .1em .7em;*/;padding:0 0 0 0}
     #specialView #specialListData .main {width:100%;display:inline-block;background-color: #fff;padding: 0px 0 0px 0;}
-    #specialView #specialListData .main .leftDv {width:55%;float:left}
+    #specialView #specialListData .main .leftDv {width:60%;float:left}
     #specialView #specialListData .main .leftDv img {width:100%;height:100%}
     /*#specialView #specialListData .main .leftDv p:nth-child(1) {color:#000;font-size:20px;margin: 15px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(2) {color:#CF2321;font-size: 15px;margin: 11px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(3) {color:#999;;font-size: 16px;margin: 10px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(4) {color:#615E5E;;font-size: 13px;margin: 25px 0 0px 14px;}*/
-    #specialView #specialListData .main .rightDv {width:45%;float:left}
+    #specialView #specialListData .main .rightDv {width:40%;float:left}
    #specialView #specialListData .main .rightDv p:nth-child(1){color: #fff;font-size: 16px;margin: 15px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(2){font-size: 18px;color: #fff;margin: 10px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(3){font-size: 35px;color: #fff;margin: 25px 0 0 10px;font-weight: bold;}
     #specialView #specialListData .main .rightDv p:nth-child(4){margin: 20px 0 0 0px;}
-    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 75%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 78% 12px;background-size: 20px 8px;color: #fff;border: none;}
+    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 75%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 90% 12px;background-size: 20px 8px;color: #fff;border: none;}
     
     /*****************************************************Gallery View********************************************************/
     #galleryView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -1688,17 +1688,17 @@
     #specialView #specialListData li:first-child .main .rightDv p .bonus{width:20%;position:absolute;top:40%;left:48%;}
     #specialView #specialListData li {padding: 0em 0em;}
     #specialView #specialListData .main {width:100%;display:inline-block;background-color: #fff;padding: 0px 0 0px 0;}
-    #specialView #specialListData .main .leftDv {width:55%;float:left}
+    #specialView #specialListData .main .leftDv {width:60%;float:left}
     #specialView #specialListData .main .leftDv p:nth-child(1) {color:#000;font-size:18px;/*font-weight:bold;*/margin: 15px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(2) {color:#CF2321;font-size: 14px;margin: 11px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(3) {color:#999;;font-size: 14px;margin: 10px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(4) {color:#615E5E;;font-size: 11px;margin: 25px 0 0px 14px;}
-    #specialView #specialListData .main .rightDv {width:45%;float:left}
+    #specialView #specialListData .main .rightDv {width:40%;float:left}
     #specialView #specialListData .main .rightDv p:nth-child(1){color: #fff;font-size: 15px;margin: 15px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(2){font-size: 18px;color: #fff;margin: 10px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(3){font-size: 35px;color: #fff;margin: 25px 0 0 10px;font-weight: bold;}
     #specialView #specialListData .main .rightDv p:nth-child(4){margin: 20px 0 0 0px;}
-    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 75%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 78% 12px;background-size: 20px 8px;color: #fff;border: none;}
+    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 75%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 90% 12px;background-size: 20px 8px;color: #fff;border: none;}
     
     /*****************************************************Gallery View********************************************************/
     #galleryView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -2172,17 +2172,17 @@
     #specialView #specialListData li:first-child .main .rightDv p .bonus{width:20%;position:absolute;top:40%;left:48%;}
     #specialView #specialListData li {padding: 0em 0em;}
     #specialView #specialListData .main {width:100%;display:inline-block;background-color: #fff;padding: 0px 0 0px 0;}
-    #specialView #specialListData .main .leftDv {width:55%;float:left}
+    #specialView #specialListData .main .leftDv {width:60%;float:left}
     #specialView #specialListData .main .leftDv p:nth-child(1) {color:#000;font-size:18px;/*font-weight:bold;*/margin: 15px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(2) {color:#CF2321;font-size: 14px;margin: 11px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(3) {color:#999;;font-size: 14px;margin: 10px 0 0 14px;}
     #specialView #specialListData .main .leftDv p:nth-child(4) {color:#615E5E;;font-size: 11px;margin: 25px 0 0px 14px;}
-    #specialView #specialListData .main .rightDv {width:45%;float:left}
+    #specialView #specialListData .main .rightDv {width:40%;float:left}
     #specialView #specialListData .main .rightDv p:nth-child(1){color: #fff;font-size: 13px;margin: 15px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(2){font-size: 16px;color: #fff;margin: 10px 0 0 10px;}
     #specialView #specialListData .main .rightDv p:nth-child(3){font-size: 30px;color: #fff;margin: 25px 0 0 10px;font-weight: bold;}
     #specialView #specialListData .main .rightDv p:nth-child(4){margin: 20px 0 0 0px;}
-    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 90%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 78% 12px;background-size: 20px 8px;color: #fff;border: none;}
+    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 90%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 95% 12px;background-size: 20px 8px;color: #fff;border: none;}
     
     /*****************************************************Gallery View********************************************************/
     #galleryView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -2410,3 +2410,6 @@
     #billingView .wrapper .conFldDv .mixdrop .state_FldDv {width:50%;float:left;}
     #billingView .wrapper .conFldDv .mixdrop .state_FldDv .dropdown{width: 100%;height: 35px;color:#FFFFFF;border:none;background:none;font-size: 16px;-webkit-appearance: none;-moz-appearance: none;text-indent: 1px;background: url('./newImage/down_arrow.png') no-repeat;background-position: 98% 17px;background-size: 20px 11px;}
 }
+
+#aboutusView .wrapper #dataNew a img{width:100% !important}
+#aboutusView .wrapper iframe{width:100% !important}

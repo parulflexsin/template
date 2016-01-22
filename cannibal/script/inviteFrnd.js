@@ -79,7 +79,7 @@
         
         findContactNumber:function()
         {
-            alert("enter");
+            //alert("enter");
             
             var options = new ContactFindOptions();
             console.log(options);

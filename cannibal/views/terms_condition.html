@@ -1,0 +1,63 @@
+<div data-role="view" id="terms_cond" data-title="TERMS AND CONDITION" data-use-native-scrolling="true" data-model="app.termService.viewModel" data-show="app.termService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <span data-role="view-title"></span>
+            <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div id="termsData" data-template="termsTemplate" data-bind="source:termsDataSource"></div>
+            <!--<div class="mainbind">
+                <div class="checkGreenDv">
+                    <p>
+                        <img src="style/images/390/phead.png"/>
+                    </p>
+                </div>
+                <div class="contentDv">
+                    <p class="title">Lorem Ipsum</p>
+                    <p>
+                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
+                    </p>
+                    <p>
+                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
+                    </p>
+                    <p class="termsTit">
+                        Terms & Conditions
+                        <ul id="termsList">
+                            <li>Lorem Ipsum is simply dummy text of the printing.</li>
+                            <li>combine industry expertise with innovative technology to deliver critical information.</li>
+                            <li>leading decision makers in the financial and risk, legal, tax and accounting</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing.</li>
+                            <li>combine industry expertise with innovative technology to deliver critical information.</li>
+                            <li>leading decision makers in the financial and risk, legal, tax and accounting</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing.</li>
+                            <li>combine industry expertise with innovative technology to deliver critical information.</li>
+                            <li>leading decision makers in the financial and risk, legal, tax and accounting</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="termsTemplate">
+    <div class="mainbind">
+        <div class="checkGreenDv">
+            #if(data){#
+                <p>
+                    <img src="style/images/390/phead.png"/>
+                </p>
+            #}#
+            
+        </div>
+        <div class="contentDv">
+            #if(data){#
+                <p class="title">#:data['title']#</p>
+                #=data['content']#
+            #}#
+        </div>
+    </div>
+</script>

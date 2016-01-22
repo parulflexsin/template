@@ -1,0 +1,35 @@
+<div data-role="view" id="pastOrderView" data-title="PAST ORDER" data-use-native-scrolling="true" data-model="app.pastOrder.viewModel" data-show="app.pastOrder.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    
+    <div data-role="content">
+        <div class="wrapper">
+            <ul id="pastOrderListData" data-role="listview" data-template="pastOrderListView" data-bind="source:pastOrderListSource"></ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="pastOrderListView">
+    <div class="main">
+        <div class="leftDv">
+            <p>
+                #:data['title']#
+            </p>
+            <p>
+                #:data['ordernum']#
+            </p>
+            <p>
+                Qty : #:data['quantity']#
+            </p>
+        </div>
+        <div class="rightDv">
+            <p>
+                #:data['price']#
+            </p>
+        </div>
+    </div>
+</script>

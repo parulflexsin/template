@@ -1,0 +1,83 @@
+<div data-role="view" id="myCart" data-title="SHOPPING CART"  data-use-native-scrolling="true" data-model="app.cartService.viewModel" data-show="app.cartService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <span data-role="view-title"></span>
+            <a data-role="button" data-align="right" data-badge="2" class="cart" ></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div id="cartListData" class="wrapper">
+            <!--<ul id="cartListData" data-role="listview" data-template="cartListView" data-bind="source:cartListSource"></ul>-->
+            
+        </div>
+        <div style="width:100%;" id="total">
+            
+        </div>
+    </div>
+    <!--<div class="footer" data-role="footer">
+        <p>
+            <a data-role="button" id="addcart" data-bind="click:checkoutSubmit">CHECKOUT</a>
+        </p>
+    </div>-->
+    
+    <div class="footer" data-role="footer">
+       <div class="footerLeft" >
+           <p>
+               <a data-role="button">Update Cart</a>
+           </p>
+       </div>
+        <div class="footerRight" >
+           <p>
+               <a data-role="button" id="newaccount" data-bind="click:checkoutSubmit">Checkout</a>
+           </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="cartListView">
+    <div class="main hhh">
+        <div class="dv1">
+            <p>
+                <img src="#:data['prodImg']#"/>
+            </p>
+        </div>
+        <div class="dv2">
+            <div class="dv21">
+                <p>
+                    #:data['title']#
+                </p>
+            </div>
+            <div class="dv22">
+                <p>
+                    #:data['desc']#
+                </p>
+            </div>
+            <div class="dv23" >
+                <div class="dv231">
+                    <!--<p style="float:left;">
+                        <a data-role="button" data-id="#:data['id']#"  id="decreaseQuantity" class="minus"></a>
+                    </p>
+                    <p class="qty" id="setQuantity#:data['id']#">
+                        #:data['quantity']#
+                    </p>
+                    <p>
+                        <a data-role="button" data-id="#:data['id']#"  id="increaseQuantity" class="add" ></a>
+                    </p> -->
+                    <p>
+                        <img src="style/images/390/minus.png" id="minus2" class="minus"/>
+                        <input id="qty2" type="text" value="#:data['quantity']#" class="qty" disabled="true"/>
+                        <img id="add2" src="style/images/390/plus.png" class="add"/>
+                    </p>
+    
+                </div>
+                
+            </div>
+        </div>
+        <div class="dv3">
+            <p>
+                #:data['price']#
+            </p>
+        </div>
+    </div>
+</script>

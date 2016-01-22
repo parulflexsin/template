@@ -1,0 +1,62 @@
+<!--Signup View-->
+<div data-role="view" id="editprofileView" data-use-native-scrolling="true" data-model="app.editService.viewModel" data-show="app.editService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" style="background-color:#23A505;border-bottom:none">
+            <a data-align="left" data-role="backbutton" class="backArrow"></a>
+            <span data-role="view-title" style="font-size:20px;color:#fff;margin-left: 15px;"></span>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="header">
+                <p>
+                    Edit Account
+                </p>
+            </div>
+            <div class="conFldDv">
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="fname" id="fname" data-bind="value:firstname" class="txtFld" placeholder="First Name"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="lname" id="lname" data-bind="value:lastname" class="txtFld" placeholder="Last Name"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="number" name="phonenum" id="phonenum" data-bind="value:mobilenum" class="txtFld" maxlength="10" placeholder="Phone Number"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="email" id="email" data-bind="value:emailadd" class="txtFld" placeholder="Email Address" disabled="true"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="licenceId" id="licenceId" data-bind="value:licenceId"  class="licenceId txtFld attch" placeholder="Upload California Driver's License/ID" />
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="prescroption" id="prescroption" data-bind="value:prescroption" class="prescroption txtFld attch" placeholder="Upload Your Prescription"/>
+                    </p>
+                </div>
+                <!--<div class="fldDv">
+                    <p>
+                        <input type="text" name="username" id="username" data-bind="value:userName" class="txtFld" placeholder="Enter Username" disabled="true"/>
+                    </p>
+                </div>-->
+            </div>
+            
+            
+            <div class="subDv">
+                <p>
+                    <a data-role="button" id="editPtofileBTN" data-bind="click:validationState">Submit</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

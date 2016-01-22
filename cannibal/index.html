@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet"/>
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet"/>
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet"/>
+    
+    <link href="style/main.css" rel="stylesheet"/>
+    <link href="style/style.css" rel="stylesheet"/>
+    
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+</head>
+<body>
+    
+    <div data-role="drawer" id="drawerList" data-use-native-scrolling="true" style="width:80%" data-swipe-to-open="false" data-model="app.drawerService.viewModel" data-show="app.drawerService.viewModel.show">
+        <ul class="listparent">
+            <li>
+                <div class="header">
+                    <div class="headerinner1">
+                        <img src="style/IOS/user_ico.png"/>
+                    </div>
+                    <div class="headerinner2">
+                        <p>Robert Wade</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToAboutus">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/about_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">About Us</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToShop">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/product.png"/>
+                        </p>
+                    </div>
+                    <div  class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Products</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToClones">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/clones.png"/>
+                        </p>
+                    </div>
+                    <div  class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Clones</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToSpecials">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/special.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Specials</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToGallery">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/gallery.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Gallery</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToShoppingCart">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/cart.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Shopping Cart</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToProfile">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/my_account.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">My Account</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToPrivacyPloicy">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/privacy_policy.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Privacy Policy</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToTerms_Condition">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/term_condition.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Terms & Conditions</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToInviteFriend">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/invite_friend.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Invite a Friend</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToPastorder">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/past_order.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Past Order</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToContactus">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/contact_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Contact Us</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToRateapp">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/rate_aap_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Rate the App</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToLogout">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p style="margin-left: 17px;">
+                            <img src="style/slideImage/logout_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Logout</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!--External File Place here-->
+    <script src="script/app.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/shop.js"></script>
+    <script src="script/drawer.js"></script>
+    <script src="script/prodDetail.js"></script>
+    <script src="script/mycart.js"></script>
+    <script src="script/signup.js"></script>
+    <script src="script/account.js"></script>
+    <script src="script/clones.js"></script>
+    <script src="script/past_order.js"></script>
+    <script src="script/special.js"></script>
+    <script src="script/gallery.js"></script>
+    <script src="script/aboutus.js"></script>
+    <script src="script/contact.js"></script>
+    <script src="script/privacy.js"></script>
+    <script src="script/terms.js"></script>
+    <script src="script/editProfile.js"></script>
+    <script src="script/inviteFrnd.js"></script>
+</body>
+</html>

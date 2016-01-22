@@ -1,0 +1,59 @@
+<div data-role="view" id="galleryView" data-title="GALLERY" data-use-native-scrolling="true" data-model="app.galleryService.viewModel" data-show="app.galleryService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <span data-role="view-title"></span>
+            <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            
+            <div class="headerTab">
+                <div id="galleryTab1" class="tab1">
+                    <p>
+                        Bud Room
+                    </p>
+                </div>
+                <div id="galleryTab2" class="tab2">
+                    <p>
+                        Dab Lounge
+                    </p>
+                </div>
+                <div id="galleryTab3" class="tab3">
+                    <p>
+                        Cannibal's
+                    </p>
+                </div>
+            </div>
+            
+            <div class="tab1View">
+                <ul id="tab1ListData" data-role="listview" data-template="tab1ListView" data-bind="source:tab1ListSource"></ul>
+            </div>
+            <div class="tab2View">
+               <ul id="tab2ListData" data-role="listview" data-template="tab2ListView" data-bind="source:tab2ListSource"></ul>
+            </div>
+            <div class="tab3View">
+               <ul id="tab3ListData" data-role="listview" data-template="tab3ListView" data-bind="source:tab3ListSource"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="tab1ListView">
+    <div class="main">
+        <img src="#:data['prodImg']#" style="width:100%;height:100%"/>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="tab2ListView">
+    <div class="main">
+        <img src="#:data['prodImg']#" style="width:100%;height:100%"/>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="tab3ListView">
+    <div class="main">
+        <img src="#:data['prodImg']#" style="width:100%;height:100%"/>
+    </div>
+</script>

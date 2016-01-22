@@ -1,0 +1,56 @@
+{
+  "ProjectName": "cannibal",
+  "ProjectGuid": "119bd475-d06c-48be-86b1-3d9b6874f169",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.cannibal",
+  "DisplayName": "cannibal",
+  "Author": "",
+  "Description": "cannibal",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{eeeae748-39ba-4082-8b77-bb566507fb3b}",
+  "WP8ProductID": "{335b2e89-6feb-4525-9377-281ab40cf17d}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.cannibal",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "iOSDeploymentTarget": "6.0",
+  "CorePlugins": [
+    "org.apache.cordova.camera",
+    "org.apache.cordova.console",
+    "org.apache.cordova.contacts",
+    "org.apache.cordova.device",
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.network-information",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
+  ]
+}

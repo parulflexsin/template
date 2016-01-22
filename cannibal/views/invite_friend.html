@@ -1,0 +1,45 @@
+<div data-role="view" id="inviteFriend" data-use-native-scrolling="true" data-model="app.inviteService.viewModel" data-show="app.inviteService.viewModel.show">
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="upper">
+                <p>
+                    <a data-role="backbutton"></a>
+                </p>
+            </div>
+            <div class="mid">
+                <p>
+                    Invite Your Friends
+                </p>
+                <p>
+                    Invite Your Friends via Email, Contact, & Message
+                </p>
+            </div>
+            <div class="down">
+                <div class="down1">
+                    <p>
+                        <a data-role="button" data-bind="click:sendEmailViaComposer"></a>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                    </p>
+                </div>
+                <div class="down2">
+                    <p>
+                        <a data-role="button" data-bind="click:findContactNumber"></a>
+                    </p>
+                    <p>
+                        <label>Contact</label>
+                    </p>
+                </div>
+                <div class="down3">
+                    <p>
+                        <a data-role="button" data-bind="click:sendSMSViaComposer"></a>
+                    </p>
+                    <p>
+                        <label>Message</label>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

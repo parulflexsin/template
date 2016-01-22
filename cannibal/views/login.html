@@ -1,0 +1,241 @@
+<div data-role="view" id="loginView" data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show" data-use-native-scrolling="true">
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="logoPrt">
+                <p>
+                   <img src="style/IOS/logo720.png"/>
+                </p>
+            </div>
+            <div class="contFldPrt">
+                <form id="loginForm" data-bind="events: { keyup: checkEnter }">
+                    <div class="logmail">
+                        <div class="txticon">
+                            <img src="style/newImage/message.png"/>
+                        </div>
+                        <div class="txtfldDv">
+                            <p>
+                                <input type="text" name="log_email" data-bind="value:log_email" class="txtFld" id="log_email" placeholder="Email Address"/>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="logpwd">
+                        <div class="txticon">
+                            <img src="style/newImage/lock.png"/>
+                        </div>
+                        <div class="txtfldDv">
+                            <p>
+                                <input type="password" name="log_pwd" data-bind="value:log_pwd" class="txtFld" id="log_pwd" placeholder="Password"/>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="logSub">
+                        <p>
+                            <a data-role="button" id="signin">SIGN IN</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" data-role="footer">
+       <div class="footerLeft" >
+           <p>
+               <!--<a data-role="button" data-bind="click:moveToForgetPwd">Forgot Password?</a>-->
+               <a href="#forgotPassword" data-role="button" data-rel="modalview">Forgot Password?</a>
+           </p>
+       </div>
+        <div class="footerRight" >
+           <p>
+               <a data-role="button" id="newaccount">Create New Account</a>
+           </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function newaccount()
+    {
+        //app.mobileApp.navigate('#signupView');
+    }
+</script>
+
+<!--Signup View-->
+<div data-role="view" id="signupView" data-model="app.signupService.viewModel" data-show="app.signupService.viewModel.show" data-use-native-scrolling="true">
+    <div data-role="header">
+        <div data-role="navbar" style="background-color:#23A505;border-bottom:none">
+            <a data-align="left" data-role="backbutton" class="backArrow"></a>
+            <span data-role="view-title" style="font-size:20px;color:#fff;margin-left: 15px;"></span>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="header">
+                <p>
+                    Club Registration
+                </p>
+            </div>
+            <div class="conFldDv">
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="fname" id="fname" data-bind="value:firstname" class="txtFld" placeholder="First Name"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="lname" id="lname" data-bind="value:lastname" class="txtFld" placeholder="Last Name"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="number" name="phonenum" id="phonenum" data-bind="value:mobilenum" class="txtFld" maxlength="10" placeholder="Phone Number"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="email" id="email" data-bind="value:emailadd" class="txtFld" placeholder="Email Address"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="licenceId" id="licenceId"  class="licenceId txtFld attch" placeholder="Upload California Driver's License/ID" />
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="prescroption" id="prescroption" class="prescroption txtFld attch" placeholder="Upload Your Prescription"/>
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="subDv">
+                <p>
+                    <a data-role="button" id="moveToRegisterStep1">CONTINUE</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function phonenum(){          
+        
+    }
+</script>
+
+<!--Signup View 2-->
+<div data-role="view" id="signupView2" data-model="app.signupService.viewModel" data-show="app.signupService.viewModel.show2" data-use-native-scrolling="true">
+    <div data-role="header">
+        <div data-role="navbar" style="background-color:#23A505;border-bottom:none">
+            <a data-align="left" data-role="backbutton" class="backArrow"></a>
+            <span data-role="view-title" style="font-size:20px;color:#fff;margin-left: 15px;"></span>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="header">
+                <p>
+                    Account Details
+                </p>
+            </div>
+            <div class="conFldDv">
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="username" id="username" data-bind="value:username" class="txtFld" placeholder="Enter Username"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="password" name="userPwd" id="userPwd" data-bind="value:userPwd" class="txtFld" placeholder="Enter Password"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="password" name="userCnfPwd" id="userCnfPwd" class="txtFld" data-bind="value:userCnfPwd" placeholder="Confirm Your Password"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <div class="checkDv">
+                        <p style="padding-bottom: 0px;">
+                            <img src="style/images/390/check.png" id="check"/>
+                            <img src="style/images/390/uncheck.png" id="uncheck"/>
+                        </p>
+                    </div>
+                    <div class="txtTitDv">
+                        <p class="terms">
+                            Agree to Terms & Conditions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subDv">
+                <p>
+                    <a data-role="button" id="signup" data>SIGN UP</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Forgot Password-->
+<div data-role="view" id="forgotpasswordView" data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-align="left" data-role="backbutton" class="backArrow"></a>
+            <span ></span>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="main">
+                <div class="logoPrt">
+                    <p>
+                       <!--<img src="style/images/390/logo_icon.png"/>-->
+                        Forgot Password
+                    </p>
+                </div>
+                <div class="logmail">
+                    <div class="txticon">
+                        <img src="style/images/390/message.png"/>
+                    </div>
+                    <div class="txtfldDv">
+                        <p>
+                            <input type="text" name="forgot_email" data-bind="value:forgotTextFld" class="txtFld" id="forgot_email" placeholder="Email Address"/>
+                        </p>
+                    </div>
+                </div>
+                <div class="subBtnDv">
+                    <p>
+                        <a data-role="button" data-bind="click:submitforgotpwd">Submit</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal View for forgot password-->
+<div data-role="modalview" id="forgotPassword" style="width:80%;" data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="navbar">
+            <span>FORGOT PASSWORD</span>
+        </div>
+    </div>
+    <div data-role="content" id="maincontent">
+        <p> 
+            <input name="verificationcode" id="verificationcode" data-bind="value:forgotTextFld" class="forgotfTxtfld" placeholder="Email Address"/>
+        </p>
+        <p class="btnpar">
+            <a data-role="button" data-bind="click:submitforgotpwd">Submit</a>
+            <a data-role="button" data-click="cancelModalView">Cancel</a>
+        </p>
+    </div>
+</div>
+
+<script>
+    function cancelModalView()
+    {
+        $('#forgotPassword').data('kendoMobileModalView').close();
+        app.loginService.viewModel.blankForgotFld();
+    }
+</script>

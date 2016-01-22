@@ -1,0 +1,50 @@
+<div data-role="view" id="clonesView" data-title="CLONES"  data-use-native-scrolling="true" data-model="app.cloneService.viewModel" data-show="app.cloneService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar">
+            <a data-role="backbutton" data-align="left" class="back"></a>
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <span data-role="view-title"></span>
+            <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <ul id="cloneListData" data-role="listview" data-template="cloneListView" data-bind="source:cloneListSource"></ul>
+            
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="cloneListView">
+    <div class="main">
+        <div class="dv1">
+            <p>
+                <img src="#:data['prodImg']#"/>
+            </p>
+        </div>
+        <div class="blankDv">
+            <p>
+                &nbsp;&nbsp;
+            </p>
+        </div>
+        <div class="dv2">
+            <div class="dv21">
+                <p>
+                    #:data['title']#
+                </p>
+            </div>
+            <div class="dv22">
+                <p>
+                    #:data['desc']#
+                </p>
+            </div>
+            <div class="dv23" >
+                <div class="dv231">
+                    <p>
+                        <!--#:data['price']#-->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,49 @@
+<div data-role="view" id="contactView" data-use-native-scrolling="true" data-model="app.contact.viewModel" data-show="app.contact.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" class="nvbar" style="border-bottom:3px solid red">
+            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+            <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div class="header">
+                <p>
+                    Contact Us
+                </p>
+            </div>
+            <div class="conFldDv">
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="contact_name" id="contact_name" data-bind="value:name" class="txtFld" placeholder="Name"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="number" name="contact_phone" id="contact_phone" data-bind="value:contact_phone" class="txtFld" placeholder="Phone Number"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="contact_mail" id="contact_mail" data-bind="value:contact_mail" class="txtFld" placeholder="Email"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <input type="text" name="contact_subject" id="contact_subject" data-bind="value:contact_subject" class="txtFld" placeholder="Subject"/>
+                    </p>
+                </div>
+                <div class="fldDv">
+                    <p>
+                        <textarea class="txtarea" id="contact_message" name="contact_message" data-bind="value:contact_message" placeholder="Message"></textarea>
+                    </p>
+                </div>
+            </div>
+            <div class="subDv">
+                <p>
+                    <a data-role="button" id="moveToRegisterStep2" data-bind="click:contactValidation">SUBMIT</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

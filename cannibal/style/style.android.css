@@ -276,6 +276,24 @@
     #galleryView #tab2ListData .main {width: 100%;height:220px;}
     #galleryView #tab3ListData .main {width: 100%;height:220px;}
     
+    /*****************************************************Event View********************************************************/
+    #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #eventView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #eventView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 0px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #eventView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #eventView .nvbar span {color:#fff;font-size: 20px;line-height: 55px;}
+    #eventView .wrapper {width:100%;margin:0px auto}
+    #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
+    #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
+    #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
+    #eventView .wrapper .eventlist li .eventListInfo{width: 100%;height: 60px;padding: 6px}
+    #eventView .wrapper .eventlist li .eventDate{width: 25%; float: left; height: 100%; text-align: center; line-height: 20px; font-weight: bold; font-size: 15px; margin-top: 5px;}
+    #eventView .wrapper .eventlist li .eventLebel{width: 75%; border-left: 1px solid; float: left; height: 100%; text-align: left; line-height: 40px;    font-weight: bold; font-size: 16px; padding-left: 5%;}
+    
+    
+    
     /*****************************************************My Account View********************************************************/
     #profileView .nvbar {background-color:#23A505 !important;height: 55px;}
     #profileView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
@@ -753,6 +771,23 @@
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
     #galleryView #tab1ListData .main {width: 100%;height:180px;}
     #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    
+    /*****************************************************Event View********************************************************/
+    #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #eventView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #eventView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 0px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #eventView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    #eventView .wrapper {width:100%;margin:0px auto}
+    #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
+    #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
+    #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
+    #eventView .wrapper .eventlist li .eventListInfo{width: 100%;height: 60px;padding: 6px}
+    #eventView .wrapper .eventlist li .eventDate{width: 25%; float: left; height: 100%; text-align: center; line-height: 20px; font-weight: bold; font-size: 15px; margin-top: 5px;}
+    #eventView .wrapper .eventlist li .eventLebel{width: 75%; border-left: 1px solid; float: left; height: 100%; text-align: left; line-height: 40px;    font-weight: bold; font-size: 16px; padding-left: 5%;}
+    
     
     /*****************************************************My Account View********************************************************/
     #profileView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -1238,6 +1273,24 @@
     #galleryView #tab2ListData .main {width: 100%;height:180px;}
     #galleryView #tab3ListData .main {width: 100%;height:180px;}
     
+    /*****************************************************Event View********************************************************/
+    #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #eventView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #eventView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 0px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #eventView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    #eventView .wrapper {width:100%;margin:0px auto}
+    #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
+    #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
+    #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
+    #eventView .wrapper .eventlist li .eventListInfo{width: 100%;height: 60px;padding: 6px}
+    #eventView .wrapper .eventlist li .eventDate{width: 25%; float: left; height: 100%; text-align: center; line-height: 20px; font-weight: bold; font-size: 15px; margin-top: 5px;}
+    #eventView .wrapper .eventlist li .eventLebel{width: 75%; border-left: 1px solid; float: left; height: 100%; text-align: left; line-height: 40px;    font-weight: bold; font-size: 16px; padding-left: 5%;}
+    
+    
+    
     /*****************************************************My Account View********************************************************/
     #profileView .nvbar {background-color:#23A505 !important;height: 55px;}
     #profileView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
@@ -1719,6 +1772,25 @@
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
     #galleryView #tab1ListData .main {width: 100%;height:180px;}
     #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    
+    /*****************************************************Event View********************************************************/
+    #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #eventView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #eventView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 0px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #eventView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    #eventView .wrapper {width:100%;margin:0px auto}
+    #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
+    #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
+    #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
+    #eventView .wrapper .eventlist li .eventListInfo{width: 100%;height: 60px;padding: 6px}
+    #eventView .wrapper .eventlist li .eventDate{width: 25%; float: left; height: 100%; text-align: center; line-height: 20px; font-weight: bold; font-size: 15px; margin-top: 5px;}
+    #eventView .wrapper .eventlist li .eventLebel{width: 75%; border-left: 1px solid; float: left; height: 100%; text-align: left; line-height: 40px;    font-weight: bold; font-size: 16px; padding-left: 5%;}
+    
+    
+    
     
     /*****************************************************My Account View********************************************************/
     #profileView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -2203,6 +2275,26 @@
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
     #galleryView #tab1ListData .main {width: 100%;height:180px;}
     #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    
+    
+    /*****************************************************Event View********************************************************/
+    #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #eventView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #eventView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 0px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #eventView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    #eventView .wrapper {width:100%;margin:0px auto}
+    #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
+    #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
+    #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
+    #eventView .wrapper .eventlist li .eventListInfo{width: 100%;height: 60px;padding: 6px}
+    #eventView .wrapper .eventlist li .eventDate{width: 25%; float: left; height: 100%; text-align: center; line-height: 20px; font-weight: bold; font-size: 15px; margin-top: 5px;}
+    #eventView .wrapper .eventlist li .eventLebel{width: 75%; border-left: 1px solid; float: left; height: 100%; text-align: left; line-height: 40px;    font-weight: bold; font-size: 16px; padding-left: 5%;}
+    
+    
+    
     
     /*****************************************************My Account View********************************************************/
     #profileView .nvbar {background-color:#23A505 !important;height: 55px;}

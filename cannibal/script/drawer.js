@@ -77,6 +77,11 @@
         moveToRateapp:function()
         {
            // alert("Rate the App");
+        },
+        moveToEvent:function()
+        {
+           //console.log("moveToEvent");
+           app.mobileApp.navigate('views/event.html');
         }
         
         

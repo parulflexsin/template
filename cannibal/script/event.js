@@ -41,7 +41,7 @@
                           
                         //$(".eventlist li img").attr(data[0]['data'][i]['ImageUrl']);
                         //$(".eventDate").html("<h1>"+data[0]['data'][i]['date']+"</h1>"+data[0]['data'][i]['ImageUrl']);
-                        //$(".eventLebel").html(data[0]['data'][i]['title']);
+                        //$(".eventLebel").html(data[0]['data'][i]['title']); 
                         
                         str += '<li>\
                                     <img src="'+data[0]['data'][i]['ImageUrl']+'"/>\

@@ -2505,3 +2505,7 @@
 
 #aboutusView .wrapper #dataNew a img{width:100% !important}
 #aboutusView .wrapper iframe{width:100% !important}
+
+.km-flat .km-shim, .km-phone .km-flat .km-actionsheet-wrapper {
+  background: rgba(0, 0, 0, 0.9) !important;
+}

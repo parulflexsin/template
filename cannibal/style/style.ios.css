@@ -284,7 +284,7 @@
     #eventView .nvbar span {color:#fff;font-size: 20px;line-height: 55px;}
     #eventView .wrapper {width:100%;margin:0px auto}
     #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
-    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;min-height: 230px;}
     #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
     #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
     #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
@@ -780,7 +780,7 @@
     #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #eventView .wrapper {width:100%;margin:0px auto}
     #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
-    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;min-height: 230px;}
     #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
     #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
     #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
@@ -1281,7 +1281,7 @@
     #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #eventView .wrapper {width:100%;margin:0px auto}
     #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
-    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;min-height: 230px;}
     #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
     #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
     #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
@@ -1781,7 +1781,7 @@
     #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #eventView .wrapper {width:100%;margin:0px auto}
     #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
-    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;min-height: 230px;}
     #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
     #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
     #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
@@ -2285,7 +2285,7 @@
     #eventView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #eventView .wrapper {width:100%;margin:0px auto}
     #eventView .wrapper .eventlist {width: 90%;margin: 0px auto;margin-top: 5%;text-align: center;margin-bottom: 5%;}
-    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;}
+    #eventView .wrapper .eventlist li {width: 100%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;list-style: none;min-height: 230px;}
     #eventView .wrapper .eventlist li:not(:first-child) {width: 100%;margin-top: 10%;text-align: center;box-shadow: 0px 2px 1px #b0b0b0;}
     #eventView .wrapper .eventlist li img{width: 100%;text-align: center;}
     #eventView .wrapper .eventlist li .eventDate h1{  padding: 0px;margin: 0px;}
@@ -2505,3 +2505,7 @@
 
 #aboutusView .wrapper #dataNew a img{width:100% !important}
 #aboutusView .wrapper iframe{width:100% !important}
+
+.km-flat .km-shim, .km-phone .km-flat .km-actionsheet-wrapper {
+  background: rgba(0, 0, 0, 0.9) !important;
+}

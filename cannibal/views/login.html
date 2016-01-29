@@ -14,7 +14,7 @@
                         </div>
                         <div class="txtfldDv">
                             <p>
-                                <input type="text" name="log_email" data-bind="value:log_email" class="txtFld" id="log_email" placeholder="Email Address"/>
+                                <input type="text" name="log_email" data-bind="value:log_email" class="txtFld" id="log_email" placeholder="Username/Email"/>
                             </p>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                     </div>
                     <div class="txtfldDv">
                         <p>
-                            <input type="text" name="forgot_email" data-bind="value:forgotTextFld" class="txtFld" id="forgot_email" placeholder="Email Address"/>
+                            <input type="email" name="forgot_email" data-bind="value:forgotTextFld" class="txtFld" id="forgot_email" placeholder="Email Address"/>
                         </p>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
 </div>
 
 <!--Modal View for forgot password-->
-<div data-role="modalview" id="forgotPassword" style="width:80%;" data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show">
+<div data-role="modalview" id="forgotPassword" style="width:90%;" data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show">
     <div data-role="header">
         <div data-role="navbar" class="navbar">
             <span>FORGOT PASSWORD</span>
@@ -223,7 +223,7 @@
     </div>
     <div data-role="content" id="maincontent">
         <p> 
-            <input name="verificationcode" id="verificationcode" data-bind="value:forgotTextFld" class="forgotfTxtfld" placeholder="Email Address"/>
+            <input type="email" name="verificationcode" id="verificationcode" data-bind="value:forgotTextFld" class="forgotfTxtfld" placeholder="Email Address"/>
         </p>
         <p class="btnpar">
             <a data-role="button" data-bind="click:submitforgotpwd">Submit</a>

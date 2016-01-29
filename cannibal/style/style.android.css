@@ -253,7 +253,7 @@
     #specialView #specialListData .main .rightDv p:nth-child(2){font-size: 20px;color: #fff;margin: 10px 0 0 20px;}
     #specialView #specialListData .main .rightDv p:nth-child(3){font-size: 40px;color: #fff;margin: 25px 0 0 20px;font-weight: bold;}
     #specialView #specialListData .main .rightDv p:nth-child(4){margin: 20px 0 0 10px;}
-    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 50%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 78% 13px;background-size: 20px 8px;color: #fff;border: none;}
+    #specialView #specialListData .main .rightDv p:nth-child(4) .shopArrow {width: 50%;background: url('./IOS/shop_arrow.png') no-repeat;text-align: left;background-position: 95% 13px;background-size: 20px 8px;color: #fff;border: none;}
     
     /*****************************************************Gallery View********************************************************/
     #galleryView .nvbar {background-color:#23A505 !important;height: 55px;}

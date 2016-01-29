@@ -14,6 +14,9 @@
                 app.accountService.viewModel.changePwdValidation();         
             });
             app.accountService.viewModel.resetChangepwdFld();
+            
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         changePwdValidation:function()

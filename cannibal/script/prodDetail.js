@@ -15,6 +15,8 @@
             });
             
             app.productService.viewModel.shopDtlAPI(localStorage.getItem('product_id'));
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         checkValidation :function()

@@ -57,6 +57,9 @@
                 $('#galleryView .wrapper .tab2View').hide();
                 $('#galleryView .wrapper .tab3View').show();
             });
+            
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         setTabView1data : function(data)

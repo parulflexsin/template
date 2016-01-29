@@ -61,6 +61,9 @@
                 
                 app.mobileApp.hideLoading();
             });
+            
+            // For show cart count
+            app.cartService.viewModel.htmlCreate();
         }
         
     });

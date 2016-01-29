@@ -19,6 +19,8 @@
                 app.privacyService.viewModel.setPrivacyData(data);    
             }
            
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         privacyAPICall : function()

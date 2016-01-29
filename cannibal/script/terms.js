@@ -18,6 +18,9 @@
                 app.termService.viewModel.setTermsData(data);    
             }
             
+            // Fot show cart count
+            app.cartService.viewModel.htmlCreate();
+            
         },
         termsconditionAPI : function()
         {

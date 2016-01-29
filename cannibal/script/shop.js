@@ -11,6 +11,9 @@
             // app.shopService.viewModel.setShopListData(data);
            // app.shopService.viewModel.productListAPI();
             //app.shopService.viewModel.API_productList();
+            
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         /*API_productList : function()

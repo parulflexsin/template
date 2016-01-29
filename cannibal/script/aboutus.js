@@ -10,6 +10,9 @@
         {
             app.about.viewModel.aboutUsAPI();
             $('#dataNew').html('');
+            
+            // For show count of my cart
+            app.cartService.viewModel.htmlCreate();
         },
         
         aboutUsAPI : function()

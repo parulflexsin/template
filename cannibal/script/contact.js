@@ -13,6 +13,9 @@
         show:function()
         {
            app.contact.viewModel.blankContactFld();
+            
+            // For show cart count
+            app.cartService.viewModel.htmlCreate(); 
         },
         
         contactValidation : function()

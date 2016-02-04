@@ -135,9 +135,9 @@
                 dataParamSignup['phone'] = mobilenum,
                 dataParamSignup['emailid'] = emailAdd;
                 dataParamSignup['driving_licence'] = localStorage.getItem('license_id');
-                dataParamSignup['ext_dl'] = localStorage.getItem('licenseId_fileEXT');
+                //dataParamSignup['ext_dl'] = localStorage.getItem('licenseId_fileEXT');
                 dataParamSignup['prescription'] = localStorage.getItem('prescription');
-                dataParamSignup['ext_pr'] = localStorage.getItem('prescription_fileEXT');
+                //dataParamSignup['ext_pr'] = localStorage.getItem('prescription_fileEXT');
                 localStorage.setItem('backstatus','1');
                 setTimeout(function(){
                     app.mobileApp.navigate('#signupView2'); ///-----------------------------------------    

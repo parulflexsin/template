@@ -235,6 +235,9 @@
 <script>
     function cancelModalView()
     {
+        $('.footerLeft').css('background-color','#1A530C');
+        $('.footerRight').css('background-color','#1E9E01');
+        
         $('#forgotPassword').data('kendoMobileModalView').close();
         app.loginService.viewModel.blankForgotFld();
     }

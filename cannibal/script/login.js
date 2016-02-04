@@ -18,17 +18,20 @@
             
             /*Move to club registration page*/
             
-            $('.footerRight').css('background-color','#1A530C');
-            
-            $('#forgotaccount').unbind(".myPlugin");
-            $('#forgotaccount').on('click.myPlugin',function(){
+            //$('.footerRight').css('background-color','#1A530C');
+            /*$('.footerLeft').css('background-color','#1A530C');
+            $('.footerRight').css('background-color','#1E9E01');
+            */
+            /*$('.footerLeft').click(function(){
+                console.log("Forgot");
                 $('.footerLeft').css('background-color','#1A530C');
                 $('.footerRight').css('background-color','#1E9E01');
                 //app.mobileApp.navigate('#signupView');
-            });
+            });*/
 
             $('#newaccount').unbind(".myPlugin");
             $('#newaccount').on('click.myPlugin',function(){
+                console.log("NewAccount");
                 $('.footerLeft').css('background-color','#1E9E01');
                 $('.footerRight').css('background-color','#1A530C');
                 app.mobileApp.navigate('#signupView');

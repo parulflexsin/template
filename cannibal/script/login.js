@@ -19,11 +19,18 @@
             /*Move to club registration page*/
             
             $('.footerRight').css('background-color','#1A530C');
+            
+            $('#forgotaccount').unbind(".myPlugin");
+            $('#forgotaccount').on('click.myPlugin',function(){
+                $('.footerLeft').css('background-color','#1A530C');
+                $('.footerRight').css('background-color','#1E9E01');
+                //app.mobileApp.navigate('#signupView');
+            });
 
             $('#newaccount').unbind(".myPlugin");
             $('#newaccount').on('click.myPlugin',function(){
-                //$('.footerLeft').css('background-color','#1E9E01');
-                //$('.footerRight').css('background-color','#1A530C');
+                $('.footerLeft').css('background-color','#1E9E01');
+                $('.footerRight').css('background-color','#1A530C');
                 app.mobileApp.navigate('#signupView');
             });
             
@@ -256,12 +263,12 @@
                 var data = this.data();
                 if(data[0]['status'] === 0 || data[0]['status'] === '0')
                 {
-                    navigator.notification.alert("Email Id does not exist.",function () { }, "Notification", 'OK');
+                    navigator.notification.alert("Email Id does not exist.",function () { }, "Password Recovery", 'OK');
                     app.mobileApp.hideLoading();
                 }
                 else
                 {
-                    navigator.notification.alert(data[0]['msg'],function () { }, "Notification", 'OK');
+                    navigator.notification.alert('Check your email. Password recovery email has been sent.',function () { }, "Password Recovery", 'OK');
                     app.mobileApp.navigate('#loginView');
                     app.mobileApp.hideLoading();
                 }

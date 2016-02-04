@@ -41,7 +41,7 @@
        <div class="footerLeft" >
            <p>
                <!--<a data-role="button" data-bind="click:moveToForgetPwd">Forgot Password?</a>-->
-               <a href="#forgotPassword" data-role="button" data-rel="modalview">Forgot Password?</a>
+               <a href="#forgotPassword" id="forgotaccount" data-role="button" data-rel="modalview">Forgot Password?</a>
            </p>
        </div>
         <div class="footerRight" >
@@ -87,12 +87,12 @@
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="number" name="phonenum" id="phonenum" data-bind="value:mobilenum" class="txtFld" maxlength="10" placeholder="Phone Number"/>
+                        <input type="tel" name="phonenum" id="phonenum" data-bind="value:mobilenum" class="txtFld" maxlength="10" placeholder="Phone Number"/>
                     </p>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="email" id="email" data-bind="value:emailadd" class="txtFld" placeholder="Email Address"/>
+                        <input type="email" name="email" id="email" data-bind="value:emailadd" class="txtFld" placeholder="Email Address"/>
                     </p>
                 </div>
                 <div class="fldDv">
@@ -163,7 +163,7 @@
                     </div>
                     <div class="txtTitDv">
                         <p class="terms">
-                            Agree to Terms & Conditions
+                            I agree to Terms & Conditions
                         </p>
                     </div>
                 </div>

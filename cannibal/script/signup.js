@@ -18,6 +18,7 @@
         show:function()
         {
             $(".km-native-scroller").scrollTop(0);
+            app.signupService.viewModel.resetSignupFld();
             
             /* validation for registration step1 and registration step2 */
             $('#moveToRegisterStep1').unbind('.myPlugin');
@@ -26,13 +27,13 @@
             });
             
             /* only numaric number enter means other fields will not be enter on the mobile number textbox*/
-            $('#phonenum').keypress(function(e) {
+            /*$('#phonenum').keypress(function(e) {
                 var valid = (e.which>=48 && e.which<=57)
                 if(!valid)
                 {
                     e.preventDefault();
                 }
-            });
+            });*/
             
             /*Get the image or docs from the mobile Device*/
             $('.licenceId').unbind('.myPlugin');
@@ -73,6 +74,7 @@
             
             $('#signup').unbind('.myPlugin');
             $('#signup').on('click.myPlugin',function(){
+                //app.signupService.viewModel.resetSignupFld();
                 app.signupService.viewModel.registrationStep2();
             });
         },
@@ -214,13 +216,13 @@
                 console.log(data);
                 if(data[0]['status'] === '1' || data[0]['status'] === 1)
                 {
-                    navigator.notification.alert(data[0]['msg'],function(){},'Signup',"OK");
+                    navigator.notification.alert("You have registered successfully. Please check your email",function(){},'Registration',"OK");
                     app.signupService.viewModel.resetSignupFld();
                     app.mobileApp.navigate('#loginView');
                 }
                 else
                 {
-                     navigator.notification.alert(data[0]['msg'],function () { }, "Message", 'OK');
+                     navigator.notification.alert("This email or username has previously been registered",function () { }, "Duplicate Account", 'OK');
                 }
             });
         },

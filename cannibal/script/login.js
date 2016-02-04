@@ -126,7 +126,12 @@
                 console.log(data);
                 if(data[0]['status'] === 0 || data[0]['status'] === '0')
                 {
-                    navigator.notification.alert("Username/Password does not exist.",function () { }, "Notification", 'OK');
+                    //navigator.notification.alert("Username/Password does not exist.",function () { }, "Notification", 'OK');
+                    navigator.notification.alert(data[0]['msg'],function () { }, "Notification", 'OK');
+                    app.mobileApp.hideLoading();
+                } else if(data[0]['status'] === 2 || data[0]['status'] === '2')
+                {
+                    navigator.notification.alert("This account not activated! Please check your email for activate",function () { }, "Notification", 'OK');
                     app.mobileApp.hideLoading();
                 }
                 else

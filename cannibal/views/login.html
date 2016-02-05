@@ -14,7 +14,7 @@
                         </div>
                         <div class="txtfldDv">
                             <p>
-                                <input type="text" name="log_email" data-bind="value:log_email" class="txtFld" id="log_email" placeholder="Username/Email"/>
+                                <input type="text" name="log_email" data-bind="value:log_email" class="txtFld" id="log_email" placeholder="Username/Email" style='text-transform: lowercase;' />
                             </p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
             <div class="conFldDv">
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="username" id="username" data-bind="value:username" class="txtFld" placeholder="Enter Username"/>
+                        <input type="text" name="username" id="username" data-bind="value:username" class="txtFld" placeholder="Enter Username" style='text-transform: lowercase;' onkeyup="return forceLower(this);" />
                     </p>
                 </div>
                 <div class="fldDv">
@@ -281,5 +281,10 @@
         $('.footerRight').css('background-color','#1E9E01');
         $('#forgotPassword').data('kendoMobileModalView').close();
         app.loginService.viewModel.blankForgotFld();
+    }
+    
+    
+    function toLowercase(str){
+        str.value=str.value.toLowerCase();
     }
 </script>

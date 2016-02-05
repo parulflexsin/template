@@ -373,6 +373,26 @@
     #terms_cond .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
     #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
     
+    /*****************************************************Terms and Condition Viewmodel only********************************************************/
+    #termsandcondtion .backArrow {width:25px;height:30px;border:none;background:url('./slideImage/back_icon.png') no-repeat;background-size:100% 100%;}
+    #termsandcondtion .nvbar {background-color:#23A505 !important;height: 55px;}
+    #termsandcondtion .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #termsandcondtion .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #termsandcondtion .nvbar span {color:#fff;font-size: 20px;line-height: 55px;}
+    
+    #termsandcondtion .wrapper {width:96%;height:auto;margin:0px auto;}
+    #termsandcondtion .wrapper .mainbind{width:100%;height:auto;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv {width:4%;float:left;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv p{margin:20px 0 0 5px}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv img {width:15px}
+    #termsandcondtion .wrapper .mainbind .contentDv {width:96%;float:left;}
+    #termsandcondtion .wrapper .mainbind .contentDv .title {font-size:22px;color:#000;margin: 18px 0 0 13px;}
+    #termsandcondtion .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
+    #termsandcondtion .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
+    #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    
+    
     /*****************************************************Invite a Friend View********************************************************/
     #inviteFriend .wrapper {width:100%;height:auto}
     #inviteFriend .wrapper .upper {width:100%;height:auto;display:inline-block}
@@ -867,6 +887,26 @@
     #terms_cond .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
     #terms_cond .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
     #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    /*****************************************************Terms and Condition Viewmodel only********************************************************/
+    #termsandcondtion .backArrow {width:25px;height:30px;border:none;background:url('./slideImage/back_icon.png') no-repeat;background-size:100% 100%;}
+    #termsandcondtion .nvbar {background-color:#23A505 !important;height: 55px;}
+    #termsandcondtion .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #termsandcondtion .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #termsandcondtion .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    
+    #termsandcondtion .wrapper {width:96%;height:auto;margin:0px auto;}
+    #termsandcondtion .wrapper .mainbind{width:100%;height:auto;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv {width:4%;float:left;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv p{margin:20px 0 0 5px}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv img {width:15px}
+    #termsandcondtion .wrapper .mainbind .contentDv {width:96%;float:left;}
+    #termsandcondtion .wrapper .mainbind .contentDv .title {font-size:22px;color:#000;margin: 18px 0 0 13px;}
+    #termsandcondtion .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
+    #termsandcondtion .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
+    #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    
     
     /*****************************************************Invite a Friend View********************************************************/
     #inviteFriend .wrapper {width:100%;height:auto}
@@ -1370,6 +1410,26 @@
     #terms_cond .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
     #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
     
+    
+    /*****************************************************Terms and Condition Viewmodel only********************************************************/
+    #termsandcondtion .backArrow {width:25px;height:30px;border:none;background:url('./slideImage/back_icon.png') no-repeat;background-size:100% 100%;}
+    #termsandcondtion .nvbar {background-color:#23A505 !important;height: 55px;}
+    #termsandcondtion .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #termsandcondtion .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #termsandcondtion .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    
+    #termsandcondtion .wrapper {width:96%;height:auto;margin:0px auto;}
+    #termsandcondtion .wrapper .mainbind{width:100%;height:auto;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv {width:4%;float:left;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv p{margin:20px 0 0 5px}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv img {width:15px}
+    #termsandcondtion .wrapper .mainbind .contentDv {width:96%;float:left;}
+    #termsandcondtion .wrapper .mainbind .contentDv .title {font-size:22px;color:#000;margin: 18px 0 0 13px;}
+    #termsandcondtion .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
+    #termsandcondtion .wrapper .mainbind .contentDv p {font-size:16px;text-align:justify;color: #7E7E7E;}
+    #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    
     /*****************************************************Invite a Friend View********************************************************/
     #inviteFriend .wrapper {width:100%;height:auto}
     #inviteFriend .wrapper .upper {width:100%;height:auto;display:inline-block}
@@ -1869,6 +1929,24 @@
     #terms_cond .wrapper .mainbind .contentDv .title {font-size:20px;color:#000;margin: 18px 0 0 13px;}
     #terms_cond .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
     #terms_cond .wrapper .mainbind .contentDv p {font-size:15px;text-align:justify;color: #7E7E7E;}
+    #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    /*****************************************************Terms and Condition Viewmodel only********************************************************/
+    #termsandcondtion .backArrow {width:25px;height:30px;border:none;background:url('./slideImage/back_icon.png') no-repeat;background-size:100% 100%;}
+    #termsandcondtion .nvbar {background-color:#23A505 !important;height: 55px;}
+    #termsandcondtion .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #termsandcondtion .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #termsandcondtion .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    
+    #termsandcondtion .wrapper {width:96%;height:auto;margin:0px auto;}
+    #termsandcondtion .wrapper .mainbind{width:100%;height:auto;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv {width:4%;float:left;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv p{margin:20px 0 0 5px}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv img {width:15px}
+    #termsandcondtion .wrapper .mainbind .contentDv {width:96%;float:left;}
+    #termsandcondtion .wrapper .mainbind .contentDv .title {font-size:20px;color:#000;margin: 18px 0 0 13px;}
+    #termsandcondtion .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
+    #termsandcondtion .wrapper .mainbind .contentDv p {font-size:15px;text-align:justify;color: #7E7E7E;}
     #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
     
     /*****************************************************Invite a Friend View********************************************************/
@@ -2373,6 +2451,24 @@
     #terms_cond .wrapper .mainbind .contentDv .title {font-size:20px;color:#000;margin: 18px 0 0 13px;}
     #terms_cond .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
     #terms_cond .wrapper .mainbind .contentDv p {font-size:15px;text-align:justify;color: #7E7E7E;}
+    #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
+    
+    /*****************************************************Terms and Condition Viewmodel only********************************************************/
+    #termsandcondtion .backArrow {width:25px;height:30px;border:none;background:url('./slideImage/back_icon.png') no-repeat;background-size:100% 100%;}
+    #termsandcondtion .nvbar {background-color:#23A505 !important;height: 55px;}
+    #termsandcondtion .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #termsandcondtion .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #termsandcondtion .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
+    
+    #termsandcondtion .wrapper {width:96%;height:auto;margin:0px auto;}
+    #termsandcondtion .wrapper .mainbind{width:100%;height:auto;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv {width:4%;float:left;display:inline-block}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv p{margin:20px 0 0 5px}
+    #termsandcondtion .wrapper .mainbind .checkGreenDv img {width:15px}
+    #termsandcondtion .wrapper .mainbind .contentDv {width:96%;float:left;}
+    #termsandcondtion .wrapper .mainbind .contentDv .title {font-size:20px;color:#000;margin: 18px 0 0 13px;}
+    #termsandcondtion .wrapper .mainbind .contentDv .termsTit {color:#000;font-weight:bold}
+    #termsandcondtion .wrapper .mainbind .contentDv p {font-size:15px;text-align:justify;color: #7E7E7E;}
     #termsList li{padding: 0 0 15px 0;margin-left: -5px;}
     
     /*****************************************************Invite a Friend View********************************************************/

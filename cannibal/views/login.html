@@ -41,10 +41,10 @@
        <div class="footerLeft" >
            <p>
                <!--<a data-role="button" data-bind="click:moveToForgetPwd">Forgot Password?</a>-->
-               <a href="#forgotPassword" id="forgotaccount" data-role="button" data-rel="modalview">Forgot Password?</a>
+               <a href="#forgotPassword" id="forgotaccount" data-role="button" data-rel="modalview" data-click="openModal">Forgot Password?</a>
            </p>
        </div>
-        <div class="footerRight" >
+        <div class="footerRight" style="background:#1A530C;">
            <p>
                <a data-role="button" id="newaccount">Create New Account</a>
            </p>
@@ -162,9 +162,11 @@
                         </p>
                     </div>
                     <div class="txtTitDv">
-                        <p class="terms">
-                            I agree to Terms & Conditions
-                        </p>
+                        <a href="#termsandcondtion" style="text-decoration:none;">
+                            <p class="terms">
+                                I agree to Terms & Conditions
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -232,12 +234,51 @@
     </div>
 </div>
 
+
+
+<div data-role="view" id="termsandcondtion" data-title="TERMS AND CONDITION" data-use-native-scrolling="true" data-model="app.termService.viewModel" data-show="app.termService.viewModel.show">
+    <div data-role="header">
+        <div data-role="navbar" style="background-color:#23A505;border-bottom:none">
+            <a data-align="left" data-role="backbutton" class="backArrow"></a>
+            <span data-role="view-title" style="font-size:20px;color:#fff;margin-left: 15px;"></span>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="wrapper">
+            <div id="termsData" data-template="termsTemplate" data-bind="source:termsDataSource"></div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/x-kendo-template" id="termsTemplate">
+    <div class="mainbind">
+        <div class="checkGreenDv">
+            #if(data){#
+                <p>
+                    <img src="style/images/390/phead.png"/>
+                </p>
+            #}#
+            
+        </div>
+        <div class="contentDv">
+            #if(data){#
+                <p class="title">#:data['title']#</p>
+                #=data['content']#
+            #}#
+        </div>
+    </div>
+</script>
 <script>
+    function openModal() {
+       //$("#foo").data("kendoMobileModalView").open();
+        $('.footerLeft').css('background-color','#1A530C');
+        $('.footerRight').css('background-color','#1E9E01');
+    }
     function cancelModalView()
     {
         $('.footerLeft').css('background-color','#1A530C');
         $('.footerRight').css('background-color','#1E9E01');
-        
         $('#forgotPassword').data('kendoMobileModalView').close();
         app.loginService.viewModel.blankForgotFld();
     }

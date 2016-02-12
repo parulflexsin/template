@@ -11,14 +11,14 @@
     #loginView .wrapper .contFldPrt .logmail .txticon {width:12%;float:left;}
     #loginView .wrapper .contFldPrt .logmail .txticon img{width:33px;}
     #loginView .wrapper .contFldPrt .logmail .txtfldDv {width:88%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-2px 0 0 0}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logpwd {width:100%;display: inline-block;  margin-top: 25px;}
     #loginView .wrapper .contFldPrt .logpwd .txticon {width:12%;float:left;}
     #loginView .wrapper .contFldPrt .logpwd .txticon img{width:33px}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 88%;float: left;padding-bottom: 15px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logSub {width:100%;margin-top:50px}
     #loginView .wrapper .contFldPrt .logSub p {margin: 0 0 0 0;}
     #loginView .wrapper .contFldPrt .logSub a {width:100%;height:58px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 18px;background-size: 35px 19px;}
@@ -56,7 +56,7 @@
     #signupView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:40px}
     #signupView .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:13%}
     #signupView .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:20px}
     #signupView .wrapper .conFldDv .fldDv .attch {background:url('./images/390/attached_ico.png') no-repeat !important;background-position: 96% 4px !important;background-size: 20px 20px !important;}
     #signupView .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 12%;}
@@ -70,14 +70,14 @@
     #signupView2 .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:40px}
     #signupView2 .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView2 .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView2 .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:20px}
     #signupView2 .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 20%;}
     #signupView2 .wrapper .subDv a {width:100%;height:58px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 18px;background-size: 35px 19px;}
     #signupView2 .wrapper .subDv a span{font-size:22px;line-height:40px;color:#23A503 !important;font-weight: 100;}
-    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:7%;float:left;margin-left: 5px;}
+    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:15%;float:left;margin-left: 5px;}
     #signupView2 .wrapper .conFldDv .fldDv .checkDv img {width:18px}
-    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left}
+    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left;margin-left: -5%;}
     #signupView2 .wrapper .conFldDv .fldDv .txtTitDv .terms {color: #FFF;font-size: 18px;margin-top: 16px;}
     .checkDv p,.txtTitDv P {border-bottom:none !importaNT;padding-bottom:0px}
     
@@ -533,14 +533,14 @@
     #loginView .wrapper .contFldPrt .logmail .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logmail .txticon img{width:28px;}
     #loginView .wrapper .contFldPrt .logmail .txtfldDv {width:85%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-2px 0 0 0}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logpwd {width:100%;display: inline-block;  margin-top: 15px;}
     #loginView .wrapper .contFldPrt .logpwd .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logpwd .txticon img{width:28px}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 15px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 7px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logSub {width:100%;margin-top:50px}
     #loginView .wrapper .contFldPrt .logSub p {margin: 0 0 0 0;}
     #loginView .wrapper .contFldPrt .logSub a {width:100%;height:45px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 12px;background-size: 35px 19px;}
@@ -578,7 +578,7 @@
     #signupView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #signupView .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:13%}
     #signupView .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:20px}
     #signupView .wrapper .conFldDv .fldDv .attch {background:url('./images/390/attached_ico.png') no-repeat !important;background-position: 96% 4px !important;background-size: 20px 20px !important;}
     #signupView .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 12%;}
@@ -592,14 +592,14 @@
     #signupView2 .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #signupView2 .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView2 .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView2 .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:20px}
     #signupView2 .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 20%;}
     #signupView2 .wrapper .subDv a {width:100%;height:45px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 12px;background-size: 35px 19px;}
     #signupView2 .wrapper .subDv a span{font-size:18px;line-height:30px;color:#23A503 !important;font-weight: 100;}
-    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:9%;float:left;margin-left: 5px;}
+    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:15%;float:left;margin-left: 5px;}
     #signupView2 .wrapper .conFldDv .fldDv .checkDv img {width:16px}
-    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left}
+    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left;margin-left: -5%;}
     #signupView2 .wrapper .conFldDv .fldDv .txtTitDv .terms {color: #FFF;font-size: 16px;margin-top: 15px;}
     .checkDv p,.txtTitDv P {border-bottom:none !importaNT;padding-bottom:0px}
     
@@ -1048,14 +1048,14 @@
     #loginView .wrapper .contFldPrt .logmail .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logmail .txticon img{width:30px;}
     #loginView .wrapper .contFldPrt .logmail .txtfldDv {width:85%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-2px 0 0 0}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logpwd {width:100%;display: inline-block;  margin-top: 15px;}
     #loginView .wrapper .contFldPrt .logpwd .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logpwd .txticon img{width:30px}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 15px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 7px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 10px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logSub {width:100%;margin-top:50px}
     #loginView .wrapper .contFldPrt .logSub p {margin: 0 0 0 0;}
     #loginView .wrapper .contFldPrt .logSub a {width:100%;height:45px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 12px;background-size: 35px 19px;}
@@ -1093,7 +1093,7 @@
     #signupView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #signupView .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:13%}
     #signupView .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:20px}
     #signupView .wrapper .conFldDv .fldDv .attch {background:url('./images/390/attached_ico.png') no-repeat !important;background-position: 96% 4px !important;background-size: 20px 20px !important;}
     #signupView .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 12%;}
@@ -1107,14 +1107,14 @@
     #signupView2 .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #signupView2 .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView2 .wrapper .conFldDv .fldDv {width:100%;margin-top: 32px;}
-    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView2 .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:18px}
     #signupView2 .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 20%;}
     #signupView2 .wrapper .subDv a {width:100%;height:45px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 12px;background-size: 35px 19px;}
     #signupView2 .wrapper .subDv a span{font-size:18px;line-height:30px;color:#23A503 !important;font-weight: 100;}
-    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:9%;float:left;margin-left: 5px;}
+    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:15%;float:left;margin-left: 5px;}
     #signupView2 .wrapper .conFldDv .fldDv .checkDv img {width:16px}
-    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left}
+    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left;margin-left: -5%;}
     #signupView2 .wrapper .conFldDv .fldDv .txtTitDv .terms {color: #FFF;font-size: 16px;margin-top: 15px;}
     .checkDv p,.txtTitDv P {border-bottom:none !importaNT;padding-bottom:0px}
     
@@ -1568,14 +1568,14 @@
     #loginView .wrapper .contFldPrt .logmail .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logmail .txticon img{width:25px;}
     #loginView .wrapper .contFldPrt .logmail .txtfldDv {width:85%;float:left;padding-bottom:2px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 0px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-2px 0 0 0}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 0px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logpwd {width:100%;display: inline-block;  margin-top: 15px;}
     #loginView .wrapper .contFldPrt .logpwd .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logpwd .txticon img{width:25px}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 7px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logSub {width:100%;margin-top:35px}
     #loginView .wrapper .contFldPrt .logSub p {margin: 0 0 0 0;}
     #loginView .wrapper .contFldPrt .logSub a {width:100%;height:40px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 10px;background-size: 30px 17px;}
@@ -1613,7 +1613,7 @@
     #signupView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:25px}
     #signupView .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView .wrapper .conFldDv .fldDv {width:100%;margin-top: 12px;}
-    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:18px}
     #signupView .wrapper .conFldDv .fldDv .attch {background:url('./images/390/attached_ico.png') no-repeat !important;background-position: 96% 4px !important;background-size: 20px 20px !important;}
     #signupView .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 12%;}
@@ -1628,14 +1628,14 @@
     #signupView2 .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:25px}
     #signupView2 .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView2 .wrapper .conFldDv .fldDv {width:100%;margin-top: 12px;}
-    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView2 .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:18px}
     #signupView2 .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 20%;}
     #signupView2 .wrapper .subDv a {width:100%;height:40px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 10px;background-size: 32px 15px;}
     #signupView2 .wrapper .subDv a span{font-size:17px;line-height:25px;color:#23A503 !important;font-weight: 100;}
-    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:9%;float:left;margin-left: 5px;}
+    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:15%;float:left;margin-left: 5px;}
     #signupView2 .wrapper .conFldDv .fldDv .checkDv img {width:16px}
-    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left}
+    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left;margin-left: -5%;}
     #signupView2 .wrapper .conFldDv .fldDv .txtTitDv .terms {color: #FFF;font-size: 14px;margin-top: 15px;}
     #signupView2 .txtFld::-webkit-input-placeholder { color:#D4EDCF;font-size:13px;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: 500;line-height:20px}
     .checkDv p,.txtTitDv P {border-bottom:none !importaNT;padding-bottom:0px}
@@ -2089,14 +2089,14 @@
     #loginView .wrapper .contFldPrt .logmail .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logmail .txticon img{width:25px;}
     #loginView .wrapper .contFldPrt .logmail .txtfldDv {width:85%;float:left;padding-bottom:2px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 0px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv p {margin:-2px 0 0 0}
+    #loginView .wrapper .contFldPrt .logmail .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 0px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logpwd {width:100%;display: inline-block;  margin-top: 15px;}
     #loginView .wrapper .contFldPrt .logpwd .txticon {width:15%;float:left;}
     #loginView .wrapper .contFldPrt .logpwd .txticon img{width:25px}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv {width: 85%;float: left;padding-bottom: 7px;border: 1px solid #D5F5A9;border-top: none;border-left: none;border-right: none;}
     #loginView .wrapper .contFldPrt .logpwd .txtfldDv p {margin:-5px 0 0 0}
-    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 40px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
+    #loginView .wrapper .contFldPrt .logpwd .txtfldDv .txtFld{width: 100%;height: 30px;padding-top: 5px;padding-left: 0px;border: none;background: none;color: #fff;font-size: 20px;font-family: 'Helvetica', 'Arial', sans-serif;}
     #loginView .wrapper .contFldPrt .logSub {width:100%;margin-top:35px}
     #loginView .wrapper .contFldPrt .logSub p {margin: 0 0 0 0;}
     #loginView .wrapper .contFldPrt .logSub a {width:100%;height:40px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 10px;background-size: 30px 17px;}
@@ -2134,7 +2134,7 @@
     #signupView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:25px}
     #signupView .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView .wrapper .conFldDv .fldDv {width:100%;margin-top: 12px;}
-    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:18px}
     #signupView .wrapper .conFldDv .fldDv .attch {background:url('./images/390/attached_ico.png') no-repeat !important;background-position: 96% 4px !important;background-size: 20px 20px !important;}
     #signupView .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 12%;}
@@ -2149,14 +2149,14 @@
     #signupView2 .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:25px}
     #signupView2 .wrapper .conFldDv {width:88%;height:auto;margin:0px auto;margin-top:10%}
     #signupView2 .wrapper .conFldDv .fldDv {width:100%;margin-top: 12px;}
-    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 18px;}
+    #signupView2 .wrapper .conFldDv .fldDv p {border:1px solid #D5F5A9;border-top: none;border-right: none;border-left: none;padding-bottom: 0px;}
     #signupView2 .wrapper .conFldDv .fldDv .txtFld {width:100%;height:35px;padding-left:0px;border:none;background: none;color:#fff;font-size:18px}
     #signupView2 .wrapper .subDv {width:90%;margin: 0px auto;margin-top: 20%;}
     #signupView2 .wrapper .subDv a {width:100%;height:40px;background-color:#fff !important; background-image:url(./images/390/btn_arrow.png) !important;background-repeat:no-repeat;background-position: 85% 10px;background-size: 32px 15px;}
     #signupView2 .wrapper .subDv a span{font-size:17px;line-height:25px;color:#23A503 !important;font-weight: 100;}
-    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:9%;float:left;margin-left: 5px;}
+    #signupView2 .wrapper .conFldDv .fldDv .checkDv {width:15%;float:left;margin-left: 5px;}
     #signupView2 .wrapper .conFldDv .fldDv .checkDv img {width:16px}
-    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left}
+    #signupView2 .wrapper .conFldDv .fldDv .txtTitDv {width:80%;float:left;margin-left: -5%;}
     #signupView2 .wrapper .conFldDv .fldDv .txtTitDv .terms {color: #FFF;font-size: 14px;margin-top: 15px;}
     #signupView2 .txtFld::-webkit-input-placeholder { color:#D4EDCF;font-size:13px;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: 500;line-height:20px}
     .checkDv p,.txtTitDv P {border-bottom:none !importaNT;padding-bottom:0px}

@@ -43,8 +43,21 @@
             
         },
         
+        hideKeypad : function(e)
+        {
+            console.log("Hello hide");
+            if(e.keyCode >= 48 && e.keyCode <= 90 )
+            {
+                $(e.target).blur();
+            }
+        },
+        
         checkEnter : function(e)
         {
+            if(e.keyCode >= 48 && e.keyCode <= 90 )
+            {
+                $(e.target).blur();
+            }
             if(e.keyCode === 13)
             {
                 $(e.target).blur();
@@ -137,7 +150,7 @@
                 if(data[0]['status'] === 0 || data[0]['status'] === '0')
                 {
                     //navigator.notification.alert("Username/Password does not exist.",function () { }, "Notification", 'OK');
-                    navigator.notification.alert(data[0]['msg'],function () { }, "Notification", 'OK');
+                    navigator.notification.alert(data[0]['msg'],function () { }, "Error", 'OK');
                     app.mobileApp.hideLoading();
                 } else if(data[0]['status'] === 2 || data[0]['status'] === '2')
                 {

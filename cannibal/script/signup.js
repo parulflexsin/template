@@ -216,13 +216,13 @@
                 console.log(data);
                 if(data[0]['status'] === '1' || data[0]['status'] === 1)
                 {
-                    navigator.notification.alert("You have registered successfully. Please check your email",function(){},'Registration',"OK");
+                    navigator.notification.alert("You have registered successfully. Please check your email.",function(){},'Registration',"OK");
                     app.signupService.viewModel.resetSignupFld();
                     app.mobileApp.navigate('#loginView');
                 }
                 else
                 {
-                     navigator.notification.alert("This email or username has previously been registered",function () { }, "Duplicate Account", 'OK');
+                     navigator.notification.alert("This email or username has previously been registered.",function () { }, "Duplicate Account", 'OK');
                 }
             });
         },

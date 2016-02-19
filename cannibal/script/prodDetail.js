@@ -6,6 +6,7 @@
         
         show:function(e)
         {
+            console.log("show product");
             cartDataView = [];
             
             $('#addcart').click(function(){

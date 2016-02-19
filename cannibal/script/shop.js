@@ -10,13 +10,13 @@
             var data = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
             // app.shopService.viewModel.setShopListData(data);
            // app.shopService.viewModel.productListAPI();
-            //app.shopService.viewModel.API_productList();
+            app.shopService.viewModel.API_productList();
             
             // For show count of my cart
             app.cartService.viewModel.htmlCreate();
         },
         
-        /*API_productList : function()
+        API_productList : function()
         {
             app.mobileApp.showLoading();
             var productData = new kendo.data.DataSource({
@@ -42,10 +42,11 @@
           });
            productData.fetch(function(){
                 var data = this.data();
-                app.mobileApp.hideLoading();
+                //console.log(data);
+                //app.mobileApp.hideLoading();
                 app.shopService.viewModel.setShopListData(data[0]);
            }); 
-        },*/
+        },
         
         productListAPI:function()
         {
@@ -173,7 +174,21 @@
         setShopListData:function(data)
         {
             console.log(data);
-            this.set('shopListSource',data);
+            var prdata = '<option>--select--</option>';
+            for(x in data)
+            {
+                if($.isNumeric(x))
+                {
+                    console.log(data[x]['MainCategoryName']);
+                    prdata += '<option>'+data[x]['MainCategoryName']+'</option>';
+                    
+                }
+            }
+            $("#productCategory").html(prdata);
+            
+            app.mobileApp.hideLoading();
+            var tempdata = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
+            this.set('shopListSource',tempdata);
         },
         
         moveToMain:function(e)

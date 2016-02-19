@@ -203,6 +203,10 @@ var app = (function(){
     localStorage.setItem('editProfile_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Edit_Profile.php');
     localStorage.setItem('event_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Events.php');
     
+    localStorage.setItem('gallery1_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Gallery.php?post_per_page=&category=cat-one&offset=0');
+    localStorage.setItem('gallery2_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Gallery.php?post_per_page=&category=cat-two&offset=0');
+    localStorage.setItem('gallery3_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Gallery.php?post_per_page=&category=cat-three&offset=0');
+    
     
 
     return{

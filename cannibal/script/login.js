@@ -43,28 +43,14 @@
             
         },
         
-        hideKeypad : function(e)
-        {
-            console.log("Hello hide");
-            if(e.keyCode >= 48 && e.keyCode <= 90 )
-            {
-                $(e.target).blur();
-            }
-        },
-        
         checkEnter : function(e)
         {
-            if(e.keyCode >= 48 && e.keyCode <= 90 )
-            {
-                $(e.target).blur();
-            }
             if(e.keyCode === 13)
             {
                 $(e.target).blur();
                 app.loginService.viewModel.loginValidation();
             }
         },
-        
         
         // Validation Function for Login
         loginValidation : function()
@@ -74,7 +60,6 @@
                 password = that.get('log_pwd');
             
             var dataParam = [];
-            
             if(username === "")
             {
                 navigator.notification.confirm("Please Enter Username/Email",function(confirm){

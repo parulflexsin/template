@@ -128,12 +128,12 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;}
+    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 18px;color:#23A505;margin-left: 10px;margin-top: 20px;}
     #shopListData .dynDv .bindCls .cartCls {width: 50%;float: left;}
-    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 13px 5px 0 0px;}
+    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 13px 5px 0 0px;float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData .dynDv .bindCls .cartCls p .cartImage{background:url(./images/390/cart.png) no-repeat;width: 35px;height: 35px;border:none;background-size: 80% 80%;}
     #shopListData li {width:50%;float:left;padding-top: 25px;}
     
@@ -650,12 +650,12 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;}
+    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 16px;color:#23A505;margin-left: 10px;margin-top: 20px;}
     #shopListData .dynDv .bindCls .cartCls {width: 50%;float: left;}
-    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;}
+    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData .dynDv .bindCls .cartCls p .cartImage{background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData li {width:50%;float:left;padding-top: 12px;}
     
@@ -1165,12 +1165,12 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;}
+    #shopListData .dynDv .prodTitle p {font-size: 16px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 16px;color:#23A505;margin-left: 10px;margin-top: 20px;}
     #shopListData .dynDv .bindCls .cartCls {width: 50%;float: left;}
-    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;}
+    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData .dynDv .bindCls .cartCls p .cartImage{background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData li {width:50%;float:left;padding-top: 12px;}
     
@@ -1687,13 +1687,13 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;}
+    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 16px;color:#23A505;margin-left: 10px;margin-top: 20px;}
     #shopListData .dynDv .bindCls .cartCls {width: 50%;float: left;}
-    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;}
-    #shopListData .dynDv .bindCls .cartCls p .cartImage{background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
+    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
+    #shopListData .dynDv .bindCls .cartCls p .cartImage{float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData li {width:50%;float:left;padding-top: 12px;}
     
     /*****************************************************product detail View********************************************************/
@@ -2208,12 +2208,12 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;}
+    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 16px;color:#23A505;margin-left: 10px;margin-top: 20px;}
     #shopListData .dynDv .bindCls .cartCls {width: 50%;float: left;}
-    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;}
+    #shopListData .dynDv .bindCls .cartCls p {text-align: right;margin: 15px 3px 0 0px;float: right;background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData .dynDv .bindCls .cartCls p .cartImage{background:url(./images/390/cart.png) no-repeat;width: 30px;height: 30px;border:none;background-size: 80% 80%;}
     #shopListData li {width:50%;float:left;padding-top: 12px;}
     

@@ -33,6 +33,9 @@
             
             app.cartService.viewModel.htmlCreate();
             
+            app.cartService.viewModel.getMyCart();
+            
+            
             $('.cross').unbind(".myPlugin");
             $('.cross').on('click.myPlugin',function(){
                var parentId = $(this).parent().parent().parent().attr('id');
@@ -43,6 +46,68 @@
                     }
                 },"Notification","Yes,Cancel");
             });
+        },
+        
+        getMyCart : function(){
+            console.log("Calling api my cart");
+            var data = [];
+            app.mobileApp.showLoading();
+            $.ajax({
+                 url:localStorage.getItem('shoping_API'),
+                 type:'GET',
+                 data: {'user_ID':localStorage.getItem('user_id')},
+                 success: function(result){
+                     
+                     data = jQuery.parseJSON(result);
+                     //console.log(data.status);
+                     if(data.status === 1 || data.status === '1')
+                     {
+                         console.log("yyyyyyyyyyy");
+                         //console.log(data.data.length);
+                         app.cartService.viewModel.carthtmlCreate(data.data);
+                         app.mobileApp.hideLoading();
+                     }
+                     else
+                     {
+                        navigator.notification.alert("Something wrong happen, Please try again!",function () { }, "Error", 'OK');
+                        app.mobileApp.hideLoading();
+                     }
+                 }
+            });
+        },
+        
+        carthtmlCreate : function(data){
+            console.log("carthtmlCreate : "+data.length);
+            
+            var html = '';
+            
+            $(".cart").html('<span class="km-badge">'+data.length+'</span>');
+            for(var i=0;i<data.length;i++)
+            {
+                html+='<div class="main" id="mainContentDv'+data[i]['data']['post']['id']+'">';
+                html+='<div class="dv1"><p><img src=""/></p></div>';
+                html+='<div class="dv2">';
+                html+='<div class="dv21"><p>'+data[i]['data']['post_title']+'</p></div>';
+                html+='<div class="dv22"><p>'+data[i]['data']['post_title']+'</p></div>';
+                html+='<div class="dv23">';
+                html+='<div class="dv230"><p>'+data[i]['price']+'</p></div><div class="dv231"><img class="minus" src="style/images/390/green_minus.png"/></div><div class="dv232" id="qunatDv"><input tyep="text" id="quantity" value="'+data[i]['quantity']+'" style="background-color:#fff;" disabled="false"/></div><div class="dv233"><img class="add" src="style/images/390/green_plus.png"/></div>';
+                html+='</div>';
+                html+='</div>';
+                html+='<div class="dv3">';
+                html+='<p><img class="cross" src="style/images/390/cross_icon.png"/></p>';
+                html+='</div>';
+                html+='</div>';
+                $('#cartListData').html(html);
+            }
+            
+            var hhtml = '';
+            hhtml +='<div class="mainTotalDv" style="width:100%;height:auto;display:inline-block;margin: 0 0 0 0;">';
+            hhtml +='<div class="leftdv1"><p>Total</p>';
+            hhtml +='</div>';
+            hhtml +='<div class="leftdv2"><p>$180.00</p>';
+            hhtml +='</div>';
+            hhtml +='<div>';
+            $('#total').html(hhtml);
         },
         
         htmlCreate : function()

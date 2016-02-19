@@ -196,7 +196,7 @@ var app = (function(){
     localStorage.setItem('registration_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Registration.php');
     localStorage.setItem('productlist_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Products.php');
     localStorage.setItem('aboutus_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/About.php');
-    localStorage.setItem('aboutus_API2','http://flexsin.org/lab/wordpress/cannibalsonline/conAPI/Pages.php?name=About');
+    localStorage.setItem('aboutus_API2','http://wordpress2014:Flexsin_2020flexsin.org/lab/wordpress/cannibalsonline/conAPI/Pages.php?name=About');
     localStorage.setItem('contact_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Contact.php');
     localStorage.setItem('privacy_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Pages.php?name=Privacy');
     localStorage.setItem('terms&condition_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Pages.php?name=Terms');
@@ -207,8 +207,10 @@ var app = (function(){
     localStorage.setItem('gallery2_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Gallery.php?post_per_page=&category=cat-two&offset=0');
     localStorage.setItem('gallery3_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Gallery.php?post_per_page=&category=cat-three&offset=0');
     
+    localStorage.setItem('shoping_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/View_cart.php');
     
-
+    
+    
     return{
         mobileApp:mobileApp
     }

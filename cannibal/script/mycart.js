@@ -85,7 +85,7 @@
             for(var i=0;i<data.length;i++)
             {
                 html+='<div class="main" id="mainContentDv'+data[i]['data']['post']['id']+'">';
-                html+='<div class="dv1"><p><img src=""/></p></div>';
+                html+='<div class="dv1"><p><img src="style/images/390/img2.png"/></p></div>';
                 html+='<div class="dv2">';
                 html+='<div class="dv21"><p>'+data[i]['data']['post_title']+'</p></div>';
                 html+='<div class="dv22"><p>'+data[i]['data']['post_title']+'</p></div>';

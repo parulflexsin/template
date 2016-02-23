@@ -87,9 +87,15 @@
                 },
                 error:function(e)
                 {
+                    console.log(e);
                     app.mobileApp.hideLoading();
-                    navigator.notification.alert("Server not responding properly.Please check your internet connection.",
-                        function () { }, "Message", 'OK');
+                    if (e.xhr.status == 401) {
+                        navigator.notification.alert("Failed to load image (Authorization Required).",
+                            function () { }, "Message", 'OK');
+                    }else{
+                        navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                            function () { }, "Message", 'OK');
+                    }
                 }
             });
             tab1DataSource.fetch(function(){
@@ -141,8 +147,13 @@
                 error:function(e)
                 {
                     app.mobileApp.hideLoading();
-                    navigator.notification.alert("Server not responding properly.Please check your internet connection.",
-                        function () { }, "Message", 'OK');
+                    if (e.xhr.status == 401) {
+                        navigator.notification.alert("Failed to load image (Authorization Required).",
+                            function () { }, "Message", 'OK');
+                    }else{
+                        navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                            function () { }, "Message", 'OK');
+                    }
                 }
             });
             tab2DataSource.fetch(function(){
@@ -194,9 +205,14 @@
                 },
                 error:function(e)
                 {
+                    if (e.xhr.status == 401) {
+                        navigator.notification.alert("Failed to load image (Authorization Required).",
+                            function () { }, "Message", 'OK');
+                    }else{
+                        navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                            function () { }, "Message", 'OK');
+                    }
                     app.mobileApp.hideLoading();
-                    navigator.notification.alert("Server not responding properly.Please check your internet connection.",
-                        function () { }, "Message", 'OK');
                 }
             });
             tab3DataSource.fetch(function(){

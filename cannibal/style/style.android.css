@@ -1348,7 +1348,7 @@
     #profileView .wrapper .addressDV .add1 a span {font-size:18px;}
     #profileView .wrapper .addressDV .add1 a:active {color:#494343}
     #profileView .wrapper .addressDV .add2 {text-align:center;margin: -26px 0 0 22px;}
-    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 100%;border:none;background-size: 18px;background-position: 0% 12px;}
+    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 70%;border:none;background-size: 18px;background-position: 0% 12px;}
     #profileView .wrapper .addressDV .add2 a span {font-size:18px;}
     #profileView .wrapper .addressDV .add2 a:active {color:#494343}
     #profileView .wrapper .addressDV .add3 {text-align:center;margin: 0 0 0 0;font-size:18px}
@@ -1869,7 +1869,7 @@
     #profileView .wrapper .addressDV .add1 a span {font-size:16px;}
     #profileView .wrapper .addressDV .add1 a:active {color:#494343}
     #profileView .wrapper .addressDV .add2 {text-align:center;margin: -26px 0 0 22px;}
-    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 100%;border:none;background-size: 18px;background-position: 0% 13px;}
+    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 70%;border:none;background-size: 18px;background-position: 0% 13px;}
     #profileView .wrapper .addressDV .add2 a span {font-size:16px;}
     #profileView .wrapper .addressDV .add2 a:active {color:#494343}
     #profileView .wrapper .addressDV .add3 {text-align:center;margin: 0 0 0 0;font-size:16px}
@@ -2391,7 +2391,7 @@
     #profileView .wrapper .addressDV .add1 a span {font-size:16px;}
     #profileView .wrapper .addressDV .add1 a:active {color:#494343}
     #profileView .wrapper .addressDV .add2 {text-align:center;margin: -26px 0 0 22px;}
-    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 100%;border:none;background-size: 18px;background-position: 0% 13px;}
+    #profileView .wrapper .addressDV .add2 a {color:#494343;background:url('./IOS/location_pin.png') no-repeat;width: 70%;border:none;background-size: 18px;background-position: 0% 13px;}
     #profileView .wrapper .addressDV .add2 a span {font-size:16px;}
     #profileView .wrapper .addressDV .add2 a:active {color:#494343}
     #profileView .wrapper .addressDV .add3 {text-align:center;margin: 0 0 0 0;font-size:16px}

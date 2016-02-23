@@ -500,6 +500,8 @@
     
     
     /*****************************************************Billing info View********************************************************/
+    #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
@@ -1017,6 +1019,8 @@
     
     
     /*****************************************************Billing info View********************************************************/
+    #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
@@ -1537,6 +1541,8 @@
     
     
     /*****************************************************Billing info View********************************************************/
+    #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
@@ -2058,6 +2064,8 @@
     
     
     /*****************************************************Billing info View********************************************************/
+    #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
@@ -2580,6 +2588,8 @@
     
     
     /*****************************************************Billing info View********************************************************/
+    #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}

@@ -47,12 +47,13 @@
         {
             if (!this.checkSimulator()) {
                 cordova.plugins.email.open({
-                    to:          ['person1@domain.com'],
-                    cc:          ['person2@domain.com'],
-                    bcc:         ['person3@domain.com', 'person4@domain.com'],
-                    attachments: ['file://styles/images/logo.png', 'file://styles/images/logo2x.png'],
+                    to:          [],
+                    //to:          ['person1@domain.com'],
+                    //cc:          ['person2@domain.com'],
+                    //bcc:         ['person3@domain.com', 'person4@domain.com'],
+                    //attachments: ['file://styles/images/logo.png', 'file://styles/images/logo2x.png'],
                     subject:     'Invite My Friend',
-                    body:        '<h2>Hello!</h2>This is a nice <strong>HTML</strong> email with two attachments.',
+                    body:        '<p><strong>Hi Friend,</strong></p>This is a dummy text.',
                     isHtml:      true
                 }, this.callback)
             }

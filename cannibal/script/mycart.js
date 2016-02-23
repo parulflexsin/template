@@ -58,6 +58,7 @@
                  data: {'user_ID':localStorage.getItem('user_id')},
                  success: function(result){
                      
+                     app.mobileApp.hideLoading();
                      data = jQuery.parseJSON(result);
                      //console.log(data.status);
                      if(data.status === 1 || data.status === '1')
@@ -65,13 +66,15 @@
                          console.log("yyyyyyyyyyy");
                          //console.log(data.data.length);
                          app.cartService.viewModel.carthtmlCreate(data.data);
-                         app.mobileApp.hideLoading();
                      }
                      else
                      {
                         navigator.notification.alert("Something wrong happen, Please try again!",function () { }, "Error", 'OK');
-                        app.mobileApp.hideLoading();
+                        //app.mobileApp.hideLoading();
                      }
+                 },
+                 error: function(){
+                     app.mobileApp.hideLoading();
                  }
             });
         },

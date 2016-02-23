@@ -272,9 +272,9 @@
     #galleryView .wrapper .tab2View {width:100%;height:auto;}
     #tab1ListData li,#tab2ListData li,#tab3ListData li {padding:0 0 0 0 !important;border:none}
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
-    #galleryView #tab1ListData .main {width: 100%;height:220px;}
-    #galleryView #tab2ListData .main {width: 100%;height:220px;}
-    #galleryView #tab3ListData .main {width: 100%;height:220px;}
+    #galleryView #tab1ListData .main {width: 100%;height:220px;margin-bottom: 3%;}
+    #galleryView #tab2ListData .main {width: 100%;height:220px;margin-bottom: 3%;}
+    #galleryView #tab3ListData .main {width: 100%;height:220px;margin-bottom: 3%;}
     
     /*****************************************************Event View********************************************************/
     #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -791,8 +791,9 @@
     #galleryView .wrapper .tab2View {width:100%;height:auto;}
     #tab1ListData li,#tab2ListData li {padding:0 0 0 0 !important;border:none}
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
-    #galleryView #tab1ListData .main {width: 100%;height:180px;}
-    #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    #galleryView #tab1ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab2ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab3ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
     
     /*****************************************************Event View********************************************************/
     #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -1313,9 +1314,9 @@
     #galleryView .wrapper .tab2View {width:100%;height:auto;}
     #tab1ListData li,#tab2ListData li {padding:0 0 0 0 !important;border:none}
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
-    #galleryView #tab1ListData .main {width: 100%;height:180px;}
-    #galleryView #tab2ListData .main {width: 100%;height:180px;}
-    #galleryView #tab3ListData .main {width: 100%;height:180px;}
+    #galleryView #tab1ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab2ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab3ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
     
     /*****************************************************Event View********************************************************/
     #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -1836,8 +1837,9 @@
     #galleryView .wrapper .tab2View {width:100%;height:auto;}
     #tab1ListData li,#tab2ListData li {padding:0 0 0 0 !important;border:none}
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
-    #galleryView #tab1ListData .main {width: 100%;height:180px;}
-    #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    #galleryView #tab1ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab2ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab3ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
     
     /*****************************************************Event View********************************************************/
     #eventView .nvbar {background-color:#23A505 !important;height: 55px;}
@@ -2359,8 +2361,9 @@
     #galleryView .wrapper .tab2View {width:100%;height:auto;}
     #tab1ListData li,#tab2ListData li {padding:0 0 0 0 !important;border:none}
     .km-badge {font-size:10px !important;margin: 0 15px 0 0 !important;}
-    #galleryView #tab1ListData .main {width: 100%;height:180px;}
-    #galleryView #tab2ListData .main {width: 100%;height:180px;}
+    #galleryView #tab1ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab2ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
+    #galleryView #tab3ListData .main {width: 100%;height:180px;margin-bottom: 3%;}
     
     
     /*****************************************************Event View********************************************************/

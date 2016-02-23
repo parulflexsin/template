@@ -87,13 +87,13 @@
             $(".cart").html('<span class="km-badge">'+data.length+'</span>');
             for(var i=0;i<data.length;i++)
             {
-                html+='<div class="main" id="mainContentDv'+data[i]['data']['post']['id']+'">';
-                html+='<div class="dv1"><p><img src="style/images/390/img2.png"/></p></div>';
+                html+='<div class="main" id="mainContentDv'+data[i]['data']['post']['ID']+'">';
+                html+='<div class="dv1"><p><img src="'+data[i]['thumbnail']+'"/></p></div>';
                 html+='<div class="dv2">';
-                html+='<div class="dv21"><p>'+data[i]['data']['post_title']+'</p></div>';
-                html+='<div class="dv22"><p>'+data[i]['data']['post_title']+'</p></div>';
+                html+='<div class="dv21"><p>'+data[i]['data']['post']['post_title']+'</p></div>';
+                html+='<div class="dv22"><p>'+data[i]['data']['post']['post_title']+'</p></div>';
                 html+='<div class="dv23">';
-                html+='<div class="dv230"><p>'+data[i]['price']+'</p></div><div class="dv231"><img class="minus" src="style/images/390/green_minus.png"/></div><div class="dv232" id="qunatDv"><input tyep="text" id="quantity" value="'+data[i]['quantity']+'" style="background-color:#fff;" disabled="false"/></div><div class="dv233"><img class="add" src="style/images/390/green_plus.png"/></div>';
+                html+='<div class="dv230"><p>'+data[i]['data']['price']+'</p></div><div class="dv231"><img class="minus" src="style/images/390/green_minus.png"/></div><div class="dv232" id="qunatDv"><input tyep="text" id="quantity" value="'+data[i]['quantity']+'" style="background-color:#fff;" disabled="false"/></div><div class="dv233"><img class="add" src="style/images/390/green_plus.png"/></div>';
                 html+='</div>';
                 html+='</div>';
                 html+='<div class="dv3">';
@@ -147,7 +147,7 @@
             $('#total').html(hhtml);
             
             $('.minus').unbind(".myPlugin");
-            $('.minus').on('click.myPlugin',function(){
+            $('.minus').on('click.myPlugin',function(){ 
                 var quantity = parseInt($(this).parent().next().children().val());
                 if (!isNaN(quantity) && quantity > 1) {
                     $(this).parent().next().children().val(quantity - 1);

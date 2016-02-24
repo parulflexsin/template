@@ -114,10 +114,10 @@
                     $.each(data[0]['data'], function(key, value){
                         
                         if(key ==  i){
-                            console.log("Image url : "+value.img_url);
-                            arrdata1 += '<div class="main">\
+                            //console.log("Image url : "+value.img_url);
+                            arrdata1 += '<div class="main"><a data-role="button" data-click="openModalView">\
                                 <img src="'+value.img_url+'" style="width:100%;height:100%"/>\
-                            </div>';
+                            </a></div>';
                         }
                         i++;
                     });
@@ -173,9 +173,9 @@
                         
                         if(key ==  i){
                             console.log("Image url : "+value.img_url);
-                            arrdata1 += '<div class="main">\
+                            arrdata1 += '<div class="main"><a data-role="button" data-click="openModalView">\
                                 <img src="'+value.img_url+'" style="width:100%;height:100%"/>\
-                            </div>';
+                            </a></div>';
                         }
                         i++;
                     });
@@ -232,9 +232,9 @@
                         
                         if(key ==  i){
                             console.log("Image url : "+value.img_url);
-                            arrdata1 += '<div class="main">\
+                            arrdata1 += '<div class="main"><a data-role="button" data-click="openModalView">\
                                 <img src="'+value.img_url+'" style="width:100%;height:100%"/>\
-                            </div>';
+                            </a></div>';
                         }
                         i++;
                     });
@@ -243,6 +243,11 @@
                     app.mobileApp.hideLoading();
                 }
             });
+        },
+        
+        showBigImage : function(e){
+            console.log(e);
+            console.log('sssssssssssssss');
         },
         
         setTabView1data : function(data)

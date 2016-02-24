@@ -42,7 +42,9 @@
 
 <script type="text/x-kendo-template" id="tab1ListView">
     <div class="main">
-        <img src="#:data['img_url']#" style="width:100%;height:100%"/>
+        <a href="\\#resizeImages" data-rel="modalview" data-click="openModal">
+            <img src="#:data['img_url']#" style="width:100%;height:100%"/>
+        </a>
     </div>
 </script>
 
@@ -56,4 +58,43 @@
     <div class="main">
         <img src="#:data['img_url']#" style="width:100%;height:100%"/>
     </div>
+</script>
+
+
+<!--Modal View for forgot password-->
+<div data-role="modalview" id="resizeImageView" style="width:90%;" data-use-native-scrolling="true" data-model="app.galleryService.viewModel" data-show="app.galleryService.viewModel.showBigImage">
+    <div data-role="header">
+        <div data-role="navbar" style="background:#23A505 !important;color: #fff;border: none;" >
+            <a data-role="button" class="modal-close" data-click="cancelModalView" data-align="left" style="font-size: 22px; line-height: 10px;" >
+                X
+            </a>
+        </div>
+    </div>
+    <div data-role="content" id="maincontent" style='height:280px;'>
+        <img src="style/slideImage/gallery_img1.png" class="bigImageShow" style="width:100%;height:240px"/>
+        <!-- <p class="btnpar">
+            <a data-role="button" data-click="cancelModalView">OK</a>
+        </p> -->
+    </div>
+</div>
+
+<script>
+    
+    $( "body" ).delegate( ".main","click", function(e) {
+        //console.log('kkkkkkkkk');
+        //var imgsrc = $(this).children().find('img').attr('src');
+        $(".bigImageShow").attr('src', $(this).children().find('img').attr('src'));
+        
+        $("#resizeImageView").kendoMobileModalView("open");
+    });
+
+    /*
+    function openModalView(e) {
+        console.log(e);
+        $("#resizeImageView").kendoMobileModalView("open");
+    }*/
+    
+    function cancelModalView() {
+        $("#resizeImageView").kendoMobileModalView("close");
+    }
 </script>

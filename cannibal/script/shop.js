@@ -7,7 +7,7 @@
         
         show:function()
         {
-            var data = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
+            //var data = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:2,title:'Pure Canna Balm',price:'$30.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:3,title:'Pure Canna Balm',price:'$35.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:4,title:'Pure Canna Balm',price:'$45.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:5,title:'Pure Canna Balm',price:'$60.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'},{id:6,title:'Pure Canna Balm',price:'$70.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
             // app.shopService.viewModel.setShopListData(data);
            // app.shopService.viewModel.productListAPI();
             app.shopService.viewModel.API_productList();
@@ -22,7 +22,7 @@
             var productData = new kendo.data.DataSource({
               transport:{
                   read:{
-                      url:localStorage.getItem('productlist_API'),
+                      url:localStorage.getItem('getCategories_API'),
                       type:'GET',
                       dataType:'JSON'
                   }
@@ -46,6 +46,11 @@
                 //app.mobileApp.hideLoading();
                 app.shopService.viewModel.setShopListData(data[0]);
            }); 
+        },
+        
+        productChange : function(e){
+            console.log('Product change');
+            console.log(e);
         },
         
         productListAPI:function()
@@ -117,58 +122,43 @@
         
         createShopList:function(data)
         {
-            console.log("HTML CREATE");
-            console.log(data);
-            /*console.log(data[1]['subcategories'][0][0]);
-            console.log(data[0]['subcategories'][0][0]['featured_Image']);
-            console.log(data[0]['subcategories'][0][0]['post']['ID']);
-            console.log(data[0]['subcategories'][0][0]['post']['post_title']);
-            console.log(data[0]['subcategories'][0][0]['regular_price'][0]);*/
+            console.log(data[0]['post']['post_date']);
+            var shopHtml = '';
             
             for(x in data)
             {
                 if($.isNumeric(x))
                 {
                     console.log(x);
-                    console.log(data[x]['subcategories'][0]);
-                    for(y in data[x]['subcategories'])
-                    {
-                        if($.isNumeric(y))
-                        {
-                            console.log(y);
-                           console.log(data[x]['subcategories'][y]); 
-                        }
-                    }
+                    console.log(data[x]['regular_price'][0]);
+                    
+                    shopHtml += '<li>';
+                    shopHtml += '<div class="dynDv">';
+                    shopHtml += '<div class="prodCls" data-bind="click:moveToMain" data-id="">';
+                    shopHtml += '<p style="text-align:center">';
+                    shopHtml += '<img src="'+data[x]['post']['featured_Image']+'" style="width:50%"/>';
+                    shopHtml += '</p>';
+                    shopHtml += '</div>';
+                    shopHtml += '<div class="prodTitle">';
+                    shopHtml += '<p class="txtCon">'+data[x]['post']['post_title']+'</p>';
+                    shopHtml += '</div>';
+                    shopHtml += '<div class="bindCls">';
+                    shopHtml += '<div class="priCls">';
+                    shopHtml += '<p>$ '+data[x]['regular_price'][0]+'</p>';
+                    shopHtml += '</div>';
+                    shopHtml += '<div class="cartCls">';
+                    shopHtml += '<p>';
+                    shopHtml += '<a data-role="button" class="cartImage" data-price="" data-id="" data-bind="click:addToCart"></a>';
+                    shopHtml += '</p>';
+                    shopHtml += '</div>';
+                    shopHtml += '</div>';
+                    shopHtml += '</div>';
+                    shopHtml += '</li>';
                 }
             }
-    
             
-            var shopHtml = '';
-            
-            shopHtml = '<li>';
-            shopHtml += '<div class="dynDv">';
-            shopHtml += '<div class="prodCls" data-bind="click:moveToMain" data-id="">';
-            shopHtml += '<p style="text-align:center">';
-            shopHtml += '<img src="" style="width:50%"/>';
-            shopHtml += '</p>';
-            shopHtml += '</div>';
-            shopHtml += '<div class="prodTitle">';
-            shopHtml += '<p></p>';
-            shopHtml += '</div>';
-            shopHtml += '<div class="bindCls">';
-            shopHtml += '<div class="priCls">';
-            shopHtml += '<p></p>';
-            shopHtml += '</div>';
-            shopHtml += '<div class="cartCls">';
-            shopHtml += '<p>';
-            shopHtml += '<a data-role="button" class="cartImage" data-price="" data-id="" data-bind="click:addToCart"></a>';
-            shopHtml += '</p>';
-            shopHtml += '</div>';
-            shopHtml += '</div>';
-            shopHtml += '</div>';
-            shopHtml += '</li>';
-            alert(shopHtml);
             $('#shopListData').html(shopHtml);
+            app.mobileApp.hideLoading();
         },
         
         setShopListData:function(data)
@@ -179,16 +169,16 @@
             {
                 if($.isNumeric(x))
                 {
-                    console.log(data[x]['MainCategoryName']);
-                    prdata += '<option>'+data[x]['MainCategoryName']+'</option>';
+                    //console.log(data[x]['MainCategoryName']);
+                    prdata += '<option value='+data[x]['MainCategoryID']+'>'+data[x]['MainCategoryName']+'</option>';
                     
                 }
             }
             $("#productCategory").html(prdata);
             
             app.mobileApp.hideLoading();
-            var tempdata = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
-            this.set('shopListSource',tempdata);
+            //var tempdata = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
+            //this.set('shopListSource',tempdata);
         },
         
         moveToMain:function(e)
@@ -213,7 +203,46 @@
         
         loadCategory:function()
         {
-            alert("ok");
+            //alert("ok");
+        },
+        
+        setProductList : function(id){
+            console.log(id);
+            app.mobileApp.showLoading();
+            var productData = new kendo.data.DataSource({
+              transport:{
+                  read:{
+                      url:localStorage.getItem('productlist_API'),
+                      type:'GET',
+                      data:{'category':id},
+                      dataType:'JSON'
+                  }
+              },
+              schema:{
+                  data:function(data)
+                  {
+                      return [data];
+                  }
+              },
+              error:function(e)
+              {
+                  app.mobileApp.hideLoading();
+                  navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                        function () { }, "Message", 'OK');
+              }
+           });
+           productData.fetch(function(){
+                var data = this.data();
+                //console.log(data);
+                if(data[0]['status'] === 0 || data[0]['status'] === '0')
+                {
+                    navigator.notification.alert("Something went wrong! Please try again.",function () { }, "Notification", 'OK');
+                }
+                else
+                {
+                    app.shopService.viewModel.createShopList(data[0]['data']);
+                }
+           });
         }
         
     });
@@ -222,3 +251,10 @@
         viewModel:new shopViewModel()
     };
 })(window);
+
+
+$(document).on('change', '#shopView .wrapper .dropDwn', function() { 
+    
+    //console.log("change event"+this.value);
+    app.shopService.viewModel.setProductList(this.value);
+});

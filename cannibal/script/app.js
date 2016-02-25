@@ -24,6 +24,8 @@ var app = (function(){
     
     var onDeviceReady = function()
     {
+        navigator.splashscreen.hide();
+        
         window.connectionInfo = new connectionApp();
         window.fileGet = new getFileApplication();
         document.addEventListener('backbutton',onBackKeyDown,false);

@@ -7,6 +7,10 @@
 #drawerList ul li {width:100%;width: 100%;padding: 5px 0 0px 0;border: 1px solid #2F3617;border-top:0px;border-left:0px;border-right:0px}
 #galleryView .wrapper .tab1View,#galleryView .wrapper .tab2View {display:none}
 
+#aboutusView .km-state-active, #aboutusView .active{
+      background-color: #ccc;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------------*/
 #shopView .km-content,#specialView .km-content,#pastOrderView .km-content,#myCart .km-content {background-color:#F3F3F1 !important}

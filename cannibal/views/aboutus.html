@@ -6,118 +6,17 @@
             <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
         </div>
         <div style="width:100%;height:50px;background-color:#FFFFFF">
-            <p style="margin:0 0 0 0;float:left;width:50%;height:100%">
+            <p class='aboutus1' style="margin:0 0 0 0;float:left;width:50%;height:100%">
                <a data-role="button" data-bind="click:location1" style="width:100%;height:100%;font-size: 18px;line-height:30px;color:#000;border:none;border-radius:0;border-right:1px solid #ccc">Montclair St.</a> 
             </p>
-            <p style="margin:0 0 0 0;float:left;width:50%;height:100%">
+            <p class='aboutus2' style="margin:0 0 0 0;float:left;width:50%;height:100%">
                <a data-role="button" data-bind="click:location2" style="width:100%;height:100%;font-size: 18px;line-height:30px;color:#000;border:none;border-radius:0">Morning Dr.</a>  
             </p>
         </div>
     </div>
     <div data-role="content">
         <div class="wrapper" id="dataNew">
-            <!--<ul id="aboutusData" data-role="listview" data-template="aboutusListView" data-bind="source:aboutusListSource"></ul>-->
-            <!--<div class="mainbind">
-                <div class="checkGreenDv">
-                    <p>
-                        <img src="style/images/390/check_green.png"/>
-                    </p>
-                </div>
-                <div class="contentDv">
-                    <h3>Lorem Ipsum is simply dummy</h3>
-                    <p>
-                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
-                    </p>
-                    <p>
-                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
-                    </p>
-                </div>
-            </div>
-            <div class="mainbind">
-                <div class="checkGreenDv">
-                    <p>
-                        <img src="style/images/390/check_green.png"/>
-                    </p>
-                </div>
-                <div class="contentDv">
-                    <h3>Lorem Ipsum is simply dummy</h3>
-                    <p>
-                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
-                    </p>
-                    <p>
-                        We combine industry expertise with innovative technology to deliver critical information to leading decision makers in the financial and risk, legal, tax and accounting, intellectual property and science and media markets, powered by the world's most trusted news organization. 
-                    </p>
-                </div>
-            </div>-->
             
-            <!--<div class="textDesc">
-                <div class="titleDV">
-                    <p>
-                        Mission Statment / About Us
-                    </p>
-                </div>
-                <div class="titleDesc">
-                    <p>
-                        Cannibal's Medibal's is a non-profit collective that has been serving Kern Country since 2010. We are dedicated to providing safe,affordable,hight-quality medical cannibais to our patient members. Cannibal's is committed to maintaining high standards, which sets our collective above and beyond other collectives. We aim to educate our patient members and our community with the positive health benifits medical marijuana can provide. 
-                    </p>
-                </div>
-            </div>
-            <div class="mapView">
-                <img src="http://www.ghaisashospital.com/wp-content/uploads/2010/03/google-map-large.jpg" width="100%" height="100%"/>
-            </div>
-            <div class="hoursDv">
-                <div class="hoursTitle">
-                    <p>
-                        Hours of operation
-                    </p>
-                </div>
-                <div class="hoursdtl" style="width:100%;margin: -8px 0 0 0;">
-                    <ul data-role="listview" id="hoursListview">
-                        <li>
-                            <div class="contain">
-                                <div class="containLeft"><p>Sunday</p></div>
-                                <div class="containRight" style=""><p>10:00am - 4:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Monday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Tuesday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Wednesday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Thursday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Friday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contain1">
-                                <div class="contain1Left"><p>Saturday</p></div>
-                                <div class="contain1right"><p>09:00am - 08:00pm</p></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
         </div>
     </div>
 </div>
@@ -149,3 +48,11 @@ img.aligncenter.wp-image-988.size-large {
     line-height: 41px;
 }
 </style>
+
+<script>
+    $(".aboutus1").click(function(event) {
+        console.log("hi");
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+	});	
+</script>

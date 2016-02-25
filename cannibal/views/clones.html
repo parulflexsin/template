@@ -4,7 +4,7 @@
             <!-- <a data-role="backbutton" data-align="left" class="back"></a>-->
             <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
             <span data-role="view-title"></span>
-            <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a>
+            <!-- <a data-role="button" data-align="right" data-badge="2" class="cart" data-click="app.shopService.viewModel.moveToCart"></a> -->
         </div>
     </div>
     <div data-role="content">
@@ -69,7 +69,7 @@
 
 <script>
     
-    $( "body" ).delegate( ".dv1","click", function(e) {
+    $( "body" ).delegate( "#clonesView .dv1","click", function(e) {
         //console.log($(this).children().find('img').attr('src'));
         $(".bigImageShowclone").attr('src', $(this).children().find('img').attr('src'));
         

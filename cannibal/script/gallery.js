@@ -10,8 +10,8 @@
         
         show:function()
         {
-            var data1 = [{id:'1',prodImg:'style/slideImage/gallery_img1.png'},{id:'2',prodImg:'style/slideImage/gallery_img.png'},{id:'3',prodImg:'style/slideImage/gallery_img1.png'}];
-            var data2 = [{id:'1',prodImg:'style/slideImage/gallery_img.png'},{id:'2',prodImg:'style/slideImage/gallery_img1.png'}];
+            //var data1 = [{id:'1',prodImg:'style/slideImage/gallery_img1.png'},{id:'2',prodImg:'style/slideImage/gallery_img.png'},{id:'3',prodImg:'style/slideImage/gallery_img1.png'}];
+            //var data2 = [{id:'1',prodImg:'style/slideImage/gallery_img.png'},{id:'2',prodImg:'style/slideImage/gallery_img1.png'}];
 
             $("#galleryTab1").css('border-bottom','4px solid #23A505');
             $("#galleryTab2").css('border-bottom','0px solid #23A505');

@@ -76,7 +76,8 @@
         
         moveToRateapp:function()
         {
-           // alert("Rate the App");
+            //alert("Rate the App");
+            //app.mobileApp.navigate('views/productDetail.html?id=2456');
         },
         moveToEvent:function()
         {

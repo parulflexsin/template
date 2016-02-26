@@ -2218,7 +2218,7 @@
     #shopListData .dynDv .prodCls p {text-align: center;margin: 0 0 0 0;padding: 15px 0 15px 0;}
     #shopListData .dynDv .prodCls p img {width:50%;}
     #shopListData .dynDv .prodTitle {width: 100%;background-color: #fff;border-bottom: 1px solid #E5E5E5;padding: 1px 0 1px 0;}
-    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;}
+    #shopListData .dynDv .prodTitle p {font-size: 15px;color: #000;font-weight: 500;margin-left: 10px;width: 110px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 110px;}
     #shopListData .dynDv .bindCls {width: 100%;display: inline-block;background-color: #f8f8f8;}
     #shopListData .dynDv .bindCls .priCls {width: 50%;float: left;}
     #shopListData .dynDv .bindCls .priCls p{font-size: 16px;color:#23A505;margin-left: 10px;margin-top: 20px;}

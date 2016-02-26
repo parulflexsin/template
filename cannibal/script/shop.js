@@ -39,7 +39,7 @@
                   navigator.notification.alert("Server not responding properly.Please check your internet connection.",
                         function () { }, "Message", 'OK');
               }
-          });
+           });
            productData.fetch(function(){
                 var data = this.data();
                 //console.log(data);
@@ -122,19 +122,20 @@
         
         createShopList:function(data)
         {
-            console.log(data[0]['post']['post_date']);
-            var shopHtml = '';
+            app.mobileApp.showLoading();
+            //console.log(data[0]['post']['ID']);
             
+            var shopHtml = '';
             for(x in data)
             {
                 if($.isNumeric(x))
                 {
-                    console.log(x);
-                    console.log(data[x]['regular_price'][0]);
+                    //console.log(x);
+                    //console.log(data[x]['regular_price'][0]);
                     
                     shopHtml += '<li>';
                     shopHtml += '<div class="dynDv">';
-                    shopHtml += '<div class="prodCls" data-bind="click:moveToMain" data-id="">';
+                    shopHtml += '<div class="prodCls" data-id="'+data[x]['post']['ID']+'">';
                     shopHtml += '<p style="text-align:center">';
                     shopHtml += '<img src="'+data[x]['post']['featured_Image']+'" style="width:50%"/>';
                     shopHtml += '</p>';
@@ -146,11 +147,11 @@
                     shopHtml += '<div class="priCls">';
                     shopHtml += '<p>$ '+data[x]['regular_price'][0]+'</p>';
                     shopHtml += '</div>';
-                    shopHtml += '<div class="cartCls">';
+                    shopHtml += '<a class="cartCls" data-role="button" data-image="'+data[x]['post']['featured_Image']+'" data-title="'+data[x]['post']['post_title']+'" data-price="'+data[x]['regular_price'][0]+'" data-id="'+data[x]['post']['ID']+'">';
                     shopHtml += '<p>';
-                    shopHtml += '<a data-role="button" class="cartImage" data-price="" data-id="" data-bind="click:addToCart"></a>';
+                    shopHtml += '<span class="cartImage"></span>';
                     shopHtml += '</p>';
-                    shopHtml += '</div>';
+                    shopHtml += '</a>';
                     shopHtml += '</div>';
                     shopHtml += '</div>';
                     shopHtml += '</li>';
@@ -164,7 +165,10 @@
         setShopListData:function(data)
         {
             console.log(data);
-            var prdata = '<option>--select--</option>';
+            app.shopService.viewModel.setProductList(data[0]['MainCategoryID']);
+            
+            //var prdata = '<option>--select--</option>';
+            var prdata = '';
             for(x in data)
             {
                 if($.isNumeric(x))
@@ -176,7 +180,7 @@
             }
             $("#productCategory").html(prdata);
             
-            app.mobileApp.hideLoading();
+            //app.mobileApp.hideLoading();
             //var tempdata = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
             //this.set('shopListSource',tempdata);
         },
@@ -237,6 +241,7 @@
                 if(data[0]['status'] === 0 || data[0]['status'] === '0')
                 {
                     navigator.notification.alert("Something went wrong! Please try again.",function () { }, "Notification", 'OK');
+                    app.mobileApp.hideLoading();
                 }
                 else
                 {
@@ -258,3 +263,80 @@ $(document).on('change', '#shopView .wrapper .dropDwn', function() {
     //console.log("change event"+this.value);
     app.shopService.viewModel.setProductList(this.value);
 });
+
+$(document).on('click', '#shopView .wrapper .cartCls', function() { 
+    
+    console.log("click_event = "+$(this).attr('data-id'));
+    /*
+    var variation = new Array();
+    var cart_item_data = new Array();
+    var productdata = {
+        'product_ID':$(this).attr('data-id'),
+        'variation_ID':'',
+        'variation':variation,
+        'quantity':1,
+        'cart_item_data':cart_item_data
+      };
+    
+    productdata = btoa(productdata);
+    var thisdata = {
+                    'user_ID':localStorage.getItem('user_id'),
+                    'product':productdata
+                   };
+    
+    app.mobileApp.showLoading();
+    var productData = new kendo.data.DataSource({
+      transport:{
+          read:{
+              url:localStorage.getItem('addtocart_API'),
+              type:'POST',
+              data:thisdata,
+              dataType:'JSON'
+          }
+      },
+      schema:{
+          data:function(data)
+          {
+              return [data];
+          }
+      },
+      error:function(e)
+      {
+          app.mobileApp.hideLoading();
+          navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                function () { }, "Message", 'OK');
+      }
+   });
+   productData.fetch(function(){
+        var data = this.data();
+        console.log(data);
+        navigator.notification.alert(data[0]['msg'], function () { }, "Notification", 'OK');
+        app.mobileApp.hideLoading();
+   });*/
+    
+    var data = {id:$(this).attr('data-id'),title:$(this).attr('data-title'),price:$(this).attr('data-price'),prodImg:'',noofItem:'1',size:''};
+	var a = [];
+	
+	if(localStorage.getItem('canUserCartData') != null){
+		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+		a = JSON.parse(localStorage.getItem('canUserCartData'));
+	}else{
+		//console.log("nnnnnn");
+	}
+	
+    // Parse the serialized data back into an aray of objects
+    // Push the new data (whether it be an object or anything else) onto the array
+    a.push(data);
+    
+    console.log(a);  // Should be something like [Object array]
+    // Re-serialize the array back into a string and store it in localStorage
+    localStorage.setItem('canUserCartData', JSON.stringify(a));
+    
+});
+
+
+$(document).on('click', '#shopView #shopListData .prodCls', function() {
+    //console.log('hhhhhhhh id = '+$(this).attr('data-id'));
+    app.mobileApp.navigate('views/productDetail.html?id='+$(this).attr("data-id"));
+});
+

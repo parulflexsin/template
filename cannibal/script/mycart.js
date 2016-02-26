@@ -80,7 +80,7 @@
         
         carthtmlCreate : function(data){
             console.log("carthtmlCreate : "+data.length);
-            
+            /*
             var html = '';
             var totaldolr = 0;
             
@@ -157,6 +157,7 @@
                     }
                 },"Notification","Yes,Cancel");
             });
+            */
         },
         
         htmlCreate : function()
@@ -176,6 +177,9 @@
             console.log(cartData.length);
             $("#myCart .cart").attr("data-badge", cartData.length);
             $("#myCart .cart").find('span').html(cartData.length);
+            
+            this.set('cartListSource',cartData);
+            
             //$(".cart").html('<span class="km-badge">'+data.length+'</span>');
             /*
             //console.log(cartData[i]['id']);
@@ -210,8 +214,8 @@
             hhtml +='</div>';
             hhtml +='<div>';
             $('#total').html(hhtml);
-            */
-            this.set('cartListSource',cartData);
+            
+    
             
             $('.minus').unbind(".myPlugin");
             $('.minus').on('click.myPlugin',function(){ 
@@ -223,12 +227,29 @@
             
             $('.add').unbind(".myPlugin");
             $('.add').on('click.myPlugin',function(){
-                var quantity = parseInt($(this).parent().prev().children().val());
+                var quantity = parseInt($(this).parent().prev().children('.thisqunty').val());
                 if (!isNaN(quantity)) {
-                    $(this).parent().prev().children().val(quantity + 1);
+                    $(this).parent().prev().children('.thisqunty').val(quantity + 1);
+                    
+                    eachVal = parseInt($(this).parent().prev().children('.thisvlue').val());
+                    
+                    totaldolr = (quantity + 1) * eachVal;
+                    $(".leftdv2").html('<p>$ '+totaldolr+'</p>');
                 }
             });
             
+            $('.minus').unbind(".myPlugin");
+            $('.minus').on('click.myPlugin',function(){ 
+                var quantity = parseInt($(this).parent().next().children('.thisqunty').val());
+                if (!isNaN(quantity) && quantity > 1) {
+                    $(this).parent().next().children('.thisqunty').val(quantity - 1);
+                    
+                    eachVal = parseInt($(this).parent().next().children('.thisvlue').val());
+                    
+                    totaldolr = (quantity - 1) * eachVal;
+                    $(".leftdv2").html('<p>$ '+totaldolr+'</p>');
+                }
+            });*/
         },
         
         setCartListview : function(data)
@@ -239,11 +260,71 @@
         checkoutSubmit:function()
         {
             app.mobileApp.navigate('views/billing.html');
-        },
-            
+        }
+        
     });
     
     app.cartService = {
         viewModel:new cartViewModel()
     }
 })(window);
+
+
+$( "body" ).delegate( ".add","click", function(e) {
+    console.log("ddd");
+    var quantity = parseInt($(this).parent().prev().children('.thisqunty').val());
+    if (!isNaN(quantity)) {
+        $(this).parent().prev().children('.thisqunty').val(quantity + 1);
+        
+        eachVal = parseInt($(this).parent().prev().children('.thisvlue').val());
+        
+        totaldolr = (quantity + 1) * eachVal;
+        $(this).parent().prev().prev().prev().find('.itemPrice').html(totaldolr);
+        //$(".leftdv2").html('<p>$ '+totaldolr+'</p>');
+    }
+});
+
+
+$( "body" ).delegate( ".minus","click", function(e) {
+    console.log("minus");
+    var quantity = parseInt($(this).parent().next().children('.thisqunty').val());
+    if (!isNaN(quantity) && quantity > 1) {
+        $(this).parent().next().children('.thisqunty').val(quantity - 1);
+        
+        eachVal = parseInt($(this).parent().next().children('.thisvlue').val());
+        
+        totaldolr = (quantity - 1) * eachVal;
+        //$(".leftdv2").html('<p>$ '+totaldolr+'</p>');
+        $(this).parent().prev().find('.itemPrice').html(totaldolr);
+    }
+});
+
+$( "body" ).delegate( ".cross","click", function(e) {
+   var parentId = $(this).parent().parent().parent().parent().attr('data-uid');
+    navigator.notification.confirm("Are you Sure you want to delete this Item?",function(confirm){
+        if(confirm === 1 || confirm === '1')
+        {
+            //$('#'+parentId).remove();
+            console.log($('.cross').parents().find('li[data-uid="'+parentId+'"]'));
+            $('.cross').parents().find('li[data-uid="'+parentId+'"]').remove();
+            
+            // Here remove form storage data also
+            var a = [];
+            if(localStorage.getItem('canUserCartData') != null){
+        		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+        		a = JSON.parse(localStorage.getItem('canUserCartData'));
+        	}else{
+        		//console.log("nnnnnn");
+        	}
+        	/*
+            // Parse the serialized data back into an aray of objects
+            // Push the new data (whether it be an object or anything else) onto the array
+            a.push(data);
+            
+            console.log(a);  // Should be something like [Object array]
+            // Re-serialize the array back into a string and store it in localStorage
+            localStorage.setItem('canUserCartData', JSON.stringify(a));
+            */
+        }
+    },"Notification","Yes,Cancel");
+});

@@ -39,10 +39,10 @@
 <div class="main" id="mainContentDv4">
 	<div class="dv1">
 		<p>
-        #if(prodImg != '' || prodImg != null){#
-            <img src="#:data['prodImg']#">
+        #if(!prodImg){#
+            <img class='2' src="style/images/390/img1.png">
         #}else{#
-            <img src="style/images/390/img1.png">
+            <img class='1' src="#:data['prodImg']#">
         #}#
         </p>
 		</div>
@@ -55,13 +55,14 @@
 		</div>
 		<div class="dv23">
 			<div class="dv230">
-				<p>#:data['price']#</p>
+				<p>$ <span class="itemPrice">#:data['price']#</span></p>
 			</div>
 			<div class="dv231">
 				<img class="minus" src="style/images/390/green_minus.png">
 			</div>
 			<div class="dv232" id="qunatDv">
-				<input tyep="text" id="quantity" value="#:data['noofItem']#" style="background-color:\\#fff;" disabled="false">
+				<input tyep="text" id="quantity" class="thisqunty" value="#:data['noofItem']#" style="background-color:\\#fff;" disabled="false">
+                <input type="hidden" id="thisvlue" class="thisvlue" value="#:data['price']#"/>
 			</div>
 			<div class="dv233">
 				<img class="add" src="style/images/390/green_plus.png">

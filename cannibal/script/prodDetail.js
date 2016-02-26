@@ -13,6 +13,47 @@
                 console.log("this is id : "+id);
             }
             
+            app.mobileApp.showLoading();
+            var productData = new kendo.data.DataSource({
+              transport:{
+            	  read:{
+            		  url:localStorage.getItem('productlist_API'),
+            		  type:'GET',
+                      data:{'post_id':id},
+            		  dataType:'JSON'
+            	  }
+              },
+              schema:{
+            	  data:function(data)
+            	  {
+            		  return [data];
+            	  }
+              },
+              error:function(e)
+              {
+            	  app.mobileApp.hideLoading();
+            	  navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+            			function () { }, "Message", 'OK');
+              }
+            });
+            productData.fetch(function(){
+            	var data = this.data();
+            	//app.mobileApp.hideLoading();
+            	console.log(data);
+                if(data[0]['status'] === 0 || data[0]['status'] === '0')
+                {
+                    navigator.notification.alert(data[0]['msg'],function () { }, "Error", 'OK');
+                }
+                else
+                {
+                    app.productService.viewModel.createProdDetail(data[0]['data'][0]);
+                }
+                app.mobileApp.hideLoading();
+                
+            });
+            
+            
+            
             app.productService.viewModel.setCartItem();
             
             cartDataView = [];
@@ -22,24 +63,43 @@
             $('#addcart').on('click.myPlugin',function(){
                 console.log("...addcart");
                 
-                var data = {id:'100',title:'tttttt',price:'10',prodImg:'',noofItem:'1',size:''};
-            	var a = [];
-            	
-            	if(localStorage.getItem('canUserCartData') != null){
-            		//localStorage.setItem('canUserCartData', JSON.stringify(a));
-            		a = JSON.parse(localStorage.getItem('canUserCartData'));
-            	}else{
-            		//console.log("nnnnnn");
-            	}
-            	
-                // Parse the serialized data back into an aray of objects
-                // Push the new data (whether it be an object or anything else) onto the array
-                a.push(data);
+                var product_quantity = $('#quantity').val(),
+                product_size = $('#materialSize').val();
                 
-                console.log(a);  // Should be something like [Object array]
-                // Re-serialize the array back into a string and store it in localStorage
-                localStorage.setItem('canUserCartData', JSON.stringify(a));
-                app.productService.viewModel.setCartItem();
+                if(product_quantity === "0" || product_quantity === 0)
+                {
+                    navigator.notification.alert("Please select Product Quantity",function(){},'Notification','OK');
+                }
+                else if(product_size === "0" || product_size === 0)
+                {
+                    navigator.notification.alert("Please select Product Size",function(){},'Notification','OK');
+                }
+                else
+                {
+                    localStorage.setItem('product_quantity',product_quantity);
+                    localStorage.setItem('product_size',product_size);
+                    //app.productService.viewModel.addTocart(localStorage.getItem('product_id'));
+                
+                
+                    var data = {id:$(this).parents().find(".title .thisitemid").val(),title:$(this).parents().find(".title p").text(),price:'10',prodImg:$(this).parents().find(".prod_image img").attr('src'),noofItem:localStorage.getItem('product_quantity'),size:localStorage.getItem('product_size')};
+                	var a = [];
+                	
+                	if(localStorage.getItem('canUserCartData') != null){
+                		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+                		a = JSON.parse(localStorage.getItem('canUserCartData'));
+                	}else{
+                		//console.log("nnnnnn");
+                	}
+                	
+                    // Parse the serialized data back into an aray of objects
+                    // Push the new data (whether it be an object or anything else) onto the array
+                    a.push(data);
+                    
+                    console.log(a);  // Should be something like [Object array]
+                    // Re-serialize the array back into a string and store it in localStorage
+                    localStorage.setItem('canUserCartData', JSON.stringify(a));
+                    app.productService.viewModel.setCartItem();
+                }
             });
             /*$('#addcart').click(function(){
                 //app.productService.viewModel.addTocart(localStorage.getItem('product_id'));
@@ -77,7 +137,7 @@
         
         shopDtlAPI : function(data)
         {
-            var data = [{id:'1',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'description about.'}];
+            //var data = [{id:'1',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'description about.'}];
             
             /*var shopDataS = new kendo.data.DataSource({
                data: [{id:'1',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'},{id:'2',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'},{id:'3',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'},{id:'4',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'},{id:'5',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'},{id:'6',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/product_img.png',desc:'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.'}],
@@ -88,7 +148,7 @@
                 app.productService.viewModel.createProdDetail(data[0]);
             });*/
             
-            app.productService.viewModel.createProdDetail(data);
+            //app.productService.viewModel.createProdDetail(data);
         },
         
         setCartItem : function(){
@@ -129,26 +189,26 @@
         
         createProdDetail : function(data)
         {
-            console.log(data);
-            var html = '';
+            console.log(data.regular_price[0]);
+            var html = '';  
             
             $('#selectProdDtl').html('');
             
             html = '<div class="prod_image">';
             html += '<p>';
-            html += '<img src="style/images/390/product_img.png"/>';
+            html += '<img src="'+data['featured_Image']+'"/>';
             html += '</p>';
             html += '</div>';
             html += '<div class="mixCls">';
             html += '<div class="title">';
-            html += '<p>New Product</p>';
-            html += '</div>';
+            html += '<p>'+data['post']['post_title']+'</p>';
+            html += '<input type="hidden" class="thisitemid" value='+data.id+' /></div>';
             html += '<div class="price">';
-            html += ' <p>$ 50</p>';
+            html += ' <p>$<span class="itemprice">'+data.regular_price[0]+'</span></p>';
             html += '</div>';
             html += ' </div>';
             html += '<div class="prodCont">';
-            html += '<p>Sed ut perspiciatis unde omnis iste natus.</p>';
+            html += '<p>'+data['post']['post_title']+'</p>';
             html += '</div>';
             html += '<div class="fldDv">';
             html += '<div class="leftFldDv">';

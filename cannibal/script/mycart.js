@@ -162,40 +162,46 @@
         htmlCreate : function()
         {  
             //var data = [{id:'1',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'},{id:'4',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'6',size:'150Mg'},{id:'5',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'8',size:'150Mg'},{id:'6',title:'Pure Canna Balm',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'4',size:'150Mg'}];
-            var data = [];
+            var cartData = [];
             
             if(localStorage.getItem('canUserCartData') != null){
                 
-                data = localStorage.getItem('canUserCartData');
-        		$("#productDetail .cart").attr("data-badge", JSON.parse(localStorage.getItem('canUserCartData')).length);
-                $("#productDetail .cart").find('span').html(JSON.parse(localStorage.getItem('canUserCartData')).length);  
+                cartData = JSON.parse(localStorage.getItem('canUserCartData')); 
         	}else{
         		console.log("Empty cart");
-                $("#productDetail .cart").attr("data-badge", '0');
-                $("#productDetail .cart").find('span').html('0');
         	}
             
             var html = '';
-            
-            $(".cart").html('<span class="km-badge">'+data.length+'</span>');
-            for(var i=0;i<data.length;i++)
-            {
-                html+='<div class="main" id="mainContentDv'+data[i]['id']+'">';
-                html+='<div class="dv1"><p><img src="'+data[i]['prodImg']+'"/></p></div>';
-                html+='<div class="dv2">';
-                html+='<div class="dv21"><p>'+data[i]['title']+'</p></div>';
-                html+='<div class="dv22"><p>'+data[i]['desc']+'</p></div>';
-                html+='<div class="dv23">';
-                html+='<div class="dv230"><p>'+data[i]['price']+'</p></div><div class="dv231"><img class="minus" src="style/images/390/green_minus.png"/></div><div class="dv232" id="qunatDv"><input tyep="text" id="quantity" value="'+data[i]['quantity']+'" style="background-color:#fff;" disabled="false"/></div><div class="dv233"><img class="add" src="style/images/390/green_plus.png"/></div>';
-                html+='</div>';
-                html+='</div>';
-                html+='<div class="dv3">';
-                html+='<p><img class="cross" src="style/images/390/cross_icon.png"/></p>';
-                html+='</div>';
-                html+='</div>';
-                $('#cartListData').html(html);
+            console.log(cartData);
+            console.log(cartData.length);
+            $("#myCart .cart").attr("data-badge", cartData.length);
+            $("#myCart .cart").find('span').html(cartData.length);
+            //$(".cart").html('<span class="km-badge">'+data.length+'</span>');
+            /*
+            //console.log(cartData[i]['id']);
+            if(cartData.length > 0){
+                for(var i=0; i<=cartData.length;i++)
+                {
+                    html+='<div class="main" id="mainContentDv'+cartData[i]['id']+'">';
+                    html+='<div class="dv1"><p><img src="'+cartData[i]['prodImg']+'"/></p></div>';
+                    html+='<div class="dv2">';
+                    html+='<div class="dv21"><p>'+cartData[i]['title']+'</p></div>';
+                    html+='<div class="dv22"><p>'+cartData[i]['desc']+'</p></div>';
+                    html+='<div class="dv23">';
+                    html+='<div class="dv230"><p>'+cartData[i]['price']+'</p></div><div class="dv231"><img class="minus" src="style/images/390/green_minus.png"/>\
+                    </div><div class="dv232" id="qunatDv"><input tyep="text" id="quantity" value="'+cartData[i]['quantity']+'" style="background-color:#fff;" disabled="false"/>\
+                    </div><div class="dv233"><img class="add" src="style/images/390/green_plus.png"/></div>';
+                    html+='</div>';
+                    html+='</div>';
+                    html+='<div class="dv3">';
+                    html+='<p><img class="cross" src="style/images/390/cross_icon.png"/></p>';
+                    html+='</div>';
+                    html+='</div>';
+                }
+            }else{
+                console.log("Data not found");
             }
-            
+            $('#cartListData').html(html);
             var hhtml = '';
             hhtml +='<div class="mainTotalDv" style="width:100%;height:auto;display:inline-block;margin: 0 0 0 0;">';
             hhtml +='<div class="leftdv1"><p>Total</p>';
@@ -204,6 +210,8 @@
             hhtml +='</div>';
             hhtml +='<div>';
             $('#total').html(hhtml);
+            */
+            this.set('cartListSource',cartData);
             
             $('.minus').unbind(".myPlugin");
             $('.minus').on('click.myPlugin',function(){ 

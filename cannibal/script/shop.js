@@ -13,9 +13,20 @@
             app.shopService.viewModel.API_productList();
             
             // For show count of my cart
-            app.cartService.viewModel.htmlCreate();
+            app.shopService.viewModel.setCartItemshop();
         },
         
+        setCartItemshop : function(){
+            
+            if(localStorage.getItem('canUserCartData') != null){
+        		$("#shopView .cart").attr("data-badge", JSON.parse(localStorage.getItem('canUserCartData')).length);
+                $("#shopView .cart").find('span').html(JSON.parse(localStorage.getItem('canUserCartData')).length);  
+        	}else{
+        		console.log("Empty cart");
+                $("#shopView .cart").attr("data-badge", '0');
+                $("#shopView .cart").find('span').html('0');
+        	}
+        },
         API_productList : function()
         {
             app.mobileApp.showLoading();
@@ -332,6 +343,8 @@ $(document).on('click', '#shopView .wrapper .cartCls', function() {
     // Re-serialize the array back into a string and store it in localStorage
     localStorage.setItem('canUserCartData', JSON.stringify(a));
     
+    app.shopService.viewModel.setCartItemshop();
+    navigator.notification.alert("This item added to your cart successfully.", function () { }, "Message", 'OK');
 });
 
 

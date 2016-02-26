@@ -8,7 +8,7 @@
     </div>
     <div data-role="content">
         <div id="cartListData" class="wrapper">
-            <!--<ul id="cartListData" data-role="listview" data-template="cartListView" data-bind="source:cartListSource"></ul>-->
+            <ul id="cartListData" data-role="listview" data-template="cartListView" data-bind="source:cartListSource"></ul>
             
         </div>
         <div style="width:100%;" id="total">
@@ -36,48 +36,42 @@
 </div>
 
 <script type="text/x-kendo-template" id="cartListView">
-    <div class="main hhh">
-        <div class="dv1">
-            <p>
-                <img src="#:data['prodImg']#"/>
-            </p>
-        </div>
-        <div class="dv2">
-            <div class="dv21">
-                <p>
-                    #:data['title']#
-                </p>
-            </div>
-            <div class="dv22">
-                <p>
-                    #:data['desc']#
-                </p>
-            </div>
-            <div class="dv23" >
-                <div class="dv231">
-                    <!--<p style="float:left;">
-                        <a data-role="button" data-id="#:data['id']#"  id="decreaseQuantity" class="minus"></a>
-                    </p>
-                    <p class="qty" id="setQuantity#:data['id']#">
-                        #:data['quantity']#
-                    </p>
-                    <p>
-                        <a data-role="button" data-id="#:data['id']#"  id="increaseQuantity" class="add" ></a>
-                    </p> -->
-                    <p>
-                        <img src="style/images/390/minus.png" id="minus2" class="minus"/>
-                        <input id="qty2" type="text" value="#:data['quantity']#" class="qty" disabled="true"/>
-                        <img id="add2" src="style/images/390/plus.png" class="add"/>
-                    </p>
-    
-                </div>
-                
-            </div>
-        </div>
-        <div class="dv3">
-            <p>
-                #:data['price']#
-            </p>
-        </div>
-    </div>
+<div class="main" id="mainContentDv4">
+	<div class="dv1">
+		<p>
+        #if(prodImg != '' || prodImg != null){#
+            <img src="#:data['prodImg']#">
+        #}else{#
+            <img src="style/images/390/img1.png">
+        #}#
+        </p>
+		</div>
+		<div class="dv2">
+		<div class="dv21">
+			<p>#:data['title']#</p>
+		</div>
+		<div class="dv22">
+			<p>Sed ut perspiciatis unde omnis iste natus.</p>
+		</div>
+		<div class="dv23">
+			<div class="dv230">
+				<p>#:data['price']#</p>
+			</div>
+			<div class="dv231">
+				<img class="minus" src="style/images/390/green_minus.png">
+			</div>
+			<div class="dv232" id="qunatDv">
+				<input tyep="text" id="quantity" value="#:data['noofItem']#" style="background-color:\\#fff;" disabled="false">
+			</div>
+			<div class="dv233">
+				<img class="add" src="style/images/390/green_plus.png">
+			</div>
+		</div>
+	</div>
+	<div class="dv3">
+		<p>
+			<img class="cross" src="style/images/390/cross_icon.png">
+		</p>
+	</div>
+</div>
 </script>

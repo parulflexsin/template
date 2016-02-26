@@ -113,7 +113,7 @@
     #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
     #shopView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #shopView .nvbar span {color:#fff;font-size: 20px;line-height: 55px;}
-    
+    #shopView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #shopView .wrapper {width:100%;}
     #shopView .wrapper .main {width:100%;margin:0px auto}
     #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
@@ -139,6 +139,7 @@
     
     /*****************************************************product detail View********************************************************/
     #productDetail .nvbar {background-color:#23A505 !important;height: 55px;}
+    #productDetail .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #productDetail .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 20px;line-height:55px;}
@@ -503,6 +504,7 @@
     #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
     #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
+    #billingView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #billingView .wrapper .conFldDv {width:90%;height:auto;margin:0px auto;margin-top:10%}
@@ -637,7 +639,7 @@
     #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
     #shopView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #shopView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
-    
+    #shopView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #shopView .wrapper {width:100%;}
     #shopView .wrapper .main {width:100%;margin:0px auto}
     #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
@@ -663,6 +665,7 @@
     
     /*****************************************************product detail View********************************************************/
     #productDetail .nvbar {background-color:#23A505 !important;height: 55px;}
+    #productDetail .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #productDetail .nvbar .menu {background:url('./images/390/menu.png') no-repeat !important;width: 28px;height: 25px;border:none !important;margin-top: 11px;margin-left: 10px;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 18px;line-height:55px;}
@@ -1023,6 +1026,7 @@
     #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
     #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
+    #billingView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #billingView .wrapper .conFldDv {width:90%;height:auto;margin:0px auto;margin-top:10%}
@@ -1155,7 +1159,7 @@
     #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
     #shopView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #shopView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
-    
+    #shopView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #shopView .wrapper {width:100%;}
     #shopView .wrapper .main {width:100%;margin:0px auto}
     #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
@@ -1181,6 +1185,7 @@
     
     /*****************************************************product detail View********************************************************/
     #productDetail .nvbar {background-color:#23A505 !important;height: 55px;}
+    #productDetail .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #productDetail .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 5px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 18px;line-height:55px;}
@@ -1545,6 +1550,7 @@
     #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
     #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
+    #billingView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #billingView .wrapper .conFldDv {width:90%;height:auto;margin:0px auto;margin-top:10%}
@@ -1679,7 +1685,7 @@
     #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
     #shopView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #shopView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
-    
+    #shopView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #shopView .wrapper {width:100%;}
     #shopView .wrapper .main {width:100%;margin:0px auto}
     #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
@@ -1705,6 +1711,7 @@
     
     /*****************************************************product detail View********************************************************/
     #productDetail .nvbar {background-color:#23A505 !important;height: 55px;}
+    #productDetail .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #productDetail .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 18px;line-height:55px;}
@@ -2069,6 +2076,7 @@
     #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
     #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #billingView .wrapper {width:100%;height:auto}
+    #billingView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}
     #billingView .wrapper .conFldDv {width:90%;height:auto;margin:0px auto;margin-top:10%}
@@ -2203,7 +2211,7 @@
     #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
     #shopView .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #shopView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
-    
+    #shopView .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #shopView .wrapper {width:100%;}
     #shopView .wrapper .main {width:100%;margin:0px auto}
     #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
@@ -2229,6 +2237,7 @@
     
     /*****************************************************product detail View********************************************************/
     #productDetail .nvbar {background-color:#23A505 !important;height: 55px;}
+    #productDetail .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
     #productDetail .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 18px;line-height:55px;}
@@ -2593,6 +2602,7 @@
     /*****************************************************Billing info View********************************************************/
     #billingView .nvbar {background-color:#23A505 !important;height: 55px;}
     #billingView .nvbar .back {background: url('./slideImage/back_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 2px;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;margin-left: 0px;background-size: 22px 24px !important;background-position: 8px 7px !important;}
+    #billingView .nvbar span {color:#fff;font-size: 18px;line-height: 55px;}
     #billingView .wrapper {width:100%;height:auto}
     #billingView .wrapper .header {width:100%;margin-top: 15%;}
     #billingView .wrapper .header p {text-align:center;color:#fff;font-family:sans-serif;font-size:30px}

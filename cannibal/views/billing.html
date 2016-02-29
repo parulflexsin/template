@@ -1,8 +1,8 @@
-<div data-role="view" id="billingView" data-title='Billing Info' data-model="app.loginService.viewModel" data-show="app.loginService.viewModel.show" data-use-native-scrolling="true">
+<div data-role="view" id="billingView" data-title='Billing Info' data-model="app.billingService.viewModel" data-show="app.billingService.viewModel.show" data-use-native-scrolling="true">
     <div data-role="header">
         <div data-role="navbar" class="nvbar">
 			<a data-role="backbutton" data-align="left" class="back"></a>
-            <span data-role="view-title"></span>
+            <strong><span data-role="view-title"></span></strong>
         </div>
     </div>
     <div data-role="content">
@@ -15,12 +15,12 @@
             <div class="conFldDv">
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="bill_fname" id="bill_fname" class="txtFld" placeholder="First Name"/>
+                        <input type="text" name="bill_fname" data-bind="value:bill_fname" class="txtFld" placeholder="First Name"/>
                     </p>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="bill_lname" id="bill_lname" class="txtFld" placeholder="Last Name"/>
+                        <input type="text" name="bill_lname" data-bind="value:bill_lname" class="txtFld" placeholder="Last Name"/>
                     </p>
                 </div>
                 <div class="fldDv">
@@ -63,7 +63,7 @@
             </div>
             <div class="subDv">
                 <p>
-                    <a data-role="button">CHECK OUT</a>
+                    <a data-role="button" data-bind='click:submitCheckout'>CHECK OUT</a>
                 </p>
             </div>
         </div>

@@ -25,39 +25,39 @@
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="bill_address" id="bill_address" class="txtFld" placeholder="Street Address"/>
+                        <input type="text" name="bill_address" data-bind="value:bill_address" class="txtFld" placeholder="Street Address"/>
                     </p>
                 </div>
                 <div class="fldDv mixdrop">
                     <div class="city_FldDV">
                         <p>
-                            <input type="text" name="bill_city" id="bill_city" class="txtFld" placeholder="City"/>
+                            <input type="text" name="bill_city" data-bind="value:bill_city" class="txtFld" placeholder="City"/>
                         </p>
                     </div>
                     <div class="state_FldDv">
                         <p>
-                            <select class="dropdown">
-                                <option>State</option>
-                                <option>Maharashtra</option>
-                                <option>Tamil Nadu</option>
-                                <option>Delhi</option>>
+                            <select class="dropdown" id="bill_state">
+                                <option value=''>State</option>
+                                <option value='Maharashtra'>Maharashtra</option>
+                                <option value='Tamil Nadu'>Tamil Nadu</option>
+                                <option value='Delhi'>Delhi</option>>
                             </select>
                         </p>
                     </div>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="number" name="bill_zipcode" id="bill_zipcode" class="txtFld" placeholder="Zipcode" />
+                        <input type="number" name="bill_zipcode" data-bind="value:bill_zipcode" maxlength='6' class="txtFld" placeholder="Zipcode" />
                     </p>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="number" name="bill_phone" id="bill_phone" class="txtFld" placeholder="Phone"/>
+                        <input type="tel" name="bill_phone" data-bind="value:bill_phone" maxlenth='10' class="txtFld" placeholder="Phone"/>
                     </p>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="bill_email" id="bill_email" class="txtFld" placeholder="Email Address"/>
+                        <input type="email" name="bill_email" data-bind="value:bill_email" class="txtFld" placeholder="Email Address"/>
                     </p>
                 </div>
             </div>

@@ -148,7 +148,10 @@
                     shopHtml += '<div class="dynDv">';
                     shopHtml += '<div class="prodCls" data-id="'+data[x]['post']['ID']+'">';
                     shopHtml += '<p style="text-align:center">';
-                    shopHtml += '<img src="'+data[x]['post']['featured_Image']+'" style="width:50%"/>';
+                    if(data[x]['post']['featured_Image'])
+                    shopHtml += '<img src="'+data[x]['post']['featured_Image']+'" style="width:50%;"/>';
+                    else
+                    shopHtml += '<img src="style/images/390/img1.png" style="width:50%;;"/>';
                     shopHtml += '</p>';
                     shopHtml += '</div>';
                     shopHtml += '<div class="prodTitle">';

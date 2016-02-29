@@ -276,11 +276,17 @@ $( "body" ).delegate( ".add","click", function(e) {
     if (!isNaN(quantity)) {
         $(this).parent().prev().children('.thisqunty').val(quantity + 1);
         
-        eachVal = parseInt($(this).parent().prev().children('.thisvlue').val());
+        eachVal = parseInt($(this).parent().prev().prev().prev().find('.itemPrice').html());
+        //eachVal = parseInt($(this).parent().prev().children('.thisvlue').val());
+        calcFprice = parseFloat(eachVal) / parseInt(quantity);
         
-        totaldolr = (quantity + 1) * eachVal;
+        totaldolr = (quantity + 1) * calcFprice;
+        //console.log("each = "+eachVal+" No = "+quantity+1+" total = "+totaldolr+" calcFprice = "+calcFprice);
+        
         $(this).parent().prev().prev().prev().find('.itemPrice').html(totaldolr);
         //$(".leftdv2").html('<p>$ '+totaldolr+'</p>');
+        
+        increaseArrayItem($(this).attr('data-id'), "add", '1');
     }
 });
 
@@ -291,19 +297,28 @@ $( "body" ).delegate( ".minus","click", function(e) {
     if (!isNaN(quantity) && quantity > 1) {
         $(this).parent().next().children('.thisqunty').val(quantity - 1);
         
-        eachVal = parseInt($(this).parent().next().children('.thisvlue').val());
+        eachVal = parseInt($(this).parent().prev().find('.itemPrice').html());
+        //eachVal = parseInt($(this).parent().next().children('.thisvlue').val());
+        calcFprice = parseFloat(eachVal) / parseInt(quantity);
         
-        totaldolr = (quantity - 1) * eachVal;
+        totaldolr = (quantity - 1) * calcFprice;
+        
+        //console.log("each = "+eachVal+" No = "+quantity+1+" total = "+totaldolr+" calcFprice= "+calcFprice );
         //$(".leftdv2").html('<p>$ '+totaldolr+'</p>');
         $(this).parent().prev().find('.itemPrice').html(totaldolr);
+        
+        increaseArrayItem($(this).attr('data-id'), "minus", '1');
     }
 });
 
 $( "body" ).delegate( ".cross","click", function(e) {
-   var parentId = $(this).parent().parent().parent().parent().attr('data-uid');
+    var parentId = $(this).parent().parent().parent().parent().attr('data-uid');
+    var itemToRemove = $(this).parent().parent().parent().attr('data-id');
+    
     navigator.notification.confirm("Are you Sure you want to delete this Item?",function(confirm){
         if(confirm === 1 || confirm === '1')
         {
+            app.mobileApp.showLoading();
             //$('#'+parentId).remove();
             console.log($('.cross').parents().find('li[data-uid="'+parentId+'"]'));
             $('.cross').parents().find('li[data-uid="'+parentId+'"]').remove();
@@ -316,15 +331,183 @@ $( "body" ).delegate( ".cross","click", function(e) {
         	}else{
         		//console.log("nnnnnn");
         	}
-        	/*
-            // Parse the serialized data back into an aray of objects
-            // Push the new data (whether it be an object or anything else) onto the array
-            a.push(data);
-            
-            console.log(a);  // Should be something like [Object array]
-            // Re-serialize the array back into a string and store it in localStorage
+        	
+            // Count of removed items
+            var removeCounter = 0;
+
+            // Iterate every array item
+            for (var index = 0; index < a.length; index++) {
+                // If current array item equals itemToRemove then
+        		// console.log(array[index].id +' = ');
+        		// console.log(itemToRemove);
+        		
+                if (a[index].id == itemToRemove) {
+                    // Remove array item at current index
+                    a.splice(index, 1);
+
+        			console.log(index);
+                    // Increment count of removed items
+                    removeCounter++;
+
+                    // Decrement index to iterate current position 
+                    // one more time, because we just removed item 
+                    // that occupies it, and next item took it place
+                    index--;
+                }
+            }
+
+        	console.log(a);
             localStorage.setItem('canUserCartData', JSON.stringify(a));
-            */
+            app.cartService.viewModel.htmlCreate();
+            
+            arrangeArray();
+            app.mobileApp.hideLoading();
         }
     },"Notification","Yes,Cancel");
 });
+
+
+
+
+function arrangeArray() {
+
+	if(localStorage.getItem('canUserCartData') != null){
+		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+		array = JSON.parse(localStorage.getItem('canUserCartData'));
+	}else{
+		console.log("nnnnnn");
+	}
+	console.log(array);
+	
+
+    // Iterate every array item
+	for (var index = 0; index < array.length; index++) {
+	
+		for (var i = index; i < array.length; i++) {
+			// If current array item equals itemToRemove then
+			// console.log(array[index].id +' = ');
+			// console.log(itemToRemove);
+			
+			//console.log("super = "+array[index].id);
+			//console.log("under = "+array[i].id);
+			try{
+				if (i != index) {
+					if (array[index].id == array[i].id) {
+						
+						console.log("Matched index = "+index+" with index "+i);
+						console.log("Matched id = "+array[index].id+" with id "+array[i].id);
+						
+						itemid = array[index].id;
+						noitem = parseInt(array[index].noofItem) + parseInt(array[i].noofItem);
+						console.log("No of items = "+noitem);
+						
+						fprice  = array[index].price;
+						//console.log("first price string = "+fprice);
+						fprice  = Number(fprice.replace(/[^0-9\.]+/g,""));
+						//console.log("first price = "+fprice);
+						
+						lprice  = array[i].price;
+						//console.log("last price string = "+lprice);
+						lprice  = Number(lprice.replace(/[^0-9\.]+/g,""));
+						//console.log("last price = "+lprice);
+						
+						finalprice = fprice + lprice;
+						console.log("final price = "+finalprice);
+						
+						// Add updated item
+						newData = {id:itemid, noofItem:noitem, title:array[index].title,price:''+finalprice,prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'};
+						
+						console.log("Now remove those two and add new one here");
+						
+						// Remove both item
+						array.splice(index, 2);
+						index = index - 1;
+						
+						console.log(array);  // Should be something like [Object array]
+						
+						// Push the new data (whether it be an object or anything else) onto the array
+						array.push(newData);
+						
+						console.log(array);  // Should be something like [Object array]
+						// Re-serialize the array back into a string and store it in localStorage
+						localStorage.setItem('canUserCartData', JSON.stringify(array));
+					}
+				}
+			}catch(e){
+				console.log(e);
+			}
+		}
+	}
+
+    if(localStorage.getItem('canUserCartData') != null){
+    	console.log(array);
+        localStorage.setItem('canUserCartData', JSON.stringify(array));
+    }
+}
+
+
+function increaseArrayItem(idToIncrease, action, no) {
+
+	if(localStorage.getItem('canUserCartData') != null){
+		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+		array = JSON.parse(localStorage.getItem('canUserCartData'));
+	}else{
+		console.log("nnnnnn");
+	}
+
+	
+    // Iterate every array item
+    for (var index = 0; index < array.length; index++) {
+
+		console.log("ID : "+array[index].id + " To be found "+idToIncrease);
+        
+        if (array[index].id == idToIncrease) {
+            
+			console.log("Founded ID : "+array[index].id);
+            eprice = parseFloat(array[index].price) / parseInt(array[index].noofItem);
+			if(action == 'minus'){
+                array[index].noofItem = parseInt(array[index].noofItem) - 1;
+                array[index].price = parseFloat(array[index].price) - eprice;
+            }else{
+                /*array[index].noofItem = parseInt(array[index].noofItem) + 1;
+                array[index].price = parseFloat(array[index].price) + eprice;*/
+                
+                array[index].noofItem = parseInt(array[index].noofItem) + parseInt(no);
+                array[index].price = array[index].noofItem * eprice;
+            }
+        }
+    }
+
+	console.log(array);
+    localStorage.setItem('canUserCartData', JSON.stringify(array));
+}
+
+
+
+function checkArrayItemExistorNot(id) {
+
+	if(localStorage.getItem('canUserCartData') != null){
+		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+		array = JSON.parse(localStorage.getItem('canUserCartData'));
+	}else{
+		console.log("nnnnnn");
+	}
+
+	var flag = false;
+    // Iterate every array item
+    for (var index = 0; index < array.length; index++) {
+
+		console.log("ID : "+array[index].id + " To be found "+id);
+        
+        if (array[index].id == id) {
+            
+			console.log("Founded ID : "+array[index].id);
+            flag = true;
+            break;
+        }
+    }
+
+	return flag;
+}
+
+

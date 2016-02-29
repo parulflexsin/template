@@ -36,7 +36,7 @@
 </div>
 
 <script type="text/x-kendo-template" id="cartListView">
-<div class="main" id="mainContentDv4#:data['id']#">
+<div class="main" id="mainContentDv4#:data['id']#" data-id='#:data['id']#'>
 	<div class="dv1">
 		<p>
         #if(!prodImg){#
@@ -58,20 +58,20 @@
 				<p>$ <span class="itemPrice">#:data['price']#</span></p>
 			</div>
 			<div class="dv231">
-				<img class="minus" src="style/images/390/green_minus.png">
+				<img class="minus" data-id='#:data['id']#' src="style/images/390/green_minus.png">
 			</div>
 			<div class="dv232" id="qunatDv">
 				<input tyep="text" id="quantity" class="thisqunty" value="#:data['noofItem']#" style="background-color:\\#fff;" disabled="false">
-                <input type="hidden" id="thisvlue" class="thisvlue" value="#:data['price']#"/>
+                <!-- <input type="hidden" id="thisvlue" class="thisvlue" value="#:data['price']#"/> -->
 			</div>
 			<div class="dv233">
-				<img class="add" src="style/images/390/green_plus.png">
+				<img class="add" data-id='#:data['id']#' src="style/images/390/green_plus.png">
 			</div>
 		</div>
 	</div>
 	<div class="dv3">
 		<p>
-			<img class="cross" src="style/images/390/cross_icon.png">
+			<img class="cross" data-id='#:data['id']#' src="style/images/390/cross_icon.png">
 		</p>
 	</div>
 </div>

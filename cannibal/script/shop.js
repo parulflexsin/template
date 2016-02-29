@@ -205,6 +205,8 @@
         
         moveToCart:function()
         {
+            
+            //arrangeArray();
             app.mobileApp.navigate('views/mycart.html')
         },
         
@@ -324,26 +326,33 @@ $(document).on('click', '#shopView .wrapper .cartCls', function() {
         navigator.notification.alert(data[0]['msg'], function () { }, "Notification", 'OK');
         app.mobileApp.hideLoading();
    });*/
-    
-    var data = {id:$(this).attr('data-id'),title:$(this).attr('data-title'),price:$(this).attr('data-price'),prodImg:'',noofItem:'1',size:''};
-	var a = [];
-	
-	if(localStorage.getItem('canUserCartData') != null){
-		//localStorage.setItem('canUserCartData', JSON.stringify(a));
-		a = JSON.parse(localStorage.getItem('canUserCartData'));
-	}else{
-		//console.log("nnnnnn");
-	}
-	
-    // Parse the serialized data back into an aray of objects
-    // Push the new data (whether it be an object or anything else) onto the array
-    a.push(data);
-    
-    console.log(a);  // Should be something like [Object array]
-    // Re-serialize the array back into a string and store it in localStorage
-    localStorage.setItem('canUserCartData', JSON.stringify(a));
-    
-    app.shopService.viewModel.setCartItemshop();
+   
+    console.log(checkArrayItemExistorNot($(this).attr('data-id')));
+    if(!checkArrayItemExistorNot($(this).attr('data-id'))){
+        console.log("nnnnnnnnnnnnn "+$(this).attr('data-id'));
+        var data = {id:$(this).attr('data-id'),title:$(this).attr('data-title'),price:$(this).attr('data-price'),prodImg:'',noofItem:'1',size:''};
+    	var a = [];
+    	
+    	if(localStorage.getItem('canUserCartData') != null){
+    		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+    		a = JSON.parse(localStorage.getItem('canUserCartData'));
+    	}else{
+    		//console.log("nnnnnn");
+    	}
+    	
+        // Parse the serialized data back into an aray of objects
+        // Push the new data (whether it be an object or anything else) onto the array
+        a.push(data);
+        
+        console.log(a);  // Should be something like [Object array]
+        // Re-serialize the array back into a string and store it in localStorage
+        localStorage.setItem('canUserCartData', JSON.stringify(a));
+        
+        app.shopService.viewModel.setCartItemshop();
+    }else{
+        console.log("fffffffffffffff "+$(this).attr('data-id'));
+        increaseArrayItem($(this).attr('data-id'), "add", "1");
+    }
     navigator.notification.alert("This item added to your cart successfully.", function () { }, "Message", 'OK');
 });
 

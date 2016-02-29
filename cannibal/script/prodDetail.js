@@ -63,8 +63,8 @@
             $('#addcart').on('click.myPlugin',function(){
                 console.log("...addcart");
                 
-                var product_quantity = $('#quantity').val(),
-                product_size = $('#materialSize').val();
+                var product_quantity = '0', product_size = '0';
+                product_quantity = $('#detquantity').val(), product_size = $('#materialSize').val();
                 
                 if(product_quantity === "0" || product_quantity === 0)
                 {
@@ -76,29 +76,36 @@
                 }
                 else
                 {
-                    localStorage.setItem('product_quantity',product_quantity);
-                    localStorage.setItem('product_size',product_size);
+                    console.log("product_quantity = "+product_quantity+"product_size = "+product_size);
+                    //localStorage.setItem('product_quantity',product_quantity);
+                    //localStorage.setItem('product_size',product_size);
                     //app.productService.viewModel.addTocart(localStorage.getItem('product_id'));
                 
-                
-                    var data = {id:$(this).parents().find(".title .thisitemid").val(),title:$(this).parents().find(".title p").text(),price:'10',prodImg:$(this).parents().find(".prod_image img").attr('src'),noofItem:localStorage.getItem('product_quantity'),size:localStorage.getItem('product_size')};
-                	var a = [];
-                	
-                	if(localStorage.getItem('canUserCartData') != null){
-                		//localStorage.setItem('canUserCartData', JSON.stringify(a));
-                		a = JSON.parse(localStorage.getItem('canUserCartData'));
-                	}else{
-                		//console.log("nnnnnn");
-                	}
-                	
-                    // Parse the serialized data back into an aray of objects
-                    // Push the new data (whether it be an object or anything else) onto the array
-                    a.push(data);
-                    
-                    console.log(a);  // Should be something like [Object array]
-                    // Re-serialize the array back into a string and store it in localStorage
-                    localStorage.setItem('canUserCartData', JSON.stringify(a));
-                    app.productService.viewModel.setCartItem();
+                    if(!checkArrayItemExistorNot($(this).parents().find(".title .thisitemid").val())){
+                        var data = {id:$(this).parents().find(".title .thisitemid").val(),title:$(this).parents().find(".title p").text(),price:$(this).parents().find(".price p .itemprice").text(),prodImg:$(this).parents().find(".prod_image img").attr('src'),noofItem:product_quantity,size:product_size};
+                    	var a = [];
+                    	
+                    	if(localStorage.getItem('canUserCartData') != null){
+                    		//localStorage.setItem('canUserCartData', JSON.stringify(a));
+                    		a = JSON.parse(localStorage.getItem('canUserCartData'));
+                    	}else{
+                    		//console.log("nnnnnn");
+                    	}
+                    	
+                        // Parse the serialized data back into an aray of objects
+                        // Push the new data (whether it be an object or anything else) onto the array
+                        a.push(data);
+                        
+                        console.log(a);  // Should be something like [Object array]
+                        // Re-serialize the array back into a string and store it in localStorage
+                        localStorage.setItem('canUserCartData', JSON.stringify(a));
+                        app.productService.viewModel.setCartItem();
+                    }else{
+                        console.log("fffffffffffffff "+$(this).parents().find(".title .thisitemid").val());
+                        increaseArrayItem($(this).parents().find(".title .thisitemid").val(), "add", product_quantity);
+                        
+                    }
+                    navigator.notification.alert("This item added to your cart successfully.",function(){},'Notification','OK');
                 }
             });
             /*$('#addcart').click(function(){
@@ -214,7 +221,7 @@
             html += '<div class="leftFldDv">';
             html += '<p>';
             html += '<label style="color:#5C5C5C;">Quantity</label>';
-            html += '<select class="dropdwn" id="quantity" data-bind="value:quantity" onchange="app.productService.viewModel.setQuantity(this.value)">';
+            html += '<select class="dropdwn" id="detquantity" data-bind="value:quantity" onchange="app.productService.viewModel.setQuantity(this.value)">';
             html += '<option value="0">Quantity</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>';
             html += '</select>';
             html += '</p>';

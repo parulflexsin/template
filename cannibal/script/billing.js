@@ -105,7 +105,6 @@
                 
                 var data = '', tprice = 0;
                 var finalArray = [];
-            	    //finalArray['store'] = [];
             	
                 // Iterate every array item
                 for (var index = 0; index < array.length; index++) {
@@ -114,18 +113,28 @@
                     
             		data = '';
             		data = {
-            			id:array[index].id,
+            			id : array[index].id,
             			item_id:array[index].id,
-            			quantity:array[index].noofItem, 
-            			item_name: array[index].title,
-            			item_price: array[index].price,
-            			item_total_price: array[index].price
-                        
+            			quantity:array[index].noofItem,
+            			item_price:array[index].price,
+            			item_total_price:array[index].price,
+            			location:'location3',
+            			sku:'',
+            			post_comment:array[index].title,
+            			subcategory_name:'',
+            			category_name:'productcategory1',
+            			attribute:{'color':''},
+            			_min_variation_price:0,
+            			item_name:array[index].title,
+            			_max_variation_price:0
             		};
             		finalArray.push(data);
                 }
-
-            	var person = {
+                
+            	
+                var thing = {
+            		main_location : "location3",
+            		store : finalArray,
             		first_name : firstname,
                     cart_total:tprice,
                     last_name:bill_address,
@@ -138,12 +147,10 @@
                     email:bill_email
             	};
                 
-                
                 dataParambill['uid'] = localStorage.getItem('user_id');
-                dataParambill['myOrders'] = Base64.encode(JSON.stringify(finalArray));
-                dataParambill['address'] = Base64.encode(JSON.stringify(person));
+                dataParambill['myOrders'] = Base64.encode(JSON.stringify(thing));
                 
-                //console.log(dataParambill);
+                console.log(dataParambill);
                 app.billingService.viewModel.postCart(dataParambill);
             }
             
@@ -193,9 +200,9 @@
             
             // Set blank cart
             if(localStorage.getItem('canUserCartData') != null){
-        		localStorage.setItem('canUserCartData', '');
+        		localStorage.setItem('canUserCartData', '[]');
         	}
-            //app.mobileApp.navigate('views/login.html');
+            app.mobileApp.navigate('views/shop.html');
         },
         
     })

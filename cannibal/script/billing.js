@@ -12,9 +12,9 @@
             console.log("submitCheckout");
             var dataParambill = [];
             
-            var a = [];
+            var array = [];
         	if(localStorage.getItem('canUserCartData') != null){
-        		a = JSON.parse(localStorage.getItem('canUserCartData'));
+        		array = JSON.parse(localStorage.getItem('canUserCartData'));
         	}
             
             var firstname = this.get('bill_fname'),
@@ -87,7 +87,7 @@
             }
             else
             {
-                dataParambill['uid'] = localStorage.getItem('user_id'),
+                /*dataParambill['uid'] = localStorage.getItem('user_id'),
                 dataParambill['first_name'] = firstname,
                 dataParambill['last_name'] = lastname,
                 dataParambill['address'] = bill_address,
@@ -98,7 +98,52 @@
                 dataParambill['email'] = bill_email;
                 
                 //data['fname'] = fname;
-                dataParambill['myOrders'] = Base64.encode(JSON.stringify(a));
+                //dataParambill['myOrders'] = Base64.encode(JSON.stringify(a));
+                */
+                
+                //console.log( Base64.encode(JSON.stringify(array)));
+                
+                var data = '', tprice = 0;
+                var finalArray = [];
+            	    //finalArray['store'] = [];
+            	
+                // Iterate every array item
+                for (var index = 0; index < array.length; index++) {
+                    
+                    tprice = tprice + parseFloat(array[index].price);
+                    
+            		data = '';
+            		data = {
+            			id:array[index].id,
+            			item_id:array[index].id,
+            			quantity:array[index].noofItem, 
+            			item_name: array[index].title,
+            			item_price: array[index].price,
+            			item_total_price: array[index].price
+                        
+            		};
+            		finalArray.push(data);
+                }
+
+            	var person = {
+            		first_name : firstname,
+                    cart_total:tprice,
+                    last_name:bill_address,
+                    priority_order:'Yes',
+                    address:bill_address,
+                    city:bill_city,
+                    state:bill_state,
+                    postcode:bill_zipcode,
+                    phone:bill_phone,
+                    email:bill_email
+            	};
+                
+                
+                dataParambill['uid'] = localStorage.getItem('user_id');
+                dataParambill['myOrders'] = Base64.encode(JSON.stringify(finalArray));
+                dataParambill['address'] = Base64.encode(JSON.stringify(person));
+                
+                //console.log(dataParambill);
                 app.billingService.viewModel.postCart(dataParambill);
             }
             
@@ -146,7 +191,10 @@
             bill_phone = that.set('bill_phone',''),
             bill_email = that.set('bill_email','');
             
-            
+            // Set blank cart
+            if(localStorage.getItem('canUserCartData') != null){
+        		localStorage.setItem('canUserCartData', '');
+        	}
             //app.mobileApp.navigate('views/login.html');
         },
         

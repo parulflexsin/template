@@ -116,10 +116,7 @@
                 schema:{
                     data:function(data)
                     {
-                        console.log("*****");
-                        console.log(data);
                         return [data];
-                        
                     }
                 },
                 error:function(e)
@@ -155,6 +152,7 @@
             console.log(data);
             localStorage.setItem("login_status",1);
             localStorage.setItem("user_id",data['user_id']);
+            localStorage.setItem("can_user_name",data['userName']);
             localStorage.setItem("user_fname",data['firstName']);
             localStorage.setItem("user_lname",data['lastName']);
             localStorage.setItem("cb_member_dl",data['cb_member_dl']);

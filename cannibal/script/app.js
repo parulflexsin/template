@@ -218,6 +218,7 @@ var app = (function(){
     localStorage.setItem('addtocart_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Cart.php');
     localStorage.setItem('placeorder_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/placeOrder.php');
     localStorage.setItem('preOrders_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/preOrders.php');
+    localStorage.setItem('userinfo_API','http://wordpress2014:Flexsin_2020@flexsin.org/lab/wordpress/cannibalsonline/conAPI/Myprofile.php');
     
     return{
         mobileApp:mobileApp

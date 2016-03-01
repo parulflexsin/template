@@ -17,6 +17,53 @@
             
             // For show count of my cart
             app.cartService.viewModel.htmlCreate();
+            
+            //app.accountService.viewModel.getMyInfo();
+        },
+        
+        getMyInfo : function(){
+           /*
+            app.mobileApp.showLoading();
+            var changePwdDataS = new kendo.data.DataSource({
+                transport:{
+                    read:{
+                        url:localStorage.getItem('userinfo_API'),
+                        type:'GET',
+                        dataType:'JSON',
+                        data:{'userName':localStorage.getItem('can_user_name')}
+                    }
+                },
+                schema:{
+                    data:function(data)
+                    {
+                        return [data];
+                    }
+                },
+                error:function(e)
+                {
+                    app.mobileApp.hideLoading();
+                    navigator.notification.alert("Server not responding properly.Please check your internet connection.",
+                        function () { }, "Message", 'OK');
+                }
+            });
+            changePwdDataS.fetch(function(){
+                var data = this.data();
+                console.log(data);
+                
+                if(data[0]['status'] === 0 || data[0]['status'] === '0')
+                {
+                    navigator.notification.alert("Something went wrong! Please try again.",function () { }, "Notification", 'OK');
+                }
+                else
+                {
+                    console.log(data[0]['UserData']);
+                    $(".add0").html(data[0]['UserData'][0].firstName.capitalize()+' '+data[0]['UserData'][0].lastName);
+                    $(".add1").html('<a data-role="button" class="km-widget km-button"><span class="km-text">'+data[0]['UserData'][0].phoneNumber+'</span></a>');
+                    $(".add2").html('<a data-role="button" class="km-widget km-button"><span class="km-text">'+data[0]['UserData'][0].phoneNumber+'</span></a>');
+                    $(".add3").html('<p class="add3">'+data[0]['UserData'][0].phoneNumber+'</p>');
+                }
+                app.mobileApp.hideLoading();
+            });*/
         },
         
         changePwdValidation:function()
@@ -115,3 +162,8 @@
         viewModel:new accountViewModel()
     };
 })(window);
+
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}

@@ -179,6 +179,7 @@
     #aboutusView .nvbar span {color:#fff;  font-size: 20px;line-height: 55px;}
     
     #aboutusView .wrapper {width:100%;height:auto;margin:0px auto;}
+    #aboutusView .wrapper .logoicon{position: absolute; top: 5%; left: 35%; z-index: 3; height: 22%; width: 30%;}
     /*#aboutusView .wrapper .mainbind{width:100%;height:auto;display:inline-block}
     #aboutusView .wrapper .mainbind .checkGreenDv {width:10%;float:left;}
     #aboutusView .wrapper .mainbind .checkGreenDv p{margin-top: 18px;}
@@ -708,6 +709,7 @@
     #aboutusView .nvbar span {color:#fff;  font-size: 18px;line-height: 55px;}
     
     #aboutusView .wrapper {width:100%;height:auto;margin:0px auto;}
+    #aboutusView .wrapper .logoicon{position: absolute; top: 3%; left: 35%; z-index: 3; height: 22%; width: 30%;}
     /*#aboutusView .wrapper .mainbind{width:100%;height:auto;display:inline-block}
     #aboutusView .wrapper .mainbind .checkGreenDv {width:10%;float:left;}
     #aboutusView .wrapper .mainbind .checkGreenDv p{margin-top: 18px;}
@@ -1230,6 +1232,7 @@
     #aboutusView .nvbar span {color:#fff;  font-size: 18px;line-height: 55px;}
     
     #aboutusView .wrapper {width:100%;height:auto;margin:0px auto;}
+    #aboutusView .wrapper .logoicon{position: absolute; top: 5%; left: 35%; z-index: 3; height: 22%; width: 30%;}
     /*#aboutusView .wrapper .mainbind{width:100%;height:auto;display:inline-block}
     #aboutusView .wrapper .mainbind .checkGreenDv {width:10%;float:left;}
     #aboutusView .wrapper .mainbind .checkGreenDv p{margin-top: 18px;}
@@ -1757,6 +1760,7 @@
     #aboutusView .nvbar span {color:#fff;  font-size: 18px;line-height: 55px;}
     
     #aboutusView .wrapper {width:100%;height:auto;margin:0px auto;}
+    #aboutusView .wrapper .logoicon{position: absolute; top: 5%; left: 35%; z-index: 3; height: 22%; width: 30%;}
     /*#aboutusView .wrapper .mainbind{width:100%;height:auto;display:inline-block}
     #aboutusView .wrapper .mainbind .checkGreenDv {width:10%;float:left;}
     #aboutusView .wrapper .mainbind .checkGreenDv p{margin-top: 18px;}
@@ -2247,7 +2251,7 @@
     #productDetail .nvbar .menu {background: url('./IOS/menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
     #productDetail .nvbar .cart {background: url('./IOS/cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
     #productDetail .nvbar span {color:#fff;  font-size: 18px;line-height:55px;}
-    #productDetail .km-view-title { width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
+    #productDetail .km-view-title { width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 140px; }
     #productDetail .wrapper {width:100%;height:auto}
     #productDetail .wrapper .prod_image {width:100%;border:1px solid #E5E5E5}
     #productDetail .wrapper .prod_image p{margin:0 0 0 0;background-color: #F3F4F1;}
@@ -2284,6 +2288,7 @@
     #aboutusView .nvbar span {color:#fff;  font-size: 18px;line-height: 55px;}
     
     #aboutusView .wrapper {width:100%;height:auto;margin:0px auto;}
+    #aboutusView .wrapper .logoicon{position: absolute; top: 8%; left: 33%; z-index: 3; height: 30%; width: 35%;}
     /*#aboutusView .wrapper .mainbind{width:100%;height:auto;display:inline-block}
     #aboutusView .wrapper .mainbind .checkGreenDv {width:10%;float:left;}
     #aboutusView .wrapper .mainbind .checkGreenDv p{margin-top: 18px;}

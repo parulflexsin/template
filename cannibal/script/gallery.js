@@ -66,7 +66,7 @@
             });
             
             // For show count of my cart
-            app.cartService.viewModel.htmlCreate();
+            //app.cartService.viewModel.htmlCreate();
         },
         
         getTabView1data : function(){

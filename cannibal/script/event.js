@@ -63,7 +63,7 @@
             });
             
             // For show cart count
-            app.cartService.viewModel.htmlCreate();
+            //app.cartService.viewModel.htmlCreate();
         }
         
     });

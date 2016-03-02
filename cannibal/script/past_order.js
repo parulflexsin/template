@@ -6,10 +6,10 @@
         pastOrderListSource:'',
         show:function()
         {
-            var data = [{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'},{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'},{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'}];
-            app.pastOrder.viewModel.setPastOrderListview(data);
+            //var data = [{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'},{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'},{id:'1',title:'Pure Canna Balm','ordernum':'Order No. 5',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'3',size:'150Mg'},{id:'2',title:'Pure Canna Balm','ordernum':'Order No. 4',price:'$30.00',prodImg:'style/images/390/img2.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'5',size:'150Mg'},{id:'3',title:'Pure Canna Balm','ordernum':'Order No. 1',price:'$30.00',prodImg:'style/images/390/img1.png',desc:'Sed ut perspiciatis unde omnis iste natus.',quantity:'2',size:'150Mg'}];
+            //app.pastOrder.viewModel.setPastOrderListview(data);
             
-            /* app.mobileApp.showLoading();
+             app.mobileApp.showLoading();
              var productData = new kendo.data.DataSource({
              transport:{
                   read:{
@@ -47,7 +47,7 @@
                 }
                 
             });
-            */
+            
         },
         
         createPastOrderList : function(data){
@@ -58,17 +58,27 @@
             {
                 if($.isNumeric(x))
                 {
-                    console.log(data[x]);
-                    pasthtml += '<div class="main">\
-                        <div class="leftDv">\
-                            <p>this is title</p>\
-                            <p>Order No. 5</p>\
-                            <p> Qty : 2</p>\
-                        </div>\
-                        <div class="rightDv">\
-                            <p>$30.00</p>\
-                        </div>\
-                    </div>';
+                    console.log(data[x]['items'].length);
+                    for(y in data[x]['items'])
+                    {
+                        if($.isNumeric(y))
+                        {
+                            var ddd = data[x]['order_date'].substr(0, 11);
+                            if( data[x]['items'][0] != undefined ){
+                                pasthtml += '<div class="main">\
+                                    <div class="leftDv">\
+                                        <p>'+data[x]['items'][y]['name']+'</p>\
+                                        <p>Order Id : '+data[x]['items'][y]['id']+'</p>\
+                                        <p> Qty : '+data[x]['items'][y]['qty']+'</p>\
+                                    </div>\
+                                    <div class="rightDv">\
+                                        <p>$ '+data[x]['total']+'</p><p>'+ddd+'</p>\
+                                    </div>\
+                                </div>';
+                                
+                            }
+                        }
+                    }
                 }
             }
             $("#pastOrderListData").html(pasthtml);

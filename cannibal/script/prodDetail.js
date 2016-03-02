@@ -11,7 +11,9 @@
                 console.log("this is undefined");
             }else{
                 console.log("this is id : "+id);
+                console.log("this is title : "+e.view.params.title);
             }
+            $("#productDetail .nvbar .km-view-title .viewtitle").html(e.view.params.title);
             
             app.mobileApp.showLoading();
             var productData = new kendo.data.DataSource({

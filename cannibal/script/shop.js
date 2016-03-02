@@ -114,7 +114,7 @@
             var Selecthtml = '';
             
             Selecthtml = '<select class="dropDwn" id="productCategory">';
-            Selecthtml += '<option>Product Categories</option>';
+            Selecthtml += '<option></option>';
             
             for(i in data)
             {
@@ -188,7 +188,9 @@
                 if($.isNumeric(x))
                 {
                     //console.log(data[x]['MainCategoryName']);
-                    prdata += '<option value='+data[x]['MainCategoryID']+'>'+data[x]['MainCategoryName']+'</option>';
+                    catname = data[x]['MainCategoryName'];
+                    catname = titleCase(catname);
+                    prdata += '<option value='+data[x]['MainCategoryID']+'>'+catname+'</option>';
                     
                 }
             }
@@ -197,6 +199,8 @@
             //app.mobileApp.hideLoading();
             //var tempdata = [{id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}, {id:1,title:'Pure Canna Balm',price:'$20.00',prodImg:'style/newImage/product_img.png',cart:'style/images/390/cart.png'}];
             //this.set('shopListSource',tempdata);
+            
+            function titleCase(string) { return string.charAt(0).toUpperCase() + string.slice(1); } 
         },
         
         moveToMain:function(e)
@@ -362,6 +366,6 @@ $(document).on('click', '#shopView .wrapper .cartCls', function() {
 
 $(document).on('click', '#shopView #shopListData .prodCls', function() {
     //console.log('hhhhhhhh id = '+$(this).attr('data-id'));
-    app.mobileApp.navigate('views/productDetail.html?id='+$(this).attr("data-id"));
+    app.mobileApp.navigate('views/productDetail.html?id='+$(this).attr("data-id")+'&title='+$(this).parent().find('.prodTitle p').text());
 });
 

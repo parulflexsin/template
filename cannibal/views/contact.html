@@ -1,17 +1,18 @@
-<div data-role="view" id="contactView" data-use-native-scrolling="true" data-model="app.contact.viewModel" data-show="app.contact.viewModel.show">
+<div data-role="view" id="contactView" data-title="Contact Us" data-use-native-scrolling="true" data-model="app.contact.viewModel" data-show="app.contact.viewModel.show">
     <div data-role="header">
         <div data-role="navbar" class="nvbar">
             <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
             <a data-role="button" data-align="right" style='border:none;margin:0;padding:0;'></a>
+            <span data-role="view-title"></span>
         </div>
     </div>
     <div data-role="content">
         <div class="wrapper">
-            <div class="header">
+            <!--  <div class="header">
                 <p>
                     Contact Us
                 </p>
-            </div>
+            </div> -->
             <div class="conFldDv">
                 <div class="fldDv">
                     <p>
@@ -20,12 +21,12 @@
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="number" name="contact_phone" id="contact_phone" data-bind="value:contact_phone" class="txtFld" placeholder="Phone Number"/>
+                        <input type="tel" name="contact_phone" id="contact_phone" data-bind="value:contact_phone" class="txtFld" placeholder="Phone Number"/>
                     </p>
                 </div>
                 <div class="fldDv">
                     <p>
-                        <input type="text" name="contact_mail" id="contact_mail" data-bind="value:contact_mail" class="txtFld" placeholder="Email"/>
+                        <input type="email" name="contact_mail" id="contact_mail" data-bind="value:contact_mail" class="txtFld" placeholder="Email"/>
                     </p>
                 </div>
                 <div class="fldDv">

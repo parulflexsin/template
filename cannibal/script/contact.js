@@ -12,12 +12,21 @@
         
         show:function()
         {
-           app.contact.viewModel.blankContactFld();
+           //app.contact.viewModel.blankContactFld();
             
             // For show cart count
-            app.cartService.viewModel.htmlCreate(); 
+            //app.cartService.viewModel.htmlCreate(); 
         },
         
+        contactValidation_modifiy : function()
+        {
+            console.log("this is clicked");
+            
+            Notification.show({
+                title: "New E-mail",
+                message: "You have 1 new mail message!"
+            }, "info");
+        },
         contactValidation : function()
         {
            var username = this.get('name'),

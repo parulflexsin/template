@@ -28,6 +28,18 @@
                     </div>
                 </div>
             </li>
+            <li data-bind="click:moveToAboutus">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/about_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">About Us</p>
+                    </div>
+                </div>
+            </li>
             <li data-bind="click:moveToShop">
                 <div class="drawerDv">
                     <div class="drawerinnerDv1">
@@ -76,30 +88,6 @@
                     </div>
                 </div>
             </li>
-            <li data-bind="click:moveToAboutus">
-                <div class="drawerDv">
-                    <div class="drawerinnerDv1">
-                        <p>
-                            <img src="style/slideImage/about_left.png"/>
-                        </p>
-                    </div>
-                    <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">About Us</p>
-                    </div>
-                </div>
-            </li>
-            <li data-bind="click:moveToEvent">
-                <div class="drawerDv">
-                    <div class="drawerinnerDv1">
-                        <p>
-                            <img src="style/slideImage/event.png"/>
-                        </p>
-                    </div>
-                    <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Events</p>
-                    </div>
-                </div>
-            </li>
             <li data-bind="click:moveToShoppingCart">
                 <div class="drawerDv">
                     <div class="drawerinnerDv1">
@@ -124,39 +112,15 @@
                     </div>
                 </div>
             </li>
-            <li data-bind="click:moveToPastorder">
+            <li data-bind="click:moveToPrivacyPloicy">
                 <div class="drawerDv">
                     <div class="drawerinnerDv1">
                         <p>
-                            <img src="style/slideImage/past_order.png"/>
+                            <img src="style/slideImage/privacy_policy.png"/>
                         </p>
                     </div>
                     <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Past Orders</p>
-                    </div>
-                </div>
-            </li>
-            <li data-bind="click:moveToInviteFriend">
-                <div class="drawerDv">
-                    <div class="drawerinnerDv1">
-                        <p>
-                            <img src="style/slideImage/invite_friend.png"/>
-                        </p>
-                    </div>
-                    <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Invite a Friend</p>
-                    </div>
-                </div>
-            </li>
-            <li data-bind="click:moveToRateapp">
-                <div class="drawerDv">
-                    <div class="drawerinnerDv1">
-                        <p>
-                            <img src="style/slideImage/rate_aap_left.png"/>
-                        </p>
-                    </div>
-                    <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Rate the App</p>
+                        <p class="textTitle" style="margin-top:24px">Privacy Policy</p>
                     </div>
                 </div>
             </li>
@@ -172,15 +136,27 @@
                     </div>
                 </div>
             </li>
-            <li data-bind="click:moveToPrivacyPloicy">
+            <li data-bind="click:moveToInviteFriend">
                 <div class="drawerDv">
                     <div class="drawerinnerDv1">
                         <p>
-                            <img src="style/slideImage/privacy_policy.png"/>
+                            <img src="style/slideImage/invite_friend.png"/>
                         </p>
                     </div>
                     <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Privacy Policy</p>
+                        <p class="textTitle" style="margin-top:24px">Invite a Friend</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToPastorder">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/past_order.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Past Order</p>
                     </div>
                 </div>
             </li>
@@ -196,6 +172,30 @@
                     </div>
                 </div>
             </li>
+            <li data-bind="click:moveToEvent">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/event.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Event</p>
+                    </div>
+                </div>
+            </li>
+            <li data-bind="click:moveToRateapp">
+                <div class="drawerDv">
+                    <div class="drawerinnerDv1">
+                        <p>
+                            <img src="style/slideImage/rate_aap_left.png"/>
+                        </p>
+                    </div>
+                    <div class="drawerinnerDv2">
+                        <p class="textTitle" style="margin-top:24px">Rate the App</p>
+                    </div>
+                </div>
+            </li>
             <li data-bind="click:moveToLogout">
                 <div class="drawerDv">
                     <div class="drawerinnerDv1">
@@ -204,7 +204,7 @@
                         </p>
                     </div>
                     <div class="drawerinnerDv2">
-                        <p class="textTitle" style="margin-top:24px">Log Out</p>
+                        <p class="textTitle" style="margin-top:24px">Logout</p>
                     </div>
                 </div>
             </li>
@@ -214,24 +214,8 @@
     <!--External File Place here-->
     <script src="script/app.js"></script>
     <script src="script/login.js"></script>
-    <script src="script/shop.js"></script>
     <script src="script/drawer.js"></script>
-    <script src="script/prodDetail.js"></script>
-    <script src="script/mycart.js"></script>
-    <script src="script/signup.js"></script>
-    <script src="script/account.js"></script>
-    <script src="script/clones.js"></script>
-    <script src="script/past_order.js"></script>
-    <script src="script/special.js"></script>
-    <script src="script/gallery.js"></script>
-    <script src="script/aboutus.js"></script>
     <script src="script/contact.js"></script>
-    <script src="script/privacy.js"></script>
-    <script src="script/terms.js"></script>
-    <script src="script/editProfile.js"></script>
-    <script src="script/inviteFrnd.js"></script>
-    <script src="script/event.js"></script>
-    <script src="script/billing.js"></script>
-    <script src="script/base64.js"></script>
+     <script src="script/productlist.js"></script>
 </body>
 </html>

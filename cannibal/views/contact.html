@@ -1,50 +1,67 @@
-<div data-role="view" id="contactView" data-title="Contact Us" data-use-native-scrolling="true" data-model="app.contact.viewModel" data-show="app.contact.viewModel.show">
-    <div data-role="header">
-        <div data-role="navbar" class="nvbar">
-            <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
-            <a data-role="button" data-align="right" style='border:none;margin:0;padding:0;'></a>
-            <span data-role="view-title"></span>
-        </div>
+<div data-role="view" id="contactView" data-layout="main" >
+<div data-role="content" style="background: url(style/images/bg.png);background-size:100% 100%">
+    <div data-role="navbar" class="nvbar">
+        <p>
+           <a data-role="button" data-align="left" data-rel="drawer" href="#drawerList" class="menu"></a>
+                
+        <a data-role="button" data-align="right" data-badge="2" class="cart"></a>
+           
+        </p>
     </div>
-    <div data-role="content">
-        <div class="wrapper">
-            <!--  <div class="header">
-                <p>
-                    Contact Us
-                </p>
-            </div> -->
-            <div class="conFldDv">
-                <div class="fldDv">
+    <div class="wrapper">
+        <div class="header">
+        <p>
+            Contact Us
+        </p>
+    </div>
+        
+            <div class="logname">
+                <div class="txtfldiv">
                     <p>
-                        <input type="text" name="contact_name" id="contact_name" data-bind="value:name" class="txtFld" placeholder="Name"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="tel" name="contact_phone" id="contact_phone" data-bind="value:contact_phone" class="txtFld" placeholder="Phone Number"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="email" name="contact_mail" id="contact_mail" data-bind="value:contact_mail" class="txtFld" placeholder="Email"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="text" name="contact_subject" id="contact_subject" data-bind="value:contact_subject" class="txtFld" placeholder="Subject"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <textarea class="txtarea" id="contact_message" name="contact_message" data-bind="value:contact_message" placeholder="Message"></textarea>
+                        <input type="text" name="name" data-bind="value:lastname" class="txtfld" id="name" placeholder="Name">
+
                     </p>
                 </div>
             </div>
-            <div class="subDv">
-                <p>
-                    <a data-role="button" id="moveToRegisterStep2" data-bind="click:contactValidation">SUBMIT</a>
-                </p>
+           <div class="lognumber">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="number" name="phonenumber" id="phonenumber" data-bind="value:mobilenumber" class="txtfld" maxlength="10" placeholder="Phone Number"/>
+
+                    </p>
+                </div>
             </div>
-        </div>
+            <div class="logemail">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="email" name="email" data-bind="value:emailid" class="txtfld" id="emailc" placeholder="Email Address";>
+                    </p>
+                </div>
+            </div>
+            <div class="logsubject">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="text" name="subject" data-bind="value:uploadphoto" class="txtfld" id="subject" placeholder="Subject";>
+                    </p>
+                </div>
+            </div>
+        <div class="logmessage">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="text" name="message" data-bind="value:uploadphoto" class="txtfld" id="message" placeholder="Message";>
+                    </p>
+                </div>
+            </div>
+          <div class="logSub">
+
+                <p>
+
+                    <a data-role="button" id="signin" class="contactsaved">SUBMIT</a>
+
+                </p>
+                
+            </div>
     </div>
+</div>
+    
 </div>

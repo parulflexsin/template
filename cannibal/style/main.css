@@ -17,3 +17,130 @@
 
 .km-flat .km-loader:before {background:#FFF !important}
 .km-flat .km-loader>*:not(h1) {background:#23A505 !important}
+
+#aboutusView .nvbar {background:#23A505 !important;border-bottom: none !important;padding-top: 0px;padding-bottom: 0px;}
+    #aboutusView .nvbar .menu {background: url('menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #aboutusView .nvbar .cart {background: url('cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+    #aboutusView .nvbar span {color:#fff;  font-size: 18px;}
+#aboutusView .wrapper .header{width: 100%;height: 7%;font-size: 30px}
+#aboutusView .content .wrapper .header p{color:#fff;text-align:center;margin-top: 0px;}
+#aboutusView .content .imagelogo{margin:-18px;}
+#aboutusView .content .title{width:100%}
+#aboutusView .content .title p{font-size:20px}
+#aboutusView .content .comment{margin-top:-15px;}
+#aboutusView .content .comment p{font-size:15px;font-family:'Times','Times New Roman',Sans-serif;}
+#aboutusView .content .holiday{margin-top:10px;}
+#aboutusView .content .holiday .hours{font-size:20px}
+#aboutusView .content .holiday .schedule{font-size:15px;font-family:'Times','Times New Roman',Sans-serif;margin-left:17px;margin-top:-4px}
+/**************************************************contactview************************************************************************/
+  #contactView .nvbar {background:#23A505 !important;border-bottom: none !important;padding-top: 5px;padding-bottom: 0px;height:45px}
+ #contactView .nvbar .menu {background: url('menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #contactView .nvbar .cart {background: url('cart_icon.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 6px;margin-right: 2px;padding-right: 20px;padding-top: 20px;padding-bottom: 8px;background-size: 28px 30px !important;background-position: 4px 4px !important;}
+  #contactView .wrapper .header{width:100%;height:7%;font-size:30px}
+#contactView .wrapper .header p{color:#fff;text-align:center}
+contactView .wrapper .logname { width: 100%; display: inline-block}
+#contactView .wrapper .logname .txtfldiv { width: 88%; float: left; padding-bottom: 7px; border: 1px solid #D5F5A9; border-top: none; border-left: none; border-right: none; margin-left: 20px; }
+#contactView .wrapper .logname .txtfldiv p { margin: -5px 0 0 0}
+#contactView .wrapper .logname .txtfldiv .txtfld { width: 100%; height: 40px; padding-left: 0px; border: none; background: none; color: #fff; font-size: 15px; font-family: 'Times', 'Times New Roman', sans-serif; }
+#contactView .wrapper .lognumber { width: 100%; display: inline-block}
+#contactView .wrapper .lognumber .txtfldiv { width: 88%; float: left; padding-bottom: 7px; border: 1px solid #D5F5A9; border-top: none; border-left: none; border-right: none; margin-left: 20px; }
+#contactView .wrapper .lognumber .txtfldiv p { margin: -5px 0 0 0}
+#contactView .wrapper .lognumber .txtfldiv .txtfld { width: 100%; height: 40px;padding-left: 0px; border: none; background: none; color: #fff; font-size: 15px; font-family: 'Times', 'Times New Roman', sans-serif;}
+#contactView .wrapper .logemail { width: 100%; display: inline-block}
+#contactView .wrapper .logemail .txtfldiv { width: 88%; float: left; padding-bottom: 7px; border: 1px solid #D5F5A9; border-top: none; border-left: none; border-right: none; margin-left: 20px; }
+#contactView .wrapper .logemail .txtfldiv p { margin: -5px 0 0 0}
+#contactView .wrapper .logemail .txtfldiv .txtfld { width: 100%; height: 40px;padding-left: 0px; border: none; background: none; color: #fff; font-size: 15px; font-family: 'Times', 'Times New Roman', sans-serif;}
+#contactView .wrapper .logsubject { width: 100%; display: inline-block}
+#contactView .wrapper .logsubject .txtfldiv { width: 88%; float: left; padding-bottom: 7px; border: 1px solid #D5F5A9; border-top: none; border-left: none; border-right: none; margin-left: 20px; }
+#contactView .wrapper .logsubject .txtfldiv p { margin: -5px 0 0 0}
+#contactView .wrapper .logsubject .txtfldiv .txtfld { width: 100%; height: 40px;padding-left: 0px; border: none; background: none; color: #fff; font-size: 15px; font-family: 'Times', 'Times New Roman', sans-serif;}
+#contactView .wrapper .logmessage { width: 100%; display: inline-block}
+#contactView .wrapper .logmessage .txtfldiv { width: 88%; float: left; padding-bottom: 7px; border: 1px solid #D5F5A9; border-top: none; border-left: none; border-right: none; margin-left: 20px; }
+#contactView .wrapper .logmessage .txtfldiv p { margin: -5px 0 0 0}
+#contactView .wrapper .logmessage .txtfldiv .txtfld { width: 100%; height: 40px;padding-left: 0px; border: none; background: none; color: #fff; font-size: 15px; font-family: 'Times', 'Times New Roman', sans-serif;}
+#contactView .wrapper .logSub { width: 100%; margin-top: 50px;margin-top: 35px}
+#contactView .wrapper .logSub p { margin: -10 0 0 0; }
+#contactView .wrapper .logSub a { width: 100%; height: 58px; background-color: #fff !important;  }
+#contactView .wrapper .logSub a span { font-size: 22px; line-height: 40px; color: #23A503 !important; font-weight: 100; }
+
+  /*********************************************productlisview*****************************************************/
+      #shopView .nvbar {background-color:#23A505 !important;height: 55px;}
+    #shopView .nvbar .menu {background: url('menu.png') no-repeat !important;width: 35px;height: 35px;border: none !important;margin-top: 10px;margin-left: 5px;padding-left: 38px;padding-top: 10px;padding-bottom: 10px;background-size: 25px 22px !important;background-position: 5px 5px !important;}
+    #shopView .nvbar span {color:#fff;font-size: 20px;line-height: 55px;}
+    
+    #shopView .wrapper {width:100%;}
+    #shopView .wrapper .main {width:100%;margin:0px auto}
+    #shopView .wrapper .prodSrchDv {width:100%;padding: 1px 0 1px 0;background-color: #ffffff;}
+    #shopView .wrapper .prodSrchDv p {margin:15px 11px 15px 11px;}
+    #shopView .wrapper .prodSrchDv .dropDwn{width: 100%;height: 45px;border: 1px solid #ccc;color: #C7C7C7;font-size: 18px;font-family: -webkit-body;padding-left:8px;}
+    #shopView .wrapper .prodSrchDv .dropDwn {-webkit-appearance: none;-moz-appearance: none;text-indent: 1px;background: url('down_arrow_gray.png') no-repeat;background-position: 98% 16px;background-size: 22px 13px;}
+    #shopView .wrapper .listContentDV{width:100%}
+    #shopView .wrapper .main .listContentDV .shopList{list-style-type:none}
+    #shopView .wrapper .main .listContentDV .shopList li{width:50%;float:left;padding-left: 10px;}   
+    #shopView .wrapper .main .listContentDV .shopList li .dynDv{  width: 94%;
+  height: 180px;
+  border: 1px solid #ccc;
+  margin-left: -28px;
+  margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px #DDDCDC;}
+    #shopView .wrapper .main .listContentDV .shopList li .dynDv .prodCls p{ text-align: center;
+  height: 88px;
+  width: 101px;margin-left: 5px;}
+    #shopView .wrapper .main .listContentDV .shopList li .dynDv .prodCls img
+    {  height:87px;
+  width: 50%;
+      margin-left: 26px;}
+   #shopView .wrapper .main .listContentDV .shopList li .dynDv .prodTitle{border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;}
+    #shopView .wrapper .main .listContentDV .shopList li .dynDv .prodTitle p{margin-left:7px;margin-top:14px;font-size:19px}
+    /********************************************billinginfo******************************************************/
+#billingInfoView .wrapper .header{width: 100%;height: 7%;font-size: 30px}
+#billingInfoView .wrapper .header p{color:#fff;text-align:center;}
+#billingInfoView .wrapper .logfname{width:100%;display: inline-block}
+#billingInfoView .wrapper .logfname .textdiv{width:88%;float:left;padding-bottom:7px;border: 1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left: 20px }
+#billingInfoView .wrapper .logfname .textdiv p{margin: -5px 0 0 0}
+#billingInfoView .wrapper .logfname .textdiv .txtfld{width: 100%;height: 40px; padding-top:5px; padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times', 'Times New Roman',sans-serif ;}
+#billingInfoView .wrapper .loglname{width:100%;display: inline-block}
+#billingInfoView .wrapper .loglname .textdiv{width:88%;float:left;padding-bottom:7px;border: 1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left: 20px }
+#billingInfoView .wrapper .loglname .textdiv p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .loglname .textdiv .txtfld{width: 100%;height: 40px; padding-top:5px; padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times', 'Times New Roman',sans-serif ;}
+#billingInfoView .wrapper .logstreet{width:100%;display: inline-block}
+#billingInfoView .wrapper .logstreet .textdiv{width:88%;float:left;padding-bottom:7px;border: 1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;border-top:none;margin-left: 20px}
+#billingInfoView .wrapper .logstreet .textdiv p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .logstreet .textdiv .txtfld{width:100%;height:40px;padding-top:5px;padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times', 'Times New Roman',sans-serif ;}
+#billingInfoView .wrapper .mixdrop {width:100%;margin-top: 12px !important;}
+#billingInfoView .wrapper .mixdrop .city_FldDV {  width: 42%;
+  float: left;
+  padding-bottom: 7px;
+  border: 1px solid #D5F5A9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 20px;
+  border: 1px solid #D5F5A9;
+    border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#billingInfoView .wrapper .mixdrop .city_FldDV p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .mixdrop .city_FldDV .txtFld{width: 100%;height: 40px; padding-top:5px; padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times', 'Times New Roman',sans-serif ;}
+#billingInfoView .wrapper .mixdrop .state_Fld{width:40%;  height: 44px;float:left;padding-bottom:0px;border: 1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left: 20px }
+#billingInfoView .wrapper  .mixdrop .state_Fld .dropdown{width: 100%;height: 35px;color:#FFFFFF;border:none;background:none;font-size: 15px;-webkit-appearance: none;-moz-appearance: none;text-indent: 1px;background: url('down_arrow.png') no-repeat;background-position: 98% 4px;background-size: 20px 11px;height: 35px;padding-bottom:20px;padding-left:0px;}
+#billingInfoView .wrapper  .mixdrop .state_Fld p{margin:7px 0 0 0}
+#billingInfoView .wrapper .logZipcode{width:100%;display:inline-block}
+#billingInfoView .wrapper .logZipcode .textdiv{width:88%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left:20px}
+#billingInfoView .wrapper .logZipcode .textdiv p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .logZipcode .textdiv .txtfld{width:100%;height:40px;padding-top:5px;padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times','Times New Roman',Sans-serif;}
+#billingInfoView .wrapper .logphone{width:100%;display:inline-block}
+#billingInfoView .wrapper .logphone .textdiv{width:88%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left:20px}
+#billingInfoView .wrapper .logphone .textdiv p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .logphone .textdiv .txtfld{width:100%;height:40px;padding-top:5px;padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times','Times New Roman',Sans-serif;}
+#billingInfoView .wrapper .logemail{width:100%;display:inline-block}
+#billingInfoView .wrapper .logemail .textdiv{width:88%;float:left;padding-bottom:7px;border:1px solid #D5F5A9;border-top:none;border-left:none;border-right:none;margin-left:20px}
+#billingInfoView .wrapper .logemail .textdiv p{margin:-5px 0 0 0}
+#billingInfoView .wrapper .logemail .textdiv .txtfld{width:100%;height:40px;padding-top:5px;padding-left:0px;border:none;background:none;color:#fff;font-size:15px;font-family:'Times','Times New Roman',Sans-serif;}
+#billingInfoView .wrapper .logcheck{width:100%;margin-top:12%}
+#billingInfoView .wrapper .logcheck a { width: 100%; height: 58px; background-color: #fff !important;}
+#billingInfoView .wrapper .logcheck a span { font-size: 22px; line-height: 40px; color: #23A503 !important; font-weight: 100; }

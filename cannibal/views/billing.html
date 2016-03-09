@@ -1,71 +1,82 @@
-<div data-role="view" id="billingView" data-title='Billing Info' data-model="app.billingService.viewModel" data-show="app.billingService.viewModel.show" data-use-native-scrolling="true">
-    <div data-role="header">
-        <div data-role="navbar" class="nvbar">
-			<a data-role="backbutton" data-align="left" class="back"></a>
-            <strong><span data-role="view-title"></span></strong>
-        </div>
-    </div>
-    <div data-role="content">
-        <div class="wrapper">
-            <!-- <div class="header">
-                <p>
-                    Billing Info
-                </p>
-            </div>  -->
-            <div class="conFldDv">
-                <div class="fldDv">
-                    <p>
-                        <input type="text" name="bill_fname" data-bind="value:bill_fname" class="txtFld" placeholder="First Name"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="text" name="bill_lname" data-bind="value:bill_lname" class="txtFld" placeholder="Last Name"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="text" name="bill_address" data-bind="value:bill_address" class="txtFld" placeholder="Street Address"/>
-                    </p>
-                </div>
-                <div class="fldDv mixdrop">
+<div data-role="view" id="billingInfoView" data-layout="main">
+<div data-role="content" style="overflow: hidden;background:url('style/images/bg.png');background-size: 100% 100%;">
+   <div class="wrapper">
+       <div class="header">
+           <p>
+               Billing Info
+           </p>
+       </div>
+       <div class="logfname">
+           <div class="textdiv">
+               <p>
+                   <input type="text" name="fname" id="fname" class="txtfld" placeholder="First Name">
+               </p>
+           </div>
+           
+       </div>
+      <div class="loglname">
+           <div class="textdiv">
+               <p>
+                   <input type="text" name="lname" id="lname" class="txtfld" placeholder="Last Name">
+               </p>
+           </div>
+           
+       </div>
+        <div class="logstreet">
+           <div class="textdiv">
+               <p>
+                   <input type="text" name="lname" id="lname" class="txtfld" placeholder="Street Address">
+               </p>
+           </div>
+           
+       </div>
+         <div class="mixdrop">
+            
                     <div class="city_FldDV">
-                        <p>
-                            <input type="text" name="bill_city" data-bind="value:bill_city" class="txtFld" placeholder="City"/>
-                        </p>
+                       <p>
+                            <input type="text" name="bill_city" id="bill_city" class="txtFld" placeholder="City"/>
+                      </p>
+                     
                     </div>
-                    <div class="state_FldDv">
-                        <p>
-                            <select class="dropdown" id="bill_state">
-                                <option value=''>State</option>
-                                <option value='Maharashtra'>Maharashtra</option>
-                                <option value='Tamil Nadu'>Tamil Nadu</option>
-                                <option value='Delhi'>Delhi</option>>
+                    <div class="state_Fld">
+                               <p>
+                            <select class="dropdown">
+                                <option>State</option>
+                                <option>Maharashtra</option>
+                                <option>Tamil Nadu</option>
+                                <option>Delhi</option>>
                             </select>
-                        </p>
+                               </p>
                     </div>
                 </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="number" name="bill_zipcode" data-bind="value:bill_zipcode" maxlength='6' class="txtFld" placeholder="Zipcode" />
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="tel" name="bill_phone" data-bind="value:bill_phone" maxlenth='10' class="txtFld" placeholder="Phone"/>
-                    </p>
-                </div>
-                <div class="fldDv">
-                    <p>
-                        <input type="email" name="bill_email" data-bind="value:bill_email" class="txtFld" placeholder="Email Address"/>
-                    </p>
-                </div>
-            </div>
-            <div class="subDv">
-                <p>
-                    <a data-role="button" data-bind='click:submitCheckout'>CHECK OUT</a>
-                </p>
-            </div>
-        </div>
-    </div>
+       <div class="logZipcode">
+           <div class ="textdiv">
+               <p>
+                   <input type="number" name="zipcode" class="txtfld" placeholder="Zipcode">
+               </p>
+           </div>
+       </div>
+       <div class="logphone">
+           <div class="textdiv">
+               <p>
+                   <input type="number" name="phone" class="txtfld" placeholder="Phone">
+               </p>
+           </div>
+       </div>
+       <div class="logemail">
+           <div class="textdiv">
+               <p>
+                   <input type="email" name="email" class="txtfld" placeholder="Email Address">
+               </p>
+           </div>
+       </div>
+       <div class="logcheck">
+           <p>
+           <a data-role="button" id="checkin">Check Out</a>
+               </p>
+       </div>
+   </div> 
 </div>
+    
+</div>
+   

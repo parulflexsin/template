@@ -1,3 +1,82 @@
-<div data-role="view" id="signupView">
-    <div data-role="content" style="background:url('style/images/bg.png')"></div>
+<div data-role="view" id="signupView" data-layout="main" data-model="app.signupService.viewModel" data-show="app.signupService.viewModel.show">
+        <ul class="listparent">>
+
+    <div data-role="content" style="overflow: hidden;background: url('styles/bg.png');background-size:100% 100%; " >
+        <div class="wrapper">
+            <div class="header">
+                <p>
+                    Club Registration
+                </p>
+            </div>
+            <div class="logfname">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="text" name="fname" data-bind="value:firstname" class="txtfld" id="fname" placeholder="First Name">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="loglname">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="text" name="lname" data-bind="value:lastname" class="txtfld" id="lname" placeholder="Last Name">
+                       
+                    </p>
+                </div>
+            </div>
+            <div class="lognumber">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="number" name="phonenumber" id="phonenumber" data-bind="value:mobilenumber" class="txtfld" maxlength="10" placeholder="Phone Number"/>
+                        
+                    </p>
+                </div>
+            </div>
+            
+            <div class="logemail">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="text" name="email" data-bind="value:emailid" class="txtfld" id="email" placeholder="Email Address";>
+                        
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="logid">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="file" name="uploadid" data-bind="value:uploadphoto" class="txtfld" id="uploadid" placeholder="Upload California Driver's Liscense Id";>
+                         
+                        </p>
+                </div>
+            </div>
+
+            <div class="logprescription">
+                <div class="txtfldiv">
+                    <p>
+                        <input type="file" name="uploadprescription" data-bind="value:uploadprescription" class="txtfld" id="uploadprescription" placeholder="Upload Your Prescription";>
+                        
+                        
+                    </p>
+                </div>
+            </div>
+             
+
+            <div class="logSub">
+
+                <p>
+
+                    <a data-role="button" id="movetonextstepregistration" class='movetonextstepregistration'>SUBMIT</a>
+
+                </p>
+                
+            </div>
+        </div>
+       
+    </div>
+ </ul>
 </div>
+
+
+
